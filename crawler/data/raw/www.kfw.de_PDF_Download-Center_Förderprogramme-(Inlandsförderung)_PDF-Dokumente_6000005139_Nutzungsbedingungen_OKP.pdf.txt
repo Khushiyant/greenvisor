@@ -1,0 +1,192 @@
+Nutzungsbedingungen
+für das KfW-Online-Banking
+. Logo: KfW, Bank aus Verantwortung
+Nutzungsbedingungen für das KfWO-nlin-eBanking
+Bedingungen für die Nutzung des Online-Kreditportals (OKP)
+1. Leistungsangebot
+Der Kreditnehmer/die Kreditnehmerin (im Weiteren der Kreditnehmer) kann das Online-Kreditportal/Online-Banking
+(im Weiteren nur Online-Banking) in dem von der KfW angebotenen Umfang für die Abwicklung seines Kredites in
+Anspruch nehmen. Mittels Online-Banking kann der Kreditnehmer zudem Erklärungen und Informationen der KfW
+sowie persönliche Dokumente zum Kreditverhältnis mit der KfW in seinem elektronischen Postkorb abrufen.
+2. Voraussetzungen zur Nutzung des Online-Banking
+(1) Der Kreditnehmer kann das Online-Banking nutzen, wenn die KfW ihn authentifiziert hat.
+(2) Authentifizierung ist das mit der KfW vereinbarte Verfahren, mit dessen Hilfe die KfW die Identität des
+Kreditnehmers einschließlich der Verwendung des personalisierten Sicherheitsmerkmals überprüfen kann. Mit den
+hierfür vereinbarten Authentifizierungselementen kann der Kreditnehmer sich gegenüber der KfW als berechtigter
+Teilnehmer ausweisen, auf Informationen zugreifen (siehe Nummer 3) sowie Aufträge erteilen (siehe Nummer 5).
+(3) Authentifizierungselemente sind
+• Wissenselemente, also etwas, das nur der Kreditnehmer weiß (zum Beispiel die persönliche
+Identifikationsnummer [PIN]) und
+• Besitzelemente, also etwas, das nur der Kreditnehmer besitzt (zum Beispiel das Gerät zur Erzeugung oder
+zum Empfang nur einmal verwendbarer Transaktionsnummern [TAN]), die den Besitz des Kreditnehmers
+nachweisen, wie das mobile Endgerät, sowie
+• Seinselemente, also etwas, das der Kreditnehmer ist (Inhärenz, zum Beispiel der Fingerabdruck als
+biometrisches Merkmal des Kreditnehmers).
+(4) Die Authentifizierung des Kreditnehmers erfolgt, indem der Kreditnehmer gemäß der Anforderung der KfW das
+Wissenselement, den Nachweis des Besitzelements und/oder den Nachweis des Seinselements an die KfW übermittelt
+hat.
+3. Zugang zum Online-Banking
+Der Kreditnehmer erhält Zugang zum Online-Banking der KfW, wenn
+• er seine individuelle Teilnehmerkennung (zum Beispiel die Geschäftspartnernummer) angibt und
+• er sich unter Verwendung des oder der von der KfW angeforderten Authentifizierungselemente(s) ausweist und
+• keine Sperre des Zugangs (siehe Nummer 9) vorliegt.
+Nach Gewährung des Zugangs zum Online-Banking kann der Kreditnehmer Informationen abrufen, Erklärungen
+abgeben oder Aufträge erteilen.
+Die Einrichtung des Zugangs erfolgt
+• mit Zusage des Kredits (bei Krediten mit Online-Kontoführung) oder
+• auf Antrag des Kreditnehmers (Auftrag zur Umstellung auf eine Online-Kontoführung).
+Der Kreditnehmer ist berechtigt, seine persönliche Identifikationsnummer (PIN) unter Verwendung eines weiteren
+Authentifizierungselements (zum Beispiel Transaktionsnummer [TAN]) jederzeit zu ändern. Bei Änderung der
+persönlichen Identifikationsnummer wird seine bisherige persönliche Identifikationsnummer ungültig.
+Stand: 11/2024 • Bestellnummer: 600 000 5139
+KfW Bankengruppe • Palmengartenstraße 5-9 • 60325 Frankfurt
+Infocenter • Telefon: 0800 539-9003 (kostenfrei) • Fax: +49 69 7431-9500 • www.kfw.de Seite 1 von 4
+
+4. Elektronischer Postkorb
+Mit der Einrichtung des Online-Banking-Zugangs wird dem Kreditnehmer gleichzeitig ein Online-Postfach (im Weiteren:
+elektronischer Postkorb) zur Verfügung gestellt.
+In dem elektronischen Postkorb werden dem Kreditnehmer persönliche Dokumente online zur Verfügung gestellt. Der
+Kreditnehmer kann sich die Unterlagen online ansehen, herunterladen, ausdrucken und archivieren. Die Auswahl der
+Dokumentenarten, die online als elektronische Post zur Verfügung gestellt werden, kann von der KfW jederzeit
+erweitert oder verringert werden.
+Der Kreditnehmer verzichtet durch die Nutzung des elektronischen Postkorbs nach Maßgabe dieser Bedingungen
+ausdrücklich auf den postalischen Versand hinterlegter Dokumente in Papierform. Auch bei Nutzung des
+elektronischen Postkorbs ist die KfW berechtigt, die hinterlegten Dokumente weiterhin postalisch oder auf eine andere
+Weise dem Kreditnehmer zuzustellen, wenn dies gesetzliche Vorgaben erforderlich machen oder es aufgrund anderer
+Umstände (zum Beispiel vorübergehender Ausfall des elektronischen Postkorbs) zweckmäßig ist.
+Der Kreditnehmer verpflichtet sich, den elektronischen Postkorb regelmäßig sowie unverzüglich nach Erhalt einer E-
+Mail-Benachrichtigung auf neu hinterlegte Dokumente zu prüfen. Er kontrolliert die in dem elektronischen Postkorb
+hinterlegten Dokumente auf Richtigkeit und Vollständigkeit. Beanstandungen sind der KfW unverzüglich, spätestens
+jedoch drei Monate nach Zugang in Textform (zum Beispiel per Brief, Fax oder E-Mail) mitzuteilen.
+Die KfW garantiert die Unveränderbarkeit der Daten in dem elektronischen Postkorb, sofern die Daten innerhalb des
+elektronischen Postkorbs gespeichert oder aufbewahrt werden. Werden Dokumente außerhalb des elektronischen
+Postkorbs gespeichert, aufbewahrt oder in veränderter Form in Umlauf gebracht, übernimmt die KfW hierfür keine
+Haftung.
+Die KfW speichert die im elektronischen Postkorb enthaltenen Dokumente im Rahmen der gesetzlichen
+Aufbewahrungsfristen.
+Der Kreditnehmer kann sich per E-Mail über die Einstellung neuer Dokumente in seinen elektronischen Postkorb
+benachrichtigen lassen. Hierfür ist es erforderlich, dass er seine E-Mail-Adresse in den persönlichen Daten hinterlegt
+und der Benachrichtigung per E-Mail zustimmt.
+5. Auftragserteilung und Autorisierung
+Der Kreditnehmer muss einem Auftrag (zum Beispiel eine Adressänderung) zu dessen Wirksamkeit zustimmen
+(Autorisierung). Auf Anforderung hat er hierzu Authentifizierungselemente (zum Beispiel Eingabe einer
+Transaktionsnummer [TAN] als Nachweis des Besitzelements) zu verwenden. Der Kreditnehmer hat vor der Freigabe
+alle von ihm eingegebenen Daten auf Vollständigkeit und Richtigkeit zu überprüfen.
+Die KfW bestätigt mittels Online-Banking den Eingang des Auftrags.
+6. Auftragsbearbeitung
+Mittels Online-Banking erteilte Aufträge werden von der KfW im Rahmen des ordnungsgemäßen Arbeitsablaufes
+bearbeitet.
+7. Widerruf und Änderung von Aufträgen
+Der Widerruf oder die Änderung von Aufträgen kann nur außerhalb des Online-Banking erfolgen, es sei denn, die KfW
+sieht eine solche Möglichkeit innerhalb des Online-Banking ausdrücklich vor. Die KfW kann einen Widerruf oder eine
+Änderung nur beachten, wenn ihr diese Nachricht so rechtzeitig zugeht, dass ihre Berücksichtigung im Rahmen des
+ordnungsgemäßen Arbeitsablaufes möglich ist.
+8. Sorgfaltspflichten des Kreditnehmers
+8.1 Technische Verbindung zum Online-Banking
+Der Kreditnehmer ist verpflichtet, die technische Verbindung zum Online-Banking über die von der KfW zur Verfügung
+gestellten Zugangskanäle herzustellen. Die Website des Online-Bankings der KfW ist hierzu über eine verschlüsselte
+https-Adresse aufzurufen. Die KfW behält sich vor, den aktuellen Sicherheitsstandard der technischen Verbindung zu
+ändern. Sofern notwendig wird sie den Kreditnehmer hierüber informieren, indem sie eine Mitteilung an geeigneter
+Stelle (zum Beispiel Login-Seite Online-Banking) veröffentlicht.
+8.2 Schutz der Authentifizierungselemente
+Der Kreditnehmer hat alle zumutbaren Vorkehrungen zu treffen, um seine Authentifizierungselemente (siehe
+Nummer 2) vor unbefugtem Zugriff zu schützen. Ansonsten besteht die Gefahr, dass das Online-Banking
+missbräuchlich verwendet oder in sonstiger Weise nicht autorisiert genutzt wird (vergleiche Nummern 3 und 5).
+Stand: 11/2024 • Bestellnummer: 600 000 5139
+KfW Bankengruppe • Palmengartenstraße 5-9 • 60325 Frankfurt
+Infocenter • Telefon: 0800 539-9003 (kostenfrei) • Fax: +49 69 7431-9500 • www.kfw.de Seite 2 von 4
+
+Zum Schutz der einzelnen Authentifizierungselemente hat der Kreditnehmer vor allem Folgendes zu beachten:
+(a) Wissenselemente, wie zum Beispiel die persönliche Identifikationsnummer (PIN), sind geheim zu halten; sie dürfen
+insbesondere
+• nicht mündlich (zum Beispiel telefonisch oder persönlich) mitgeteilt werden,
+• nicht außerhalb des Online-Banking in Textform (zum Beispiel per E-Mail, Messengerdienst) weitergegeben
+werden,
+• nicht ungesichert elektronisch gespeichert (zum Beispiel Speicherung der persönlichen Identifikationsnummer
+[PIN] im Klartext im Computer oder im mobilen Endgerät) werden und
+• nicht auf einem Gerät notiert oder als Abschrift zusammen mit einem Gerät aufbewahrt werden, das als
+Besitzelement (zum Beispiel mobiles Endgerät) oder zur Prüfung des Seinselements (zum Beispiel mobiles
+Endgerät mit Anwendung für das Online-Banking und Fingerabdrucksensor) dient.
+(b) Besitzelemente, wie zum Beispiel ein mobiles Endgerät, sind vor Missbrauch zu schützen, insbesondere
+• ist sicherzustellen, dass unberechtigte Personen auf das mobile Endgerät des Kreditnehmers (zum Beispiel
+Mobiltelefon) nicht zugreifen können,
+• ist dafür Sorge zu tragen, dass andere Personen die auf dem mobilen Endgerät (zum Beispiel Mobiltelefon)
+befindliche Anwendung für das Online-Banking (zum Beispiel Authentifizierungs-App) nicht nutzen können,
+• ist die Anwendung für das Online-Banking (zum Beispiel Authentifizierungs-App) auf dem mobilen Endgerät des
+Kreditnehmers zu deaktivieren, bevor der Kreditnehmer den Besitz an diesem mobilen Endgerät aufgibt (zum
+Beispiel durch Verkauf oder Entsorgung des Mobiltelefons),
+• dürfen die Nachweise des Besitzelements (zum Beispiel TAN) nicht außerhalb des Online-Banking mündlich
+(zum Beispiel per Telefon) oder in Textform (zum Beispiel per E-Mail, Messenger-Dienst) weitergegeben werden
+und
+• muss der Kreditnehmer, der von der KfW einen Code zur Aktivierung des Besitzelements (zum Beispiel für ein
+Mobiltelefon mit Anwendung für das Online-Banking) erhalten hat, diesen vor dem unbefugten Zugriff anderer
+Personen sicher verwahren; ansonsten besteht die Gefahr, dass andere Personen ihr Gerät als Besitzelement
+für das Online-Banking des Kreditnehmers aktivieren.
+(c) Seinselemente, wie zum Beispiel Fingerabdruck des Kreditnehmers, dürfen auf einem mobilen Endgerät des
+Kreditnehmers für das Online-Banking nur dann als Authentifizierungselement verwendet werden, wenn auf dem
+mobilen Endgerät keine Seinselemente anderer Personen gespeichert sind. Sind auf dem mobilen Endgerät, das
+für das Online-Banking genutzt wird, Seinselemente anderer Personen gespeichert, ist für das Online-Banking das
+von der KfW ausgegebene Wissenselement (zum Beispiel persönliche Identifikationsnummer [PIN]) zu nutzen und
+nicht das auf dem mobilen Endgerät gespeicherte Seinselement.
+Beim Mobile-TAN-Verfahren darf das mobile Endgerät, mit dem die Transaktionsnummer (TAN) empfangen wird (zum
+Beispiel Mobiltelefon), nicht gleichzeitig für das Online-Banking genutzt werden.
+Die für das Mobile-TAN-Verfahren hinterlegte Telefonnummer ist zu löschen oder zu ändern, wenn der Kreditnehmer
+diese Telefonnummer für das Online-Banking nicht mehr nutzt.
+8.3 Sicherheitshinweise der KfW
+Der Kreditnehmer muss die Hinweise im "Infoblatt Sicherheitshinweise KfW-Online-Banking“ sowie alle weiteren
+Sicherheitshinweise der KfW zum Online-Banking, insbesondere die Maßnahmen zum Schutz der eingesetzten Hard-
+und Software (Kundensystem), beachten. Das "Infoblatt Sicherheitshinweise KfW-Online-Banking“ ist abrufbar unter
+www.kfw.de/sicherheitshinweise-okp.
+8.4 Anzeige- und Unterrichtungspflichten
+Stellt der Kreditnehmer
+• den Verlust oder den Diebstahl eines Besitzelements zur Authentifizierung (zum Beispiel mobiles Endgerät)
+oder
+• die missbräuchliche Verwendung oder die sonstige nicht autorisierte Nutzung eines Authentifizierungselements
+fest, muss der Kreditnehmer die KfW hierüber unverzüglich unterrichten (Sperranzeige). Der Kreditnehmer kann der
+KfW eine Sperranzeige jederzeit auch über die gesondert mitgeteilten Kommunikationskanäle abgeben.
+Der Kreditnehmer hat jeden Diebstahl oder Missbrauch eines Authentifizierungselements unverzüglich bei der Polizei
+zur Anzeige zu bringen.
+Stand: 11/2024 • Bestellnummer: 600 000 5139
+KfW Bankengruppe • Palmengartenstraße 5-9 • 60325 Frankfurt
+Infocenter • Telefon: 0800 539-9003 (kostenfrei) • Fax: +49 69 7431-9500 • www.kfw.de Seite 3 von 4
+
+Hat der Kreditnehmer den Verdacht einer nicht autorisierten oder betrügerischen Verwendung eines seiner
+Authentifizierungselemente, muss er ebenfalls eine Sperranzeige abgeben.
+Der Kunde hat die KfW unverzüglich nach Feststellung eines nicht autorisierten oder fehlerhaft ausgeführten Auftrags
+hierüber zu unterrichten.
+Die KfW haftet ab dem Zugang der Sperrnachricht für alle Schäden, die aus einer Nichtbeachtung der Sperre
+entstehen. Dies gilt nicht, wenn der Kreditnehmer in betrügerischer Absicht gehandelt hat.
+9. Nutzungssperre
+9.1 Sperre auf Veranlassung des Kreditnehmers
+Die KfW sperrt auf Veranlassung des Kreditnehmers, insbesondere im Fall der Sperranzeige nach Nummer 8.4 dieser
+Bedingungen, den Online-Banking-Zugang für ihn.
+9.2 Sperre auf Veranlassung der KfW
+Die KfW darf den Online-Banking-Zugang für einen Kreditnehmer sperren, wenn
+• sie berechtigt ist, den Online-Banking-Vertrag aus wichtigem Grund zu kündigen
+• sachliche Gründe im Zusammenhang mit der Sicherheit der Authentifizierungselemente des Kreditnehmers dies
+rechtfertigen oder
+• der Verdacht einer nicht autorisierten oder einer betrügerischen Verwendung eines Authentifizierungselements
+besteht.
+Die KfW wird den Kreditnehmer unter Angabe der hierfür maßgeblichen Gründe möglichst vor, spätestens jedoch
+unverzüglich nach der Sperre auf dem vereinbarten Weg unterrichten. Die Angabe von Gründen darf unterbleiben,
+wenn die KfW hierdurch gegen gesetzliche Pflichten verstoßen würde.
+9.3 Aufhebung der Sperre
+Die KfW wird eine Sperre aufheben oder die betroffenen Authentifizierungselemente austauschen, wenn die Gründe für
+die Sperre nicht mehr gegeben sind. Hierüber unterrichtet sie den Kreditnehmer unverzüglich.
+10. Änderungen der Nutzungsbedingungen
+Die KfW behält sich das Recht vor, diese Nutzungsbedingungen für die Zukunft zu ändern. Die KfW wird solche
+Änderungen nur bei einem berechtigten Interesse vornehmen, insbesondere auf Grund neuer technischer
+Entwicklungen, Änderungen der Rechtsprechung, Anpassungen beim Funktionsumfang des Online-Banking oder aus
+sonstigen gleichwertigen Gründen.
+Änderungen der Nutzungsbedingungen werden dem Kreditnehmer entweder schriftlich oder durch Hinterlegung im
+Online-Banking-Portal übermittelt. Eine Übermittlung durch Hinterlegung im Online-Banking-Portal setzt voraus, dass
+der Kreditnehmer die Änderungen in lesbarer Form drucken oder archivieren kann.
+Die Änderungen gelten als genehmigt, wenn der Kreditnehmer ihnen nicht binnen drei Monaten nach Zugang
+widerspricht. Auf diese Folge wird die KfW den Kreditnehmer bei der Bekanntgabe besonders hinweisen.
+11. Anwendbares Recht
+Auf die Geschäftsbeziehung zwischen dem Kreditnehmer und der KfW findet deutsches Recht Anwendung, es sei
+denn, dieses verweist auf eine ausländische Rechtsordnung.
+SKIntffaWon cdBe: an1nt1ker/e 2•n 0gT2re4ul ep•f poBene :s •t 0Pe8la0lnlm0u me5n3mg9ae-rr9:t0 e06n30s 0t( rk0ao0ßs0et e55n1-fr39e9 •i ) 6•0 3F2ax5: F+r49an k6f9 urt74 31-9500 • www.kfw.de
+Stand: 11/2024 • Bestellnummer: 600 000 5139
+KfW Bankengruppe • Palmengartenstraße 5-9 • 60325 Frankfurt
+Infocenter • Telefon: 0800 539-9003 (kostenfrei) • Fax: +49 69 7431-9500 • www.kfw.de Seite 4 von 4

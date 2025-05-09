@@ -1,0 +1,215 @@
+Nutzungsbedingungen
+für das Online-Banking
+Produktnummer
+Bedingungen für die Nutzung des Online-Kreditportals /
+Keine Produktkachel
+Online-Banking
+1 Leistungsangebot
+Der Kreditnehmer/die Kreditnehmerin (im Weiteren der Kreditnehmer) kann das Online-Kreditportal /
+Online-Banking (im Weiteren nur Online-Banking) in dem von der KfW angebotenen Umfang für die
+Abwicklung seines Kredites in Anspruch nehmen. Mittels des Online-Banking kann der Kreditnehmer
+zudem Erklärungen und Informationen der KfW sowie persönliche Dokumente zum Kreditverhältnis mit
+der KfW in seinem "elektronischen Postkorb" abrufen.
+2 Voraussetzungen zur Nutzung des Online-Banking
+Für die Nutzung des Online-Banking benötigt der Kreditnehmer die mit der KfW vereinbarten
+Personalisierten Sicherheitsmerkmale und Authentifizierungsinstrumente, um sich gegenüber der KfW
+als berechtigter Teilnehmer auszuweisen (siehe Nummer 3.1) und Aufträge zu autorisieren (siehe
+Nummer 5).
+2.1 Personalisierte Sicherheitsmerkmale
+Personalisierte Sicherheitsmerkmale sind personalisierte Merkmale, die die KfW dem Kreditnehmer zum
+Zwecke der Authentifizierung bereitstellt. Personalisierte Sicherheitsmerkmale sind insbesondere
+• eine persönliche Identifikationsnummer (PIN)
+• einmal verwendbare Transaktionsnummern (TAN)
+• der Nutzungscode für die elektronische Signatur (wird von der KfW derzeit nicht angeboten).
+2.2 Authentifizierungsinstrumente
+Authentifizierungsinstrumente sind personalisierte Instrumente oder Verfahren, deren Verwendung
+zwischen der KfW und dem Kreditnehmer für die Erteilung von Aufträgen an die KfW vereinbart wurde.
+Die KfW kann dem Kreditnehmer das personalisierte Sicherheitsmerkmal (zum Beispiel TAN)
+insbesondere mittels folgender Authentifizierungsinstrumente zur Verfügung stellen:
+• PIN-Brief
+• Liste mit einmal verwendbaren TAN (TAN-Liste)
+• Mobiles Endgerät (zum Beispiel Mobiltelefon) zum Empfang von TAN per SMS (Mobile-TAN)
+• TAN-Generator, der Bestandteil einer Chipkarte oder eines anderen elektronischen Geräts zu
+Erzeugung von TAN ist (wird von der KfW derzeit nicht angeboten)
+• Chipkarte mit Signaturfunktion (wird von der KfW derzeit nicht angeboten)
+• Sonstiges Authentifizierungsinstrument, auf dem sich Signaturschlüssel befinden (wird von der KfW
+derzeit nicht angeboten).
+3 Verfahren
+3.1 Zugang zum Online-Banking
+Der Kreditnehmer erhält Zugang zum Online-Banking, wenn
+• dieser die Geschäftspartnernummer und seine PIN übermittelt,
+• die Prüfung dieser Daten bei der KfW eine Zugangsberechtigung des Kreditnehmers ergeben hat
+und
+Stand: 08/2021 • Bestellnummer: 600 000 4516
+KfW • Palmengartenstraße 5-9 • 60325 Frankfurt • Telefon: 069 7431-0 • Fax: 069 7431-2944 • www.kfw.de
+Infocenter • Telefon: 0800 539 9003 (kostenfrei) • Fax: 069-7431-9500 Seite 1 von 5
+
+Nutzungsbedingungen
+für das Online-Banking
+• keine Sperre des Zugangs (siehe Nummer 9) vorliegt.
+Nach Gewährung des Zugangs zum Online-Banking kann der Teilnehmer Informationen abrufen,
+Erklärungen abgeben oder Aufträge erteilen.
+3.2 Aktivierung des Zugangs zum Online-Banking
+Der Kreditnehmer erhält die Personalisierten Sicherheitsmerkmale (siehe Nummer 2.1) für den Zugang
+zum Online-Banking unmittelbar nach Einrichtung dieses Zugangs. Dieser erfolgt
+• mit Zusage des Kredits (bei Krediten mit Online-Kontoführung)
+• auf Antrag des Kreditnehmers (Auftrag zur Umstellung auf eine Online-Kontoführung)
+Der Kreditnehmer ist berechtigt, seine PIN unter Verwendung einer TAN jederzeit zu ändern. Bei
+Änderung der PIN wird seine bisherige PIN ungültig.
+3.3 Nutzung der TAN-Verfahren
+Im Mobile-TAN-Verfahren erhält der Kreditnehmer vor jedem Auftrag an die KfW, für den die Eingabe
+einer TAN erforderlich ist, eine an diesen Auftrag gebundene TAN als SMS auf sein mobiles Endgerät.
+Die TAN verliert ihre Gültigkeit wenn der Auftrag abgebrochen oder geändert wird bzw. nach Ablauf
+einer festgelegten Frist.
+Für die Nutzung des Mobile-TAN-Verfahrens hat der Kreditnehmer seine Mobilfunknummer im Online-
+Banking zu erfassen und freischalten zu lassen. Die Aktivierung der Mobilfunknummer erfolgt durch
+postalische Übersendung eines Aktivierungscodes.
+Im Listen-TAN-Verfahren erhält der Kreditnehmer eine Liste mit aktivierten TAN-Nummern, die er für
+die Freigabe eines Auftrages an die KfW über das Online-Banking nutzen kann.
+Bei Verlust oder Deaktivierung einer TAN-Liste kann der Kreditnehmer eine neue TAN-Liste anfordern.
+Diese Folge-Liste ist vor deren Verwendung im Online-Banking zu aktivieren.
+3.4 Änderung der Mobilfunknummer
+Die für die Nutzung des Mobile-TAN-Verfahrens vom Kreditnehmer benannte Mobilfunk-Nummer kann
+jederzeit gewechselt oder gesperrt werden. Die neue Mobilfunknummer des Kreditnehmers ist erst nach
+erneuter Aktivierung im Online-Banking nutzbar.
+4 Elektronischer Postkorb
+Mit der Einrichtung des Online-Banking-Zugangs wird dem Kreditnehmer gleichzeitig ein Online-Postfach
+(im Weiteren: elektronischer Postkorb) zur Verfügung gestellt.
+In dem elektronischen Postkorb werden dem Kreditnehmer persönliche Dokumente online zur Verfügung
+gestellt. Der Kreditnehmer kann sich die Unterlagen online ansehen, herunterladen, ausdrucken und
+archivieren. Die Auswahl der Dokumentenarten, die online als elektronische Post zur Verfügung gestellt
+werden, kann von der KfW jederzeit erweitert oder verringert werden.
+Der Kreditnehmer verzichtet durch die Nutzung des elektronischen Postkorbs nach Maßgabe dieser
+Bedingungen ausdrücklich auf den postalischen Versand hinterlegter Dokumente in Papierform. Auch
+bei Nutzung des elektronischen Postkorbs ist die KfW berechtigt, die hinterlegten Dokumente weiterhin
+postalisch oder auf eine andere Weise dem Kreditnehmer zuzustellen, wenn dies gesetzliche Vorgaben
+erforderlich machen oder es aufgrund anderer Umstände (zum Beispiel vorübergehender Ausfall des
+elektronischen Postkorbs) zweckmäßig ist.
+Der Kreditnehmer verpflichtet sich, den elektronischen Postkorb regelmäßig sowie unverzüglich nach
+Erhalt einer E-Mail-Benachrichtigung auf neu hinterlegte Dokumente zu prüfen. Er kontrolliert die in dem
+elektronischen Postkorb hinterlegten Dokumente auf Richtigkeit und Vollständigkeit. Beanstandungen
+Stand: 08/2021 • Bestellnummer: 600 000 4516
+KfW • Palmengartenstraße 5-9 • 60325 Frankfurt • Telefon: 069 7431-0 • Fax: 069 7431-2944 • www.kfw.de
+Infocenter • Telefon: 0800 539 9003 (kostenfrei) • Fax: 069-7431-9500 Seite 2 von 5
+
+Nutzungsbedingungen
+für das Online-Banking
+sind der Bank unverzüglich, spätestens jedoch drei Monate nach Zugang in Textform (zum Beispiel per
+Brief, Fax oder E-Mail) mitzuteilen.
+Die KfW garantiert die Unveränderbarkeit der Daten in dem elektronischen Postkorb, sofern die Daten
+innerhalb des elektronischen Postkorbs gespeichert oder aufbewahrt werden. Werden Dokumente
+außerhalb des elektronischen Postkorbs gespeichert, aufbewahrt oder in veränderter Form in Umlauf
+gebracht, übernimmt die KfW hierfür keine Haftung.
+Die KfW speichert die im elektronischen Postkorb enthaltenen Dokumente im Rahmen der gesetzlichen
+Aufbewahrungsfristen.
+Der Kreditnehmer kann sich per E-Mail über die Einstellung neuer Dokumente in seinen elektronischen
+Postkorb benachrichtigen lassen. Hierfür ist es erforderlich, dass er seine E-Mail-Adresse in den
+persönlichen Daten hinterlegt und der Benachrichtigung per E-Mail zustimmt.
+5 Auftragserteilung und Freigabe von Erklärungen
+Aufträge (zum Beispiel Änderungsaufträge oder Kontostandsabfragen) sind erteilt (autorisiert) und
+sonstige rechtsgeschäftliche Erklärungen des Kreditnehmers sind abgegeben (autorisiert), wenn er sie
+zur Übermittlung abschließend freigegeben hat. Auf Anforderung hat der Kreditnehmer hierzu
+Personalisierte Sicherheitsmerkmale (siehe Nummer 2.1, zum Beispiel Eingabe einer TAN) zu
+verwenden. Bei Vorgängen, die der Eingabe einer TAN bedürfen, ist die Freigabe mittels TAN
+maßgebend.
+Der Kreditnehmer hat vor der Freigabe alle von ihm eingegebenen Daten auf Vollständigkeit und
+Richtigkeit zu überprüfen.
+Die KfW bestätigt mittels Einstellung eines Auftragsschreibens in den elektronischen Postkorb (siehe
+Nummer 4) den Eingang des Auftrags.
+6 Auftragsbearbeitung
+Mittels Online-Banking erteilte Aufträge werden von der KfW im Rahmen des ordnungsgemäßen
+Arbeitsablaufes bearbeitet.
+7 Rückruf und Änderung von Aufträgen
+Der Rückruf oder die Änderung von Aufträgen kann nur außerhalb des Online-Banking erfolgen, es sei
+denn, die KfW sieht eine solche Möglichkeit innerhalb des Online-Banking ausdrücklich vor. Die KfW
+kann einen Rückruf oder eine Änderung nur beachten, wenn ihr diese Nachricht so rechtzeitig zugeht,
+dass ihre Berücksichtigung im Rahmen des ordnungsgemäßen Arbeitsablaufes möglich ist.
+8 Sorgfaltspflichten des Kreditnehmers
+8.1 Technische Verbindung zum Online-Banking
+Der Kreditnehmer ist verpflichtet, die technische Verbindung zum Online-Banking über die von der KfW
+gesondert mitgeteilten Online-Banking-Zugangskanäle (zum Beispiel Internetadresse) herzustellen. Die
+KfW behält sich vor, den aktuellen Sicherheitsstandard der technischen Verbindung zu ändern. Sie wird
+den Kreditnehmer hierüber unterrichten, indem sie vorher eine Mitteilung im Internet auf einer
+geeigneten zentralen Seite (zum Beispiel Login-Seite) veröffentlicht.
+8.2 Geheimhaltung der Personalisierten Sicherheitsmerkmale und sichere Aufbewahrung der
+Authentifizierungsinstrumente
+Stand: 08/2021 • Bestellnummer: 600 000 4516
+KfW • Palmengartenstraße 5-9 • 60325 Frankfurt • Telefon: 069 7431-0 • Fax: 069 7431-2944 • www.kfw.de
+Infocenter • Telefon: 0800 539 9003 (kostenfrei) • Fax: 069-7431-9500 Seite 3 von 5
+
+Nutzungsbedingungen
+für das Online-Banking
+Der Kreditnehmer hat seine Personalisierten Sicherheitsmerkmale (siehe Nummer 2.1) geheim zu halten
+und sein Authentifizierungsinstrument (siehe Nummer 2.2) vor dem Zugriff anderer Personen sicher zu
+verwahren. Er hat dafür Sorge zu tragen, dass keine andere Person Kenntnis von einer ihm zur
+Verfügung gestellten PIN und der/n TAN erlangt. Jede Person, die die PIN und - falls erforderlich – über
+eine gültige TAN verfügt, hat die Möglichkeit, das Online-Banking-Leistungsangebot zu nutzen.
+Insbesondere Folgendes ist zur Geheimhaltung des personalisierten Sicherheitsmerkmals sowie des
+Authentifizierungsinstruments zu beachten:
+• Die PIN und TAN aus einer TAN-Liste dürfen nicht ungesichert elektronisch gespeichert oder
+ungeschützt in Papierform aufbewahrt werden.
+• Die PIN darf nicht per E-Mail weitergegeben werden.
+• Die PIN darf nicht zusammen mit einer TAN-Liste verwahrt werden.
+• Eine dem Kreditnehmer zur Verfügung gestellte TAN-Liste ist sicher zu verwahren.
+• Bei Eingabe einer PIN und Nutzung einer TAN-Liste ist sicherzustellen, dass Dritte diese nicht
+ausspähen können.
+• Bei Nutzung des Mobile-TAN-Verfahrens ist sicherzustellen, dass das für den Empfang der Mobile-
+TAN genutzte mobile Endgerät beziehungsweise die zur Rufnummer gehörige SIM-Karte nicht
+durch Dritte genutzt werden können.
+• Bei Nutzung des Mobile-TAN-Verfahrens darf das für den Empfang der Mobile-TAN genutzte mobile
+Endgerät nicht gleichzeitig für das Online-Banking genutzt werden.
+8.3 Anzeige- und Unterrichtungspflichten
+Stellt der Kreditnehmer fest, dass eine andere Person unberechtigt
+• den Besitz an seinem Authentifizierungsinstrument oder die Kenntnis seines Personalisierten
+Sicherheitsmerkmals erlangt hat,
+• sein Authentifizierungsinstrument oder Personalisiertes Sicherheitsmerkmal verwendet oder
+• der Verdacht der missbräuchlichen Verwendung des Authentifizierungsinstruments oder
+Personalisierten Sicherheitsmerkmals besteht,
+so ist der Kreditnehmer verpflichtet, die KfW unverzüglich zu benachrichtigen (Sperranzeige). Eine von
+der KfW zur Verfügung gestellte PIN ist vom Kreditnehmer unverzüglich zu ändern und eine nicht
+vollständig verbrauchte TAN-Liste zu sperren.
+Bei Nutzung des Mobile-TAN-Verfahrens ist bei Verlust des Mobilfunkgerätes oder der SIM-Karte die im
+Online-Banking hinterlegte Mobilfunknummer zu sperren.
+Sofern der Kreditnehmer im Rahmen der Sperranzeige mitteilt, dass es ihm nicht möglich ist, die
+unberechtigte Nutzung des Online-Banking-Zugangs durch die Änderung seiner PIN, die Sperrung der
+TAN-Liste und/oder der Änderung/Sperrung der Mobilfunknummer zu verhindern, wird die KfW den
+Online-Banking-Zugang des Kreditnehmers sperren.
+Die KfW haftet ab dem Zugang der Sperrnachricht für alle Schäden, die aus einer Nichtbeachtung der
+Sperre entstehen.
+9 Sperre des Online-Banking
+Wird dreimal hintereinander eine falsche PIN eingegeben, so sperrt die KfW den Online-Banking-Zugang
+des Kreditnehmers.
+Werden dreimal hintereinander falsche TAN eingegeben, so wird im Falle der Nutzung des Listen-TAN-
+Verfahrens alle noch nicht verbrauchten TAN auf der TAN-Liste gesperrt.
+Stand: 08/2021 • Bestellnummer: 600 000 4516
+KfW • Palmengartenstraße 5-9 • 60325 Frankfurt • Telefon: 069 7431-0 • Fax: 069 7431-2944 • www.kfw.de
+Infocenter • Telefon: 0800 539 9003 (kostenfrei) • Fax: 069-7431-9500 Seite 4 von 5
+
+Nutzungsbedingungen
+für das Online-Banking
+Die KfW wird den Online-Banking-Zugang sperren, wenn der Verdacht einer unberechtigten Nutzung
+des Online-Banking-Zugangs beziehungsweise der Verdacht einer nicht autorisierten oder einer
+betrügerischen Verwendung des Authentifizierungsinstruments besteht. Sie wird den Kreditnehmer
+hierüber außerhalb des Online-Banking informieren.
+Die KfW sperrt den Online-Banking-Zugang des Kreditnehmers auf seine Veranlassung.
+In allen in Absatz 1 bis Absatz 4 genannten Fällen kann die Sperre nicht mittels des Online-Banking
+aufgehoben werden. Der Kreditnehmer kann sich mit der KfW in Verbindung setzen, um die
+Nutzungsmöglichkeiten des Online-Banking wieder herstellen zu lassen.
+10 Änderungen der Nutzungsbedingungen
+Die KfW behält sich das Recht vor, diese Nutzungsbedingungen für die Zukunft zu ändern. Die KfW wird
+solche Änderungen nur bei einem berechtigten Interesse vornehmen, insbesondere auf Grund neuer
+technischer Entwicklungen, Änderungen der Rechtsprechung, Anpassungen beim Funktionsumfang des
+Online-Banking oder aus sonstigen gleichwertigen Gründen.
+Änderungen der Nutzungsbedingungen werden dem Kreditnehmer entweder schriftlich oder durch
+Hinterlegung im Online-Banking-Portal übermittelt. Eine Übermittlung durch Hinterlegung im Online-
+Banking-Portal setzt voraus, dass der Kreditnehmer die Änderungen in lesbarer Form drucken oder
+archivieren kann.
+Die Änderungen gelten als genehmigt, wenn der Kreditnehmer ihnen nicht binnen drei Monaten nach
+Zugang widerspricht. Auf diese Folge wird die KfW den Kreditnehmer bei der Bekanntgabe besonders
+hinweisen.
+11 Anwendbares Recht
+Auf die Geschäftsbeziehung zwischen dem Kreditnehmer und der KfW findet deutsches Recht
+Anwendung, es sei denn, dieses verweist auf eine ausländische Rechtsordnung.
+Stand: 08/2021 • Bestellnummer: 600 000 4516
+KfW • Palmengartenstraße 5-9 • 60325 Frankfurt • Telefon: 069 7431-0 • Fax: 069 7431-2944 • www.kfw.de
+Infocenter • Telefon: 0800 539 9003 (kostenfrei) • Fax: 069-7431-9500 Seite 5 von 5

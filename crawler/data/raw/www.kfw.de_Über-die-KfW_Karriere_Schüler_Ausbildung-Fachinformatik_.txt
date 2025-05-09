@@ -1,0 +1,103 @@
+Ausbildung Fachinformatik | KfW
+Zum Hauptinhalt
+Tipp: Aktivieren Sie Javascript, damit Sie alle Funktionen unserer Website nutzen können.
+Starte deine IT-Ausbildung bei der KfW und gestalte mit uns die Welt von morgen!
+Zur Jobbörse
+Ausbildung zur Fachinformatikerin und zum Fachinformatiker
+Als Auszubildende bzw. Auszubildender in der IT der KfW kannst du dich spannenden Herausforderungen stellen und interessante Einblicke in die Informationstechnologien und IT-Systeme einer der weltweit größten Förderbanken erhalten.
+Bei uns findest du vielfältige Beschäftigungsfelder. Du kannst zwischen drei verschiedenen Schwerpunkten wählen: Anwendungsentwicklung, Systemintegration sowie Daten- und Prozessanalyse.
+Die verschiedenen Arbeitsgebiete interessieren dich? Dann bist du das perfekte Match, um bei der KfW Ihre Ausbildung zur Fachinformatikerin beziehungsweise zum Fachinformatiker zu machen.
+Schulabschluss
+Abitur, Fachhochschulreife, mittlerer Bildungsabschluss
+Standorte
+Frankfurt am Main und Berlin
+Dauer
+2,5 Jahre bis zur IHK-Prüfung
+Folgende Ausbildungsschwerpunkte bieten wir an:
+Anwendungsentwicklung
+Du möchtest lernen, wie man Programme entwickelt und optimiert? Dann haben wir die passende Ausbildung für dich!
+Mehr erfahren
+Systemintegration
+Du möchtest Experte für PCs, Server und deren Vernetzung untereinander werden? Dann bist du bei uns richtig!
+Mehr erfahren
+Daten- und Prozessanalyse
+Das Planen und Analysieren machen dir Spaß? Dann kannst du deine Leidenschaft bei uns einbringen!
+Mehr erfahren
+Weitere Infos zu Ihrer Ausbildung
+Deine Voraussetzungen
+Was wir dir bieten
+Abitur / Fachhochschulreife oder guter mittlerer Bildungsabschluss
+Gute Deutsch- und Englischkenntnisse
+Großes Interesse an eigenverantwortlichem Arbeiten
+Gute Umgangsformen und gutes Ausdrucksvermögen
+Hohes Verantwortungsbewusstsein, Zuverlässigkeit und Diskretion
+Begeisterung im Umgang mit Menschen
+Flexibilität sowie Offenheit für die Themen Digitalisierung & agile Arbeitsmethoden
+Engagement und Begeisterung für die Arbeit im Team
+Attraktive Ausbildungsvergütung nach Tarifvertrag
+Business-Englischunterricht mit zertifiziertem Abschluss
+Interner Block-Unterricht zur Vorbereitung auf Ihre Prüfung
+Gute Sozialleistungen sowie Seminare und Trainings
+Betreuerin oder Betreuer sowie Patenmodell
+Betriebssportgruppen
+Firmenlaptop
+Der Bewerbungsprozess
+Dein Weg zur KfW – wir freuen uns auf dich! Weitere Infos findest du unter
+Bewerbungstipps
+.
+Die Online-Bewerbung
+Die Bewerbung über unsere Jobbörse nimmt etwa 10 Min. Zeit in Anspruch. Bitte halte bereits Lebenslauf und Zeugnisse als PDF-Datei parat. Ein
+Anschreiben
+ist bei der KfW
+nicht erforderlich
+.
+Der Online-Test und das Online-Kurzinterview
+Im nächsten Schritt laden wir dich zu einem
+Online-Test
+ein, den du von zu Hause aus bearbeiten kannst. Nach erfolgreichem Bestehen des Tests erhältst du eine Einladung zu einem
+Online-Interview
+.
+Live-Vorstellung
+Im letzten Schritt möchten wir in einem Gespräch vor Ort (inkl. Rollenspiel) mehr über deine Motivation und Kompetenzen erfahren. Sind alle überzeugt? Dann erhältst du bald deinen
+Arbeitsvertrag
+.
+Erfahrungsberichte
+„Der Wechsel fiel mir nach den angenehmen und informativen Vorstellungsgesprächen sehr leicht.“ – Philipp Ernst
+Ich mache seit August 2021 eine Ausbildung zum Fachinformatiker für Systemintegration. Über einige Umwege (angefangenes Osteopathie Studium in Idstein), bin ich schließlich bei der KfW gelandet. Der Wechsel vom Gesundheits- in den IT-Sektor, fiel mir nach den angenehmen und informativen Vorstellungsgesprächen sehr leicht, weshalb ich meinen Ausbildungsvertrag bei der KfW ohne Zögern unterschrieben habe!
+Mein „Stamm-Team“, während der gesamten Ausbildung administriert die Unix Systeme der KfW, welche sich in Linux und AIX aufteilen. Mein Einsatzgebiet ist dabei auf der Linux Seite. Im Gegensatz zu anderen Ausbildungsberufen, wo man das erste Jahr nur PDFs und PowerPoint-Präsentationen durchklickt, konnte ich bereits in der ersten Woche praktische Erfahrungen sammeln. Da das Linux-Team neben der Produktivumgebung, auch viele Test- und Entwicklungsserver hat, konnte ich anhand von kleineren Aufgaben mein Wissen direkt praktisch umsetzen und festigen. So lernte ich die Grundlagen und es bekam die ersten kleineren Projekte: Ein Skript zur Datenabfrage auf den Servern wurde hier benötigt, während ein neuer Server an anderer Stelle bereitgestellt wurde. Ich wurde mehr und mehr Teil des Teams und die Aufgaben wurden immer umfangreicher. Neben den oben genannten Aufgaben, wie Skripten, Server Auf- und Abbau, kam im Dezember 2021 dann mein erstes „Großprojekt“ hinzu. Das manuelle Booten von neuen Servern sollte durch PXE-Boot abgelöst werden. Nach dem Einlesen in die Thematik, zahlreichen Tests und noch zahlreicheren Firewall-Anträgen, ist das System inzwischen im Einsatz.
+Pünktlich, mit Beginn des zweiten Jahres, stand mein erster Teamwechsel an. Die kommenden Monate werde ich immer wieder zwischen meinem „Stamm-Team“ und anderen IT-Teams wechseln. Dadurch werden die Schnittstellen zwischen den einzelnen Teams sichtbar und man lernt wie die verschiedenen Teams zusammenarbeiten und gemeinsam Aufgaben erledigen.
+Rückblickend hätte ich mir das erste Lehrjahr kaum besser vorstellen können. Praktische Aufgaben stehen bei mir an der Tagesordnung und das kollektive Miteinander in der IT ist sehr angenehm, wodurch ich meiner Arbeit gerne nachkomme. Den Ausbildungsvertrag bei der KfW würde ich jederzeit wieder sofort unterschreiben!
+„Die Betreuung während der Ausbildung kann ich mir nicht besser vorstellen.“ – Eren Coral
+Meine Ausbildung zum Fachinformatiker für Systemintegration bei der KfW habe ich im August 2021 begonnen. Zuvor habe ich mein Abitur in Bamberg absolviert und anschließend zwei Semester Wirtschaftsinformatik studiert, allerdings entschied ich mich wegen der Praxisnähe dazu, die Ausbildung zum Fachinformatiker zu machen.
+Meine erste Einsatzstation war im Team „Netzwerk“, welches Teil der Abteilung IT-Infrastruktur ist. Zunächst absolvierte ich eine theoretische Netzwerkschulung, die jegliches Basiswissen des Themas Netzwerk umfasste, um die grundlegenden Aufgaben des Teams verstehen zu können. Außerdem wurde ich in die Prozesse und das komplexe Netzwerk der KfW eingeführt. Anschließend konnte ich mein theoretisches Wissen in der Praxis anwenden: Ich durfte veraltete Netzpläne aktualisieren und sie auf den neuesten Stand der Netzwerkstruktur der KfW bringen sowie verschiedene Überprüfungsaufgaben des 4-Augen-Prinzips auf verschiedenen Komponenten des Netzwerks machen.
+Mein erster Stationswechsel, brachte mich zum Team „IT-Security“. Dort habe ich mich mit den Kolleginnen und Kollegen ausgetauscht und mich in die Thematiken und Aufgaben des Teams eingelesen. Mir wurden die verschiedenen Aufgabenbereiche des Teams erklärt und gezeigt welche Tools verwendet werden. Eine meiner Aufgaben bestand darin, Phishing-Mails zu bearbeiten und veraltete PDF-Dateien in eine andere Programmiersprache umzuschreiben.
+Rückblickend war es auf jeden Fall die richtige Entscheidung, zur KfW gekommen zu sein. Das Arbeitsklima im Kollegium ist super und die Betreuung während der Ausbildung kann ich mir nicht besser vorstellen, wodurch ich der Arbeit gerne nachkomme.
+KfW als Arbeitgeberin
+Was wir bieten – Betriebssport, Jobticket, Kantine und vieles mehr.
+Mehr erfahren
+Jetzt Bewerben
+Die KfW bietet attraktive und vielfältige Beschäf­tigungs­möglich­keiten.
+Zu den Ausbildungsangeboten
+Zu den Studienangeboten
+Messen und Events
+Welche Möglichkeiten es gibt, die KfW in einem persönlichen Gespräch kennenzulernen.
+Veranstaltungen
+­
+Ausbildungsbroschüre
+Aus der Schule in die KfW. Ausbildung und duales Studium.
+Bewerbungsratgeber
+(PDF, 989 KB, barrierefrei)
+Kontakt
+Das KfW Ausbildungsteam hilft bei Fragen gerne weiter.
++49 69 7431-2121
+ed.wfk@gnudlibsua gnudlibsuA
+Drucken
+Seite teilen
+Um die Inhalte dieser Seite mit Ihrem Netzwerk zu teilen, klicken Sie auf eines der unten aufgeführten Icons.
+Hinweis zum Datenschutz:
+Beim Teilen der Inhalte werden Ihre persönlichen Daten an das ausgewählte Netzwerk übertragen.
+Datenschutzhinweise
+Alternativ können Sie auch den Kurz-Link kopieren:
+https://www.kfw.de/s/dekBd3Ub
+Link kopieren
+Link kopiert
