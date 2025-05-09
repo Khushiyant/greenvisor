@@ -1,0 +1,32 @@
+{
+    "Ma\u00dfnahme":{
+        "0":"Heizung",
+        "1":"Fenster & T\u00fcren",
+        "2":"L\u00fcftungssystem"
+    },
+    "Beispielprodukt":{
+        "0":"Viessmann Vitocal 250-A",
+        "1":"EcoTherm Dreifachverglasung",
+        "2":"AirPro 200"
+    },
+    "Investitionen":{
+        "0":"11.000 \u20ac",
+        "1":"15.000 \u20ac",
+        "2":"8.000 \u20ac"
+    },
+    "Heizkostenersparnis":{
+        "0":"\u2191 90 %\\n2.200 \u20ac\/Jahr auf\\n300 \u20ac\/Jahr",
+        "1":"\u2191 75 %\\n1.200 \u20ac\/Jahr\\nauf 300 \u20ac\/Jahr",
+        "2":"\u2191 80 %\\n700 \u20ac\/Jahr\\nauf 140 \u20ac\/Jahr"
+    },
+    "CO2-Ersparnis":{
+        "0":"\u2191 100 %\\n8.000 kg\/Jahr",
+        "1":"\u2191 75 %\\n2.000 kg\/Jahr",
+        "2":"\u2191 87 %\\n1.500 kg\/Jahr"
+    },
+    "F\u00f6rderungen":{
+        "0":"Bis zu 50%\\nmehr Infos",
+        "1":"Bis zu 40%\\nmehr Infos",
+        "2":"Bis zu 35%\\nmehr Infos"
+    }
+}
