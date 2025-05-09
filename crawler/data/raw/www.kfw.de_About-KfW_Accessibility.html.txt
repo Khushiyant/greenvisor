@@ -1,0 +1,96 @@
+Content accessibility | KfW
+Skip to main content
+Tip: Activate javascript to be able to use all functions of our website
+Content accessibility
+Our aim is to make www.kfw.de as accessible as possible for all users.
+We follow the international Guidelines
+WCAG 1.0
+(Web Content Accessibility Guidelines) and
+WCAG 2.0
+of the
+W3C
+(World Wide Web Consortium) as well as the
+BITV
+(
+Barrierefreie Informationstechnik-Verordnun
+g, the German "Ordinance on the Creation of Barrier-Free Information Technology"), particularly the criteria of the
+BITV Test
+, a testing procedure for assessing the accessibility of Web content.
+WCAG 1.0
+WCAG 2.0
+W3C
+BITV 2.0 (in German)
+BITV-Test
+Web standards compliance
+We take care that our Web content conforms to the standards adopted by
+W3C
+in order to assure good quality and usability with as many operating systems, browsers, assistive technology and mobile devices as possible, including mobile phones. We check the source code of our websites prior to publication with the aid of the W3C validator.
+W3C-Validator
+PDFs
+Not all PDFs on our Website are currently accessible.
+However, we intend to offer new, accessible PDFs, such as the
+Annual Reports
+we have published since the end of 2007. All accessible PDFs are identified as such.
+We generally seek to provide our information in HTML format where possible.
+Font size
+You can set the font size quickly and easily to suit your needs using the corresponding feature of your browser.
+Windows
+Using
+Internet Explorer
+: Select the "Tools" button at the top of your browser's menu bar. Now click on "Zoom" and choose between "Zoom in" or "Zoom out" or define a user-defined zoom under "Custom". You can also enlarge or reduce several times. Alternatively, press the key combination Ctrl + or Ctrl -.
+Using
+Firefox
+: Click on "Zoom" in the menu bar of your browser and choose between "Zoom in" or "Zoom out". You can also zoom in or out several times. Alternatively, press the key combination Ctrl + or Ctrl -.
+Using
+Chrome
+: Select the settings of your browser from the menu bar at the top. Under the section "Appearance" you will now find the option "Page zoom", where you can choose between several zoom sizes. Alternatively, you can press the key combination Ctrl + or Ctrl -.
+MacOs
+Using
+Firefox
+: Click on "View / Zoom" in the menu bar of your browser and choose between "Zoom in" or "Zoom out". You can also zoom in or out several times. Alternatively, press the Apple key + or Apple key - key combination.
+Using
+Chrome
+: Click on "View" in the menu bar of your browser and choose between "Zoom in" or "Zoom out". You can also enlarge or reduce several times. Alternatively, press the Apple key + or Apple key - key combination.
+Using
+Safari
+: Click on "View" in the menu bar of your browser and choose between "Zoom in" or "Zoom out". You can also zoom in or out several times. Alternatively, press the Apple key + or Apple key - key combination.
+Colours
+In presenting documents on screen we take care that all font and page colours meet the
+contrast requirements
+of the BITV Test.
+Users with low vision who need stronger contrasts can set their own colours in their browser.
+Windows
+Using
+Internet Explorer
+: Select "Tools / Internet Options" from the menu bar at the top of your browser and click the "Colors" button on the "General" tab. Deactivate the checkbox "Use Windows colors", select your desired colors and confirm with "OK". Then click on the "Accessibility" button and activate the checkbox "Ignore color specifications on webpages" and confirm with "OK".
+Using
+Firefox
+: Select "Options" in the menu bar of your browser, click in the section "Language and Appearance" the button "Colors" and select your desired colors. Select the option "Always" in the drop-down menu "Override the colors specified by the page with your selections above" and confirm your changes with "OK".
+Using
+Chrome
+: Select “Settings” in the menu bar of your browser. You will now find the "Themes" option under the "Appearance" section. By clicking on this option you will get to the "Chrome Web Store" in an extra page window, which provides you with a selection of different designs. Then select one of the designs and click the "Add to Chrome" button to use the new design.
+MacOS
+Using
+Firefox
+: Select "Options" in the menu bar of your browser, click in the section "Language and Appearance" the button "Colors" and select your desired colors. Select the option "Always" in the drop-down menu "Override the colors specified by the page with your selections above" and confirm your changes with "OK".
+Using
+Chrome
+: Select “Settings” in the menu bar of your browser. You will now find the "Themes" option under the "Appearance" section. By clicking on this option you will get to the "Chrome Web Store" in an extra page window, which provides you with a selection of different designs. Then select one of the designs and click the "Add to Chrome" button to use the new design.
+All web content of www.kfw.de will remain readable even with user-customised colour settings.
+Contrast requirements
+Keyboard accessibility
+All content and functions at www.kfw.de are accessible without using your mouse.
+This is how it works: move from link to link by pressing the tab key repeatedly. Each link you hit will be highlighted visually. To activate a selected link press Enter.
+Using screen readers
+We are very intent on making the Web content of www.kfw.de as easy to use with screen readers as possible.
+For example, all images carry informative alternative text, and we structure the pages of our Web content with headings and highlight words in German so that they can be pronounced correctly by your voice application.
+Print
+Share page
+To share the content of this page with your network, click on one of the icons below.
+Note on data protection:
+When you share content, your personal data is transferred to the selected network.
+Data protection
+Alternatively, you can also copy the short link:
+https://www.kfw.de/s/enkBbm0O
+Copy link
+Link copied

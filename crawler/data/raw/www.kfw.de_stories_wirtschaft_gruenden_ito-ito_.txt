@@ -1,0 +1,77 @@
+Das Start-up Ito Ito will mit einer intelligenten Software die gesamte Modebranche verändern. | KfW Stories
+Zurücksetzen
+Suche anzeigen
+ito-ito
+Gründen
+Gründen
+Die Umkrempler
+Text:
+Carmen Vallero
+Bild:
+Jonas Wresch
+Lesezeit: 5 min
+Datenschutzgrundsätze
+Wenn Sie auf eines der Icons der hier aufgeführten klicken, werden Ihre persönlichen Daten an das ausgewählte Netzwerk übertragen.
+Datenschutzhinweise
+Wer weniger Kleidung kauft und sie länger trägt, spart Ressourcen. Aber Mode anders herzustellen, packt das Problem an der Wurzel. Das Start-up Ito Ito will mit einer intelligenten Software die gesamte Branche verändern. Dafür wurde es beim KfW Award Gründen als Landessieger Bremen ausgezeichnet.
+KfW Award Gründen
+Der KfW Award Gründen zeichnet in jedem Jahr 16 Landessieger und einen Bundessieger für ihre Geschäftsideen aus.
+Mehr erfahren
+So groß und so schwer wie ein durchschnittliches Auto ist eine moderne Strickmaschine, mit der Kleidung hergestellt wird. Friederike und Florian Pfeffer haben sie in Zusammenarbeit mit der VORN eG, einem Berliner Fashion Hub, in einem Showroom in der Hauptstadt aufstellen lassen. Modelabels sind eingeladen, ihr Konzept vorzustellen – und gleich auszuprobieren. Das Interesse ist groß, denn das Gründerpaar verspricht nicht weniger als eine effizientere und zugleich nachhaltige Produktion hochwertiger Strickwaren.
+Ito Ito
+(Quelle: KfW / n-tv)
+Flexibel
+Nicht nur Kleidung, sondern auch die Obermaterialien von Schuhen werden auf Maschinen gestrickt und können individualisiert werden.
+Gründerin Friederike Pfeffer beschreibt, wie die Textilien bisher entstanden sind: „Bis die Ware in den Läden steht, vergehen viele Monate. Denn zunächst stellen die Labels Prototypen her und kalkulieren die Stückzahlen. Die Strickmaschinen müssen frühzeitig reserviert werden. Auch der Einzelhandel hat lange Vorläufe und kann nicht sonderlich flexibel planen. Hinzu kommt, dass Mode nicht immer vorhersehbar ist. Wenn heute von Rot als Trendfarbe des nächsten Winters ausgegangen wird, kann es auch passieren, dass alle grüne Sachen tragen wollen. Dann bleiben die Labels auf hohen Überschüssen sitzen, die verramscht werden. Das schadet ihnen nicht nur finanziell, sondern kann auch ihren Ruf schwächen. Oft wird die Ware dann verbrannt oder landet auf der Müllhalde.“
+Erschreckende Zahlen unterstreichen ihre Aussage: Rund 40 Prozent aller produzierten Kleidungsstücke werden nie oder nur einmal getragen. Jede Sekunde wird eine Lkw-Ladung Kleidung entsorgt. Von der Verschwendung ganz zu schweigen: Die schnelllebige Modeindustrie ist bei der Herstellung ihrer Waren bereits für zehn Prozent der weltweiten CO₂-Emissionen verantwortlich. „Das geht bestimmt besser“, dachte sich das Gründerpaar.
+Musterlösung
+Eine Vielzahl von Farben und Stile und die Möglichkeit, erst einmal eine kleine Auflage zu produzieren, um die Nachfrage abzuwarten – das ist mit ito ito möglich.
+Ein Online-Video führte sie auf die Spur. Es zeigte, wie jemand eine industrielle Strickmaschine „hackt“ und per Computer steuert. Dass sie beherrschbarer ist als gedacht, hat die beiden Kommunikationsdesigner zum Grübeln und Experimentieren gebracht. Ihre Idee: Was im Einzelfall klappt, müsste sich doch auch auf Serienproduktionen übertragen lassen. Sie entwickelten eine Software, die Bilder in Strickmuster übersetzt - aus Pixel werden Maschen. Ihr Unternehmen nannten sie nach dem japanischen Wort für Faden:
+ito
+. Wer mit dem Start-up zusammenarbeitet, hat die Fäden buchstäblich in der Hand. Die Labels laden ihre Entwürfe auf eine Plattform hoch und konfigurieren sie in Designvorlagen. Diese Angaben wiederum werden ausgelesen und in eine Datei übersetzt, die die Strickmaschinen verarbeiten können.
+Stricken auf Abruf
+Plattformlösung
+Designs werden hochgeladen und konfiguriert, anschließend erstellt die Software eine Datei für die Steuerung der Strickmaschine.
+„Unsere Digitalisierung der Prozesse ermöglicht es den Labels, Kleidung genau nach Bedarf zu produzieren“, erklärt Pfeffer. „Dafür haben wir die sogenannte
+Shared Factory
+entwickelt, mit der sie sich die Produktionskapazitäten europäischer Strickereien teilen können. Unsere Software bildet die Schnittstelle zwischen Designvorlage und Programmierung der Maschinen. Sie stellen dann genau die benötigte Menge her - ob zwei oder hundert Stück. Die Plattform ermöglicht eine kontinuierliche Auslastung der Maschinen möglich, und es kann ‚on demand‘ nachproduziert werden, was sich am besten verkauft“.
+Für die Unternehmen bedeutet das eine ungeahnte Flexibilität. Nicht nur die Stückzahl kann geändert werden, sondern auch die Farbe, der Schnitt oder die Größe der Ware. Ito Ito hat einen weiteren Clou: Die Software lässt sich in die Websites der Labels integrieren. So reicht eskünftig aus, dort Prototypen abzubilden und erst dann zu produzieren, wenn Bestellungen eingehen. Das ist nicht nur nachhaltig, sondern auch ein Barometer für Trends. Wird ein Produkt besonders häufig nachgefragt, kann es in größeren Mengen oder weiteren Farben angeboten werden.
+Anerkennung
+Die Idee des 2023 gegründeten Start-ups wurde beim KfW Award Gründen ausgezeichnet.
+Für die Produktion hat Ito Ito ein Netzwerk von Strickereien in Deutschland aufgebaut, die eine umweltzertifizierte Merinowolle verarbeiten. Alle Daten über Lieferwege, Kosten und Ressourcenverbrauch werden den Auftraggebern offengelegt. Diese können die Informationen zur Lieferkette auch an ihre Kunden weitergeben und so auf die Ökobilanz hinweisen. Die dezentrale Produktion und die digitalen Abläufe ermöglichen Preise, die im mittleren Segment üblich sind. Neben Kleidung lassen sich auch Obermaterialien für Schuhe stricken. Durch die hohe Individualisierbarkeit ist dies auch für den orthopädischen Schuhmarkt interessant. Es können Schuhe nach Maß entstehen, die erschwinglich und schnell verfügbar sind.
+Als selbstständige Kommunikationsdesigner haben Friederike und Florian Pfeffer bisher Lösungen für Unternehmen entwickelt, die ihre Produkte vermarkten wollten. Mit Ito Ito stehen sie nun selbst an der Schwelle zum Markteintritt. Ein unverstellter Blick von außen und ihr Ehrgeiz haben sicher dabei geholfen, tief in die Abläufe einzusteigen.
+„Es ist viel Arbeit“, sagt Friederike Pfeffer, „aber ich finde es wunderbar, hier tatsächlich etwas Großem auf der Spur zu sein, das eine Branche verändern kann.“
+Auf KfW Stories veröffentlicht am 19. März 2025
+Bildnachweis
+Wirtschaft
+Bremen
+Gründen
+KfW Award Gründen
+Weiterempfehlen
+Datenschutzgrundsätze
+Wenn Sie auf eines der Icons der hier aufgeführten klicken, werden Ihre persönlichen Daten an das ausgewählte Netzwerk übertragen.
+Datenschutzhinweise
+Abbrechen
+Drucken
+Kontakt
+Unsere Empfehlungen für Sie
+Zum Artikel
+Gründen
+Revolution auf dem Acker
+Automatisch und nachhaltig: Das baden-württembergische Start-up Farming Revolution hat einen Roboter entwickelt, der mit Hilfe künstlicher Intelligenz auf dem Feld Unkraut entfernt.
+Artikel lesen
+Zum Artikel
+Gründen
+Gemeinsam gut
+Bio24 Social bringt als soziales Start-up Menschen beim Kochen und Backen zusammen.
+Artikel lesen
+Zum Artikel
+Gründen
+Das schlägt Wellen
+Das Berliner Start-up Wunderfish hat Erfolg mit veganen Fischalternativen auf Algenbasis.
+Artikel lesen
+YouTube
+Twitter
+Xing
+LinkedIn
+Instagram

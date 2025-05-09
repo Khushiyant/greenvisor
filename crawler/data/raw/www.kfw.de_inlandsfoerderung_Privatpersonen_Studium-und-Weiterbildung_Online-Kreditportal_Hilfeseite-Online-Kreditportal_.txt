@@ -1,0 +1,326 @@
+Hilfe zum Online-Kreditportal | KfW
+Zum Hauptinhalt
+Tipp: Aktivieren Sie Javascript, damit Sie alle Funktionen unserer Website nutzen können.
+Hilfe zum Online-Kreditportal
+Für Probleme und Fragen, die Sie mit den verfügbaren Hilfe-Texten nicht lösen können, steht Ihnen das KfW-Infocenter über das
+Kontaktformular
+mit Rat und Hilfe zur Verfügung.
+Allgemeine Bedienungshinweise
+Nach 15 Minuten Inaktivität werden Sie zu Ihrer eigenen Sicherheit automatisch vom Online-Kreditportal (OKP) der KfW abgemeldet.
+Unter der Rubrik Meine „Zugangsdaten“ im Online-Kreditportal verwalten Sie die zur Anmeldung benötigte persönliche Identifikations­nummer (PIN) und die Verfahren für die Freigabe eines Auftrages (TAN-Verfahren). Wichtige Informationen rund um das Online-Kreditportal (OKP) finden Sie unter
+www.kfw.de/online-banking
+. Bitte beachten Sie die dort aufgeführten Hinweise im „Infoblatt Sicherheits­hinweise KfW-Online-Banking“.
+Nicht jede beauftragte Änderung ist für Sie sofort sichtbar. Auf der Seite „Offene Aufträge an die KfW“ werden alle von Ihnen erteilten Aufträge angezeigt, die noch nicht abschließend bearbeitet wurden.
+Schreiben Sie uns ganz einfach über das
+Kontaktformular
+, wenn Sie Ihre Fragen nicht mit den verfügbaren Informationen lösen können.
+Beachten Sie bitte die folgenden Sicherheits
+hinweise für die Vergabe Ihrer neuen PIN:
+Sie muss mindestens 12-stellig und darf maximal 30-stellig sein.
+Sie darf nicht aus nur einem Zeichen (beispielsweise 111111111111) bestehen.
+Sie darf nicht identisch mit einer der letzten 5 verwendeten PINs sein.
+Kombinieren Sie bei der Vergabe einer PIN Groß- und Kleinbuch­staben.
+Benutzen Sie auch Sonderzeichen.
+Aus Sicherheitsgründen werden nur die folgenden Zeichen unterstützt:
+Buchstaben:
+a b c d e f g h i j k l m n o p q r s t u v w x y z ä ö ü ß
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Ä Ö Ü
+Ziffern:
+0 1 2 3 4 5 6 7 8 9
+Sonderzeichen:
+* + , - . / : ; = ? @ _ ` § ! # $ % ' ( )
+Anmelden
+Das Online-Kreditportal (OKP) der KfW erreichen Sie über
+www.kfw.de/online-banking
+oder auch direkt mit
+https://onlinekreditportal.kfw.de
+.
+Für die Anmeldung benötigen Sie
+Ihre KfW-GP-Nr. und
+eine PIN.
+Die KfW-GP-Nr. finden Sie in dem Ihnen zugesandten Zusage­schreiben der KfW. Bei einer Neuregistrierung erhalten Sie Ihre persönliche Identifikations­nummer (PIN) per Post.
+Ändern Sie diese Initial-PIN nach der Aktivierung des TAN-Verfahrens und auch Ihre selbst vergebene PIN in regelmäßigen Abständen.
+Abmelden
+Durch Anklicken der Schaltfläche „Abmelden“ in der Navigations­leiste können Sie sich vom Online-Kreditportal der KfW abmelden.
+Der korrekte Abmelde­vorgang wird auf einer separaten Seite bestätigt. Nicht gespeicherte Daten gehen bei der Abmeldung verloren.
+PIN anfordern
+Sie haben zwei Möglichkeiten, eine neue PIN anzufordern:
+a) Versand eines Aktivierungs­links an Ihre im Portal hinterlegte E-Mail-Adresse, mit der Möglichkeit anschließend selbst eine neue PIN zu vergeben
+Die E-Mail mit Ihrem Aktivierungs­link kann in Ihrem Spam-Ordner landen, schauen Sie bitte auch dort nach. Länger als eine Stunde darf der Versand nicht dauern. Wenn doch, stimmt etwas mit Ihrer E-Mail-Adresse nicht. Bitte wiederholen Sie dann den Vorgang mit der Option „Post­versand“.
+Der Aktivierungs­link ist 30 Minuten gültig. Ist diese Zeit überschritten, starten Sie den Vorgang bitte erneut. Fordern Sie innerhalb der 30 Minuten einen neuen Aktivierungs­link über das Portal an, wird der vorherige automatisch ungültig.
+b) Versand Ihrer neuen PIN per Post an die uns bekannte Anschrift.
+Die Abfrage Ihres Geburts­datums erfolgt ausschließlich aus Sicherheits­gründen.
+PIN zurücksetzen
+Für das Zurücksetzen der PIN ist es aus Sicherheits­gründen erforderlich, die aufgeführten Fragen zu beantworten.
+Bitte erfassen Sie unter „Konto­nummer“ die Darlehens­konto­nummer eines Ihrer im OKP geführten KfW-Darlehen. Geben Sie im folgenden Feld die letzten 5 Ziffern Ihrer Konto­nummer ein (gemeint ist die IBAN Ihres Girokontos, die bei der KfW für Buchungen zu Ihrem zuvor angegebenen Darlehens­konto hinterlegt ist).
+Beachten Sie bitte die folgenden Sicherheits­hinweise für die Vergabe Ihrer neuen PIN:
+Sie muss mindestens 12-stellig und darf maximal 30-stellig sein.
+Sie darf nicht aus nur einem Zeichen (beispiels­weise 111111111111) bestehen.
+Sie darf nicht identisch mit einer der letzten 5 verwendeten PINs sein.
+Kombinieren Sie bei der Vergabe einer PIN Groß- und Klein­buchstaben.
+Benutzen Sie auch Sonder­zeichen.
+Aus Sicherheits­gründen werden nur die folgenden Zeichen unterstützt:
+Buchstaben:
+a b c d e f g h i j k l m n o p q r s t u v w x y z ä ö ü ß
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Ä Ö Ü
+Ziffern:
+0 1 2 3 4 5 6 7 8 9
+Sonderzeichen:
+* + , - . / : ; = ? @ _ ` § ! # $ % ' ( )
+Startseite
+Nach Ihrer Anmeldung gelangen Sie automatisch auf die „Startseite“.
+Sollten sich seit Ihrer letzten Anmeldung neue Nachrichten in Ihrem Postkorb befinden, sehen Sie hier einen entsprechenden Hinweis.
+Die Startseite zeigt eine Übersicht zu Ihren onlinegeführten Darlehen bei der KfW mit Angabe von Kredit­programm, Vertrags­datum, aktuellem Sollzins­satz und der Kredit­phase, in der sich das jeweilige Darlehen zurzeit befindet. Außerdem werden Ihnen zu jedem Darlehen der maximal zugesagte Betrag sowie der aktuelle Kapital­saldo angezeigt.
+Durch einen Klick auf die jeweilige Darlehens­nummer erhalten Sie weitere Informationen zu dem ausgewählten Darlehen.
+Elektronischer Postkorb
+Der elektronische Postkorb besteht aus dem Posteingang für neue oder noch nicht gelesene Nachrichten und einem Archiv. Die Zahl ungelesener Nachrichten wird Ihnen in Klammern im Navigations­menü angezeigt.
+Prüfen Sie regelmäßig, mindestens einmal im Quartal, Ihren elektronischen Postkorb. Alle wichtigen Informationen stellen wir dort für Sie ein. Über „Anzeige Zeilen“ lässt sich die Anzahl der angezeigten Nachrichten erhöhen.
+Zusätzlich können Sie sich bei neuen und wichtigen Mitteilungen im elektronischen Postkorb per E-Mail informieren lassen.
+Konto 12345678
+Kontodetails
+Unter „Kontodetails“ erhalten Sie detaillierte Informationen zu dem ausgewählten Darlehen. Zusätzlich zu den auf der Startseite angezeigten Daten finden Sie hier Informationen zu den Auszahlungs- und Rückzahlungs­vereinbarungen.
+Den genauen Auszahlungs­plan können Sie über die Navigations­leiste unter „Auszahlungs­plan anzeigen“ aufrufen. Die Funktionen zum Ändern der Auszahlungs­höhe oder zur Beendigung der Auszahlungs­phase erreichen Sie unter „Auszahlungs­plan ändern“.
+Nachweiszeitpunkte
+Diese Funktion ist nur für den KfW-Studien­kredit (Kredit­programm 174) relevant und zeigt einen Überblick über die nächsten von Ihnen bei der KfW einzureichenden Nachweise.
+Die jeweiligen Nachweise müssen immer bis zu den angezeigten Terminen eingereicht werden.
+Auszahlungsplan anzeigen
+Hier wird zu dem ausgewählten Darlehen der Auszahlungs­plan angezeigt. Für Studien­kredite (Programm 174) gilt dabei: der auszuzahlende Betrag errechnet sich aus Ihrem momentanen Betrag abzüglich der aktuell anfallenden Zinsen. Da die Verzinsung von der Kapitalmarkt­entwicklung abhängt, kann der auszuzahlende Betrag nur für den aktuellen Auszahlungs­zeitraum (01.04. – 30.09. bzw. 01.10. – 31.03.) angezeigt werden.
+Auszahlungsplan ändern/Auszahlungsplan beenden
+Auf diesen Seiten können Sie den monatlichen Darlehens­betrag ändern oder die Auszahlung beenden. Dazu geben Sie bitte unter „Art der Änderung“ an, ob Sie die Auszahlungs­höhe anpassen oder die Auszahlung wegen Studien­abschluss, Exmatrikulation oder aus sonstigen Gründen beenden möchten.
+Bei Anpassung der Auszahlungs­höhe beachten Sie bitte, dass beim KfW-Studienkredit der monatliche Finanzierungs­betrag zwischen 100 und 650 Euro liegt. Um die Auszahlungs­rate auf 0 Euro zu setzen, ist ein
+Zinsaufschub
+erforderlich.
+Änderungen der Auszahlungs­höhe sind nach Ablauf Ihres ersten Förder­semesters monatlich möglich. Erfassen Sie Ihren Auftrag dazu spätestens bis zum 15. des Vormonats über die Schaltfläche „Auszahlungs­plan ändern“.
+Beim KfW-Studienkredit erfolgt die Beendigung der Auszahlung monatlich:
+Erfassung bis zum 15. eines Monats -> die Auszahlung stoppt zum 1. des Folge­monats
+Erfassung nach dem 15. eines Monats -> die Auszahlung stoppt zum 1. des über­nächsten Monats
+Bei Beendigung der Auszahlung wegen Studien­abschlusses geben Sie bitte zusätzlich Art, Datum, Studien­fach und die Note des Abschlusses an.
+Auszahlung verlängern
+Diese Funktion wird nur für das Kredit­programm 174 (KfW-Studienkredit) angeboten, wenn der Vertrag eine Förder­dauer bis zum 14. Förder­semester vorsieht.
+Bitte beachten Sie, dass nach erfolgreicher Verlängerung der Auszahlungs­phase die Einreichung eines gültigen Immatrikulations­nachweises für jedes weitere Förder­semester erforderlich ist, um die Auszahlung der monatlichen Beträge in der Verlängerungs­phase zu gewährleisten.
+Zinsaufschub
+Diese Funktion steht nur für das Programm 174 (KfW-Studienkredit) zur Verfügung.
+Die Zinsen werden bei einem Zinsaufschub nicht mehr von dem monatlichen Auszahlungs­betrag bzw. von Ihrem Konto abgezogen, sondern bis zum Beginn der Tilgungs­phase aufgeschoben. Voraussetzung hierfür ist, dass sich der Kredit in der Auszahlungs- oder Karenz­phase befindet. Bei Darlehen für grundständige Studiengänge, die sich in der Auszahlungs­phase befinden, ist es erforderlich, dass der Leistungs­nachweis erbracht wurde.
+Bitte beachten Sie, dass Sie die Entscheidung für den Zinsaufschub
+nicht widerrufen
+können.
+Stundung/Freistellung beantragen
+Was ist der Unterschied zwischen Erst­wohnsitz und Post­anschrift?
+Der Erst­wohnsitz ist die Adresse, unter der Sie beim Einwohner­meldeamt gemeldet sind,
+d. h.
+die Adresse, die auch auf Ihrem Personal­ausweis angegeben ist. Als Post­anschrift können Sie die Adresse angeben, an welche Ihre Post gesendet werden soll. Diese kann abweichend zum Erst­wohnsitz sein.
+Was sind fällige rück­ständige Beträge?
+Fällige rück­ständige Beträge sind Raten, die wir mittels Last­schrift bislang nicht von Ihrem Konto einziehen konnten.
+Was ist die „Summe der Rück­stände“?
+Die Summe der Rück­stände gibt den Gesamt­wert aller fälligen rück­ständigen Beträge an.
+Ich bin mit meinen Raten im Rück­stand und möchte eine Stundung der rück­ständigen Raten beantragen. Welche Option muss ich anklicken?
+Wenn Sie für Ihre Rück­stände eine Stundung/­Freis­tellung wünschen, wählen Sie bitte das Auswahl­feld "Vorhandene Rück­stände stunden/freistellen“ aus.
+Ich bin mit meinen Raten im Rück­stand und möchte eine Stundung der rück­ständigen und zukünftigen Raten beantragen. Welche Option muss ich anklicken?
+Wenn Sie für Ihre Rück­stände eine Stundung/Frei­stellung wünschen, wählen Sie bitte das Auswahl­feld „Vorhandene Rück­stände stunden/freistellen“ und „Künftige Raten stunden/freistellen“ aus.
+Ich möchte lediglich zukünftige Raten stunden. Welche Option muss ich anklicken?
+Wenn Sie mit Ihren Zahlungen nicht im Rück­stand sind, Sie aber für zukünftige Raten eine Stundung beantragen möchten, wählen Sie bitte die Option „Künftige Raten stunden/freistellen“ aus.
+Ich möchte meine rück­ständigen Raten stunden und meine zukünftigen Raten reduzieren. Welche Option muss ich anklicken? (gilt nicht für KfW-Studienkredit und die Studien­beitrags­darlehen)
+Wenn Sie für Ihre Rück­stände eine Stundung/­Freistellung wünschen, wählen Sie bitte die Option „Vorhandene Rück­stände stunden/­freistellen“ sowie für die Raten­reduzierung die Option „Künftige Raten reduzieren“.
+Ich habe die Option „Vorhandene Rück­stände stunden/­freistellen“ und „Künftige Raten stunden“ gewählt. Ab wann beginnt der Stundungs­zeitraum?
+Der Stundungs­zeitraum beginnt im Monat der ältesten fälligen Rate.
+Ich habe einen Studien­kredit und/­oder Studien­beitrags­darlehen und mir wird die Option „Künftige Raten reduzieren“ nicht angezeigt?
+Beim Studien­kredit ist eine Raten­reduzierung nur über die Funktion
+„Tilgungsplan ändern“
+möglich.
+Kann ich einen Stundungs­zeitraum von über 12 Monaten beantragen?
+Nein, dies ist nicht möglich. Beachten Sie bitte, dass gestundete Rück­stände in den Stundungs­zeitraum eingerechnet werden.
+Was ist eine „eingetragene Lebens­partnerschaft“?
+Eine eingetragene Lebens­partnerschaft begründen können nur ledige Personen. Mit der Eintragung ist die Registrierung in das Lebens­partnerschafts­register gemeint, das die Standes­ämter neben dem Ehe­register führen.
+Was sind Zuwendungen privater Dritter?
+Zuwendungen Dritter (beispiels­weise durch Verwandte) sind regelmäßige Geld-, Sach- oder sonstige Leistungen ohne vereinbarte Gegen­leistung. In der Praxis sind gängige Zuwendungen, dass Sie beispiels­weise bei jemandem kostenfrei wohnen oder monatlich Geld für Ihre Lebens­haltungs­kosten erhalten.
+Wie weise ich Zuwendungen privater Dritter nach?
+Wir benötigen eine schriftliche Bestätigung durch die unterstützende Person über die Art und gegebenen­falls die Höhe der finanziellen Unterstützung.
+Wie berechnet sich die Höhe meiner monatlichen Einkünfte?
+Sofern Sie aus verschiedenen Quellen Einkommen beziehen, geben Sie bitte die gesamte Höhe an (beispiels­weise das Netto­gehalt zzgl. Wohn­geld oder SGB II Zahlungen). Auch Zuwendungen privater Dritter müssen hier eingerechnet werden. Kinder­geld zählt nicht zu Ihrem Einkommen und soll daher nicht angegeben werden.
+Ich besitze eine Immobilie und habe einen Bildungs­kredit oder ein BAföG-Bankdarlehen.
+Dann benötigen wir einen vollständigen Grundbuch­auszug sowie weitere Angaben (Beleihungs­quote und Besitz­verhältnisse).
+Was sind unterhalts­berechtigte Personen?
+Unterhalts­berechtigte Personen sind Personen, für deren Lebens­haltungs­kosten Sie aufkommen. Dazu zählen beispiels­weise eigene Kinder, Ehe­partner – sofern diese kein eigenes oder nur ein geringes Einkommen beziehen.
+Ich bin unterhalts­pflichtig. Wie weise ich das nach? (nur im Aufstiegs-BAföG, BAföG-Bank­darlehen, Bildungs­kredit)
+Sofern die Anzahl der unterhalts­berechtigten Kinder aus ihrem Einkommens­nachweis hervorgeht, ist dies ausreichend. Falls nicht, können Sie uns dies durch die Geburts­urkunden Ihrer Kinder belegen.
+Ich lebe mit einer anderen Person zusammen. Muss ich deren Netto­einkommen auch angeben?
+Sofern Sie nicht verheiratet sind oder sich in einer eingetragenen Lebens­partnerschaft befinden, ist dieses Netto­einkommen nicht aufzuführen.
+Was sind außer­gewöhnliche monatliche Zahlungs­verpflichtungen?
+Außergewöhnliche Zahlungs­verpflichtungen sind Ausgaben, die neben den üblichen Lebens­haltungs­kosten, wie Miete und Ausgaben für Lebens­mittel, Strom, Telefon, etc. anfallen.
+Darunter fallen zum Beispiel weitere Bildungs­darlehen (außerhalb der KfW), Fortbildungs­kosten oder Inkasso­kosten.
+Nicht benötigte Dokumente und Daten Dritter:
+Konto­auszüge oder Screenshots von Banking-Apps anstelle von Einkommens­nachweisen oder amtlichen Bescheiden erkennen wir nicht an.
+Wir benötigen keine ergänzenden Zusatz­seiten für Ihre Nachweise, wie beispiels­weise die rechtlichen Hinweise bei Bescheiden.
+Bitte verzichten Sie auf die un­aufge­forderte Zusendung von Dokumenten. Wir benötigen keine Atteste oder gesundheits­bezogene Bescheinigungen mit sensiblen Informationen.
+Bitte geben Sie nur Informationen oder Dokumente von anderen Personen an die KfW weiter, die Sie in der Antrag­stellung als relevant erfasst haben.
+Schwärzen Sie vor dem Ein­scannen nicht benötigte persönliche Angaben wie Steuer­identifikations­nummern, Religions­zugehörigkeiten oder Gesundheits­daten, insbesondere von Dritten.
+Wie lade ich Dokumente hoch?
+Sobald Sie beim Abschnitt „Dokumente“ angekommen sind, rufen Sie über „Datei(en) auswählen“ Ihre zuvor abgelegten Nach­weise auf. Anschließend wählen Sie bitte aus dem Dropdown­menü für jede Datei die passende Dokumenten­art aus.
+Wichtig:
+Erst durch Anklicken des Pfeils, rechts neben dem Dropdown, laden Sie das Dokument in die Antrags­maske. Erscheint ein Häkchen hinter der Dokumenten­art, ist der Vorgang abgeschlossen und Sie können Ihren Auftrag über „Weiter“ fortführen.
+Hinweise zum Ablegen Ihrer Unterlagen vor dem Ausfüllen des Stundungs­antrages sind auf der Einstiegs­seite unter „Schritt 1“ hinterlegt.
+Festzinsvereinbarung
+Die Funktion zur Beantragung eines Fest­zinses steht Ihnen ausschließlich im Rahmen des KfW-Studienkredits (Kredit­programm 174) zur Verfügung und ermöglicht es Ihnen, einen Fest­zins (maximale Laufzeit 10 Jahre) für Ihr Darlehen zu beantragen. Beim Aufruf dieser Funktion erfolgt eine Prüfung, ob die erforderlichen Bedingungen erfüllt sind. Wenn dies der Fall ist, können Sie nach dem Klick auf „Festzins­angebot anfordern“ eine neue Rückzahlungs­rate eingeben. Das Eingabefeld für den monatlichen Rückzahlungs­betrag ist standardmäßig mit der aktuellen Annuität vorbelegt, die Gesamt­rückzahlungs­dauer darf 25 Jahre nicht überschreiten.
+Das Vertrags­angebot für die Festzins­vereinbarung wird Ihnen am nächsten Tag in Ihrem elektronischen Postkorb bereitgestellt. Sie haben die Möglichkeit, beliebig viele Fest­zins­vereinbarungen mit unterschiedlichen Rückzahlungs­beträgen zu erstellen. Entscheidend für den Abschluss der Vereinbarung ist das Exemplar, das Sie bei der KfW einreichen.
+Aufgeschobene Leistungen
+Angezeigt wird hier die aktuell nicht zahlbare, d. h. aufgeschobene Zins- oder Tilgungs­leistung.
+Pro Stundungs­typ (beispielsweise während der Karenz­phase) und Leistungs­art (beispielsweise Zinsen) wird der aktuell aufgeschobene bzw. gestundete Betrag angezeigt.
+Die Entscheidung für einen Zins­aufschub kann nicht widerrufen werden. Die aufgeschobenen Zinsen werden am Beginn der Tilgungs­phase in einem Gesamt­betrag fällig. Zu diesem Zeit­punkt können Sie den Gesamt­betrag entweder leisten oder das Angebot der KfW auf Kapitalisierung der Zinsen annehmen.
+Karenzphase beenden
+Diese Funktion steht nur für die Programme 174 (KfW-Studienkredit), 175 (Niedersachsen-Studien­beitrags­darlehen), 176 (Bayerisches Studien­beitrags­darlehen), 177 (Hamburger Studien­darlehen) und 178 (Studien­gebühren­darlehen Saar­land) zur Verfügung.
+Sie können die Karenz­phase eines Darlehens vorzeitig beenden. Mit dem Ende der Karenz­phase tritt die Tilgungs­phase ein. Voraussetzung hierfür ist, dass sich der Kredit entweder in der letzten Roll-Over-Periode der Auszahlungs­phase oder in der Karenz­phase befindet. Die Beantragung muss bis 6½ Monate vor dem gewünschten Tilgungs­beginn erfolgen.
+Wählen Sie hierzu bitte den von Ihnen gewünschten Tilgungs­beginn und bestätigen Sie die Erklärung zur Beendigung der Karenz­phase.
+Bitte beachten Sie, dass Sie die Entscheidung für die vorzeitige Beendigung der Karenz­phase
+nicht widerrufen
+können.
+Wiederaufnahme Auszahlungen
+Die Funktion zur Wieder­aufnahme von Auszahlungen ist ausschließlich für den KfW-Studienkredit (Kredit­programm 174) verfügbar. Bei Nutzung dieser Funktion erfolgt eine Prüfung, ob ein Wieder­eintritt in die Auszahlungs­phase für Ihr Darlehen möglich ist. Dieser kann erfolgen, wenn sich das Darlehen in der Karenz- oder Tilgungs­phase befindet, nicht gekündigt ist und noch mindestens eines der vertraglich zugesagten Förder­semester offen ist.
+Tilgungsplan anzeigen
+Zu dem ausgewählten Darlehen wird Ihnen hier der Tilgungs­plan angezeigt. Die Annuität errechnet sich aus dem Tilgungs­betrag zuzüglich der zu dem entsprechenden Zeitpunkt angefallenen Zinsen.
+Tilgungsplan ändern
+Zum Ändern Ihres Tilgungs­plan geben Sie bitte die von Ihnen gewünschte neue monatliche Annuität (=Rückzahlungs­rate) ein und wählen Sie das Datum aus, ab dem die Änderung gültig sein soll.
+Beim
+KFW-Studienkredit
+(Kreditprogramm 174) können Sie die Annuität bis zu sechs Monate im Voraus anpassen. Änderungen, die bis zum 15. des laufenden Monats bei uns eingehen, werden zum 1. des übernächsten Monats umgesetzt, d.h. Sie können beispielsweise bis zum 15.06. die Annuität ab dem 01.08. ändern. Wurde eine Fest­zins­vereinbarung geschlossen, sind für die Dauer der Zins­fest­schreibung keine Änderungen am Tilgungs­plan möglich.
+Beim
+BAföG-Bankdarlehen
+ist eine Änderung zu jedem beliebigen Termin möglich. Diese muss spätestens 2 Wochen vor dem gewünschten Termin veranlasst werden.
+Für die von uns verwalteten
+Studienbeitrags- bzw. Gebühren­darlehen
+sind Änderungen des Tilgungs­plans grundsätzlich nur zum folgenden Roll-Over-Termin (01.04. bzw. 01.10. eines Jahres) möglich und müssen bis zum Beantragungs­stichtag (hier: 15.03. für den Zeitraum 01.04. - 30.09. bzw. 15.09. für den Zeitraum 01.10. - 31.03.) veranlasst werden.
+Außerplanmäßige Rückzahlung (Teil- oder Vollrückzahlung)
+Eine außerplanmäßige Rückzahlung mittels Lastschrift­einzug können Sie selbst beauftragen. Beachten Sie hierbei bitte den erforderlichen Mindest­betrag gemäß Programm­bestimmungen.
+Sofern der angegebene Termin auf ein Wochenende oder einen Feiertag fällt, werden wir den Einzug erst am nächsten Bank­arbeitstag vornehmen.
+Beim KfW-Studienkredit (Kredit­programm 174) beauftragen Sie außerplanmäßige Teil­rückzahlungen in jeder Darlehen­sphase bis zu 6 Monate im Voraus – für eine Umsetzung im Folge­monat erteilen Sie uns Ihren Auftrag bis spätestens zum 15. des laufenden Monats.
+Beim Niedersachsen-Studien­beitrags­darlehen (Kredit­programm 175), Hamburger Studien­darlehen (Kredit­programm 177) und beim Studien­gebühren­darlehen Saarland (Kredit­programm 178) sind außer­planmäßige Rück­zahlungen in der Tilgungs­phase und nur zum folgenden Roll-Over-Termin (01.04. bzw. 01.10. eines Jahres) möglich. Beim Bayerischen Studien­beitrags­darlehen (Kredit­programm 176) sind außerplan­mäßige Zahlungen in jeder Darlehens­phase zum folgenden Roll-Over-Termin möglich.
+Wichtig:
+Außer­planmäßige Tilgungen können Sie bei diesen Darlehen bis zum 15.03. für den 01.04. und bis zum 15.09. für den 01.10. erfassen.
+Beim BAföG-Bank­darlehen (Kreditprogramm 170), Aufstiegs-BAföG (Kredit­programm 172) und beim Bildungs­kredit (Kredit­programm 173) ist eine außer­planmäßige Rück­zahlung jederzeit möglich. Diese muss spätestens 2 Wochen vor dem gewünschten Termin veranlasst werden.
+Leistungserlass beantragen
+Diese Funktion steht nur für das Kredit­programm 172 (AFBG) zur Verfügung.
+Sie können einen Teil­erlass Ihres AFBG-Darlehens beantragen, wenn Sie folgende Voraussetzungen erfüllen:
+Sie haben ein Darlehen für die Lehrgangs- und Prüfungs­gebühren in Anspruch genommen.
+Sie haben Ihre Weiter­bildung erfolgreich abgeschlossen.
+Ihr Abschluss­nachweis (Abschluss­zeugnis, Urkunde, Meisterbrief etc.) liegt Ihnen vor.
+Sie haben Ihr Darlehen noch nicht vollständig zurückgezahlt.
+Sie haben noch keinen Antrag auf einen Leistungs­erlass im Online-Kreditportal gestellt.
+Sofern Sie einen Punkt nicht erfüllen, ist eine Beantragung über das Online-Kreditportal nicht möglich. Der entsprechende Grund wird Ihnen angezeigt.
+So beantragen Sie den Erlass Schritt für Schritt:
+Für den elektronischen Antrag benötigen wir von Ihnen den Abschluss­nachweis als Datei. Wir unterstützen ausschließlich diese Datei­formate: JPG / JPEG, PDF oder PNG.
+Durch Anklicken der Schaltfläche „Weiter“ gelangen Sie auf die Maske, auf der Sie Ihre Angaben zum Abschluss erfassen.
+Der in Ihrem Darlehens­konto hinterlegte angestrebte Abschluss wird Ihnen automatisch angezeigt. Bitte wählen Sie durch Anklicken aus, ob Sie diesen Abschluss oder einen abweichenden Abschluss erreicht haben. Haben Sie einen anderen Abschluss erreicht, wird Ihnen ein Freitext­feld angezeigt. Bitte tragen Sie hier Ihren tatsächlich erreichten Abschluss ein.
+Danach erfassen Sie das Datum des Abschluss­nachweises im Format TT.MM.JJJJ im dafür vorgesehenen Feld.
+Im nächsten Feld tragen Sie die ausgebende Stelle Ihres Abschluss­nachweises ein. Es sind maximal 100 Zeichen möglich.
+Laden Sie jetzt Ihren Abschluss­nachweis hoch. Dafür wählen Sie die Art des Nachweises über das Dropdown-Auswahl­menü aus, klicken dann auf „Durchsuchen“ und fügen die Datei Ihres Abschluss­nachweises ein. Bestätigen Sie Ihre Auswahl bitte mit „Hochladen“. Die Datei­größe darf 10 MB nicht überschreiten. Insgesamt können Sie maximal 5 Dokumente hochladen.
+Bitte beachten Sie, dass Sie den elektronischen Antrags­prozess nur abschließen können, wenn Sie alle mit einem * gekennzeichneten Felder ausgefüllt haben.
+Anderes
+Die Funktion „Anderes“ dient der Über­mittlung von Aufträgen an die KfW, die nicht durch spezielle Menü­punkte abgedeckt werden.
+Falls sich Ihr Auftrag auf ein bestimmtes Darlehen bezieht, so wählen Sie dieses bitte aus der Liste aus.
+Offene Aufträge an die KfW
+Auf dieser Seite werden alle von Ihnen erteilten Aufträge an die KfW an­gezeigt, die noch nicht abschließend bearbeitet wurden. Nach ab­schließender Bearbeitung wird der jeweilige Vorgang aus dieser Anzeige gelöscht.
+Durch An­klicken der Schaltfläche „Auftrag anzeigen“ können Sie sich das zugehörige Dokument für den gewählten Auftrag aus dem elektronischen Postkorb anzeigen lassen.
+Nachweise
+Diese Funktion steht nur für ausgewählte Studien-Kredit­programme zur Verfügung und wird an­gezeigt, wenn noch ein Nach­weis ansteht. Dort erhalten Sie einen Über­blick über die für Sie ge­speicherten Daten zum Studium. Eine Änderung der Daten ist beim Nachweis der Immatrikulation möglich. Hierzu klicken Sie bitte in der Navigations­leiste auf den Abschnitt „Immatrikulation“.
+Immatrikulation
+Mit Hilfe dieser Funktion können Sie Ihre Studien­bescheinigung bei einem der angezeigten Vertriebs­partner einreichen. Bitte achten Sie darauf, Ihre Daten korrekt einzugeben.
+Alle Angaben, die Sie benötigen, können Sie Ihrer Studien­bescheinigung entnehmen.
+Leistungsnachweis
+Diese Funktion wird nur für das Kredit­programm 174 (KFW-Studienkredit) angeboten.
+Spätestens zum
+Ende des 6. Förder­semesters
+muss ein Leistungs­nachweis erbracht werden. Nähere Informationen zu diesem Thema finden Sie im
+Infoblatt KfW-Studienkredit
+(PDF, 151 KB, barrierefrei)
+. Die für Sie gültigen Nachweis­zeitpunkte werden auf der entsprechenden Seite dieses Online-Kreditportals angezeigt.
+Das Formular für den Leistungs­nachweis finden Sie unter
+www.kfw.de/174-Leistungsnachweis
+(PDF, 149 KB, barrierefrei)
+. Nutzen Sie für die Einreichung einfach das
+Kontaktformular
+der KfW.
+Falls sich Ihre persönlichen Daten geändert haben, teilen Sie uns bitte die aktuellen Daten über die entsprechende Änderungs­funktion dieses Online-Bankings mit.
+Bankverbindung
+Hier wird Ihre aktuell gespeicherte Bank­verbindung angezeigt.
+Eine Änderung Ihrer Bank­verbindung können Sie selbstständig beauftragen. Diese ist für Sie am nächsten Arbeitstag im Online-Kreditportal sichtbar.
+Um Ihre Bank­daten online zu ändern, ist es erforderlich, dass Sie Konto­inhaber oder Mit­inhaber des Kontos sind. Falls Sie nicht Konto­inhaber oder Mit­inhaber sind, bitten wir Sie, die Änderung der Bank­verbindung schriftlich an uns zu übermitteln. Nutzen Sie hierfür das
+Formular Nr. 600 000 2715 „SEPA-Lastschriftmandat“
+(PDF, 924 KB, barrierefrei)
+, das Sie im
+Download-Center der KfW
+finden.
+Bitte beachten Sie die Programm­bedingungen zu Ihrem Darlehen. So muss in den Programmen KfW-Studienkredit (Kreditprogramm 174) und Studien­beitragsdarlehen der/die Darlehens­nehmer/in auch Inhaber/in oder Mit­inhaber/in der angegebenen Konto­verbindung sein. Ein abweichender Konto­inhaber ist in den Programmen KfW-Studienkredit und Studien­beitrags­darlehen nicht möglich.
+Personendaten
+Unter „Personen­daten“ werden Ihnen die personen­bezogenen Daten wie Staats­angehörigkeit, Familien­stand und Anzahl unterhalts­berechtigter Kinder angezeigt.
+Eine Änderung dieser Daten können Sie selbst­ständig beauftragen. Diese ist für Sie am nächsten Arbeits­tag im Online-Kreditportal sichtbar.
+Zum Ändern der Anrede und der Staats­angehörigkeit wenden Sie sich bitte schriftlich an die KfW, beispielsweise über das
+Kontaktformular
+.
+Kontaktdaten
+Auf dieser Seite werden alle Adress- und Kontakt­daten, wie Erst­wohnsitz, eine ab­weichende Post­anschrift sowie Telefon­nummern und Ihre E-Mail-Adresse angezeigt.
+Eine Änderung können Sie selbst­ständig beauftragen. Diese ist für Sie am nächsten Arbeits­tag im Online-Kreditportal sichtbar.
+Hinterlegen Sie Ihre E-Mail-Adresse in den Kontakt­daten. Zusätzlich können Sie sich bei neuen und wichtigen Mit­teilungen im elektronischen Postkorb per E-Mail informieren lassen.
+Meine Zugangsdaten
+Was sind TAN-Verfahren und welche bietet die KfW an?
+Ein TAN-Verfahren (Transaktions­nummer-Verfahren) ist eine Methode zur Authenti­fi­zierung von Aufträgen im Online-Banking. Es dient der Sicherheit und verhindert unbefugte Zugriffe.
+Für das Online-Banking im Online-Kreditportal können Sie zwischen dem Mobile-TAN-Verfahren und dem OTP-Verfahren (One-Time Password) wählen.
+Nähere Erläuterungen zu den Verfahren finden Sie in den jeweiligen Abschnitten.
+PIN ändern
+Zum Ändern der PIN geben Sie bitte die gewünschte neue PIN ein und bestätigen Sie diese im Bestätigungsfeld.
+Beachten Sie bitte die folgenden Sicherheitshinweise für die Vergabe einer neuen PIN:
+Sie muss mindestens 12-stellig und darf maximal 30-stellig sein.
+Sie darf nicht aus nur einem Zeichen (beispielsweise 111111111111) bestehen.
+Sie darf nicht identisch mit einer der letzten 5 verwendeten PINs sein.
+Kombinieren Sie bei der Vergabe einer PIN Groß- und Kleinbuchstaben.
+Benutzen Sie auch Sonderzeichen.
+Aus Sicherheitsgründen werden nur die folgenden Zeichen unterstützt:
+Buchstaben:
+a b c d e f g h i j k l m n o p q r s t u v w x y z ä ö ü ß
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Ä Ö Ü
+Ziffern:
+0 1 2 3 4 5 6 7 8 9
+Sonderzeichen:
+* + , - . / : ; = ? @ _ ` § ! # $ % ' ( )
+Mobile-TAN sperren
+Hier haben Sie die Möglichkeit das Mobile-TAN-Verfahren zu sperren. Bitte veranlassen Sie die Sperre bei Verlust des Mobil­geräts dessen Ruf­nummer in Ihrem Online-Banking hinterlegt ist. Die Sperre in Ihrem Online-Banking ersetzt nicht das Sperren Ihrer SIM-Karte über Ihren Mobilfunk­anbieter.
+Wichtig:
+Sperren Sie das Mobile-TAN-Verfahren, können keine TAN-pflichtigen Aufträge über das Online-Banking erteilt werden.
+Ein Aufheben der Sperre ist unter „Meine Zugangs­daten“, „Mobile-TAN verwalten“ möglich. Aus Sicherheits­gründen erhalten Sie auch bei einer Ent­sperrung einen neuen Aktivierungs­code per Post. Erst nach der erneuten Aktivierung des Mobile-TAN-Verfahrens sind wieder TAN-pflichtige Aufträge über das Online-Banking möglich.
+Mobile-TAN verwalten
+Unter diesem Menü­punkt ändern Sie ihre hinterlegte Mobil­funk­nummer oder heben selbst­ständig die Sperre Ihrer Mobil­funk­nummer auf. Wir senden Ihnen in jedem Fall einen neuen Aktivierungs­code per Post, mit dem Sie die Ent­sperrung bestätigen können.
+Schritt 1: Mobil­funk­nummer erfassen
+Schritt 2: Aktivierungs­code anfordern
+Sie erhalten den Aktivierungs­code in Kürze per Post an Ihre hinterlegte Post­anschrift.
+Schritt 3: Aktivierungs­code im Portal unter „Meine Zugangs­daten“, „Mobile-TAN verwalten“ erfassen
+Das Mobile-TAN-Verfahren ist aktiviert
+Wechsel zu Mobile-TAN
+Ihre Mobil­funk­nummer ist zunächst für die Nutzung des Mobile-TAN-Verfahrens freizuschalten. Dazu erhalten Sie einen Aktivierungs­code, der Ihnen postalisch an die im Online-Banking hinterlegte Adresse zugesandt wird. Erst nach Aktivierung der Mobil­funk­nummer kann das Mobile-TAN-Verfahren genutzt werden. Mit dem Wechsel auf das Mobile-TAN-Verfahren wird Ihre bisheriges TAN-Verfahren ungültig.
+Wechsel zu OTP
+Beim OTP-Verfahren wird ein Einmal­passwort (TAN) per Authen­tifizierungs­anwendung (Authenticator App) generiert und auf Ihrem separaten Endgerät (beispielsweise Smart­phone, Tablet) angezeigt. Alle 30 Sekunden wird die angezeigte TAN aktualisiert.
+Sie können den Anbieter für diese App frei wählen.
+Ein Versand der TAN erfolgt beim OTP-Verfahren nicht. Die TAN wird direkt auf Ihrem End­gerät erzeugt und ist damit vor dem Zugriff un­berechtigter Personen geschützt. Weitere Informationen zur Aktivierung des OTP-Verfahrens finden Sie nachfolgend unter
+OTP einrichten
+.
+OTP einrichten
+Um das OTP-Verfahren einzurichten, lesen Sie bitte unter „Meine Zugang­sdaten“ und "Wechsel zu OTP" die Nutzungs­bedingungen und akzeptieren diese. Mit dem Wechsel auf das OTP-Verfahren wird Ihr bisheriges TAN-Verfahren ungültig.
+Ist bei Ihnen bereits das OTP-Verfahren hinterlegt, heißt die Funktion „OTP einrichten“.
+In den folgenden Schritten erklären wir Ihnen, wie Sie das OTP-Verfahren einrichten und damit für die Frei­gabe von Auf­trägen im Online-Kreditportal nutzen können.
+Schritt 1: Authenti­fizierungs­anwendung (Authenticator App) installieren
+Schritt 2: Bankver­bindung und Geburts­datum eingeben
+Schritt 3: QR-Code scannen - ein neuer Eintrag mit der Be­zeichnung „KfW“ erscheint in der App
+Schritt 4: Angezeigte TAN auf der Bestätigungs­seite im Online-Kreditportal eingeben
+Das OTP-Verfahren ist aktiviert
+OTP-Gerät löschen
+Diese Funktion bietet Ihnen die Möglichkeit, beispielsweise bei einem Geräte­tausch das hinterlegte End­gerät zu löschen.
+Wichtig:
+Nachdem Sie die Funktion „OTP-Gerät löschen“ ausgeführt haben, bleibt der Eintrag „KfW“ in der Authenticator App erhalten. Wenn Sie das OTP-Verfahren erneut einrichten, wird Ihnen ein neuer, veränderter QR-Code angezeigt. Daher löschen Sie bitte zusätzlich auch den veralteten Eintrag in der App oder überschreiben ihn.
+Ohne aktiviertes TAN-Verfahren können Sie keine TAN-pflichtigen Aufträge erfassen. Starten Sie daher direkt im Anschluss nach der Geräte­löschung die Aktivierung des TAN-Verfahrens neu.
+Drucken
+Seite teilen
+Um die Inhalte dieser Seite mit Ihrem Netzwerk zu teilen, klicken Sie auf eines der unten aufgeführten Icons.
+Hinweis zum Datenschutz:
+Beim Teilen der Inhalte werden Ihre persönlichen Daten an das ausgewählte Netzwerk übertragen.
+Datenschutzhinweise
+Alternativ können Sie auch den Kurz-Link kopieren:
+https://www.kfw.de/s/deiB1tIT
+Link kopieren
+Link kopiert
