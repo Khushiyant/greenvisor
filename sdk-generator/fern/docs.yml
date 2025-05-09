@@ -1,0 +1,9 @@
+instances:
+  - url: https://greenvisor.docs.buildwithfern.com
+title: Greenvisor | Documentation
+navigation:
+  - api: API Reference
+    paginated: true
+colors:
+  background: '#ffffff'
+  accentPrimary: '#000000'
