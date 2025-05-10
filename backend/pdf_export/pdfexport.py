@@ -11,13 +11,22 @@ import pdfkit
 
 def json_to_pdf(data, output_path):
     """
-    data: json in format {"column 1": ["row 1", ..., "row n"], "column 2": ["row 1", ..., "row n"] }
+    Converts JSON data into a PDF file, formatted as a table.
 
-    For example:
-    data = {
-        "criterion": ["heating", "windows", "ventilation"],
-        "example product": ["Viessmann Vitocal 250-A", "EcoTherm Dreifachverglasung", "AirPro 200"]
-    }
+    The function takes a JSON object (or Python dictionary) where keys are column headers
+    and values are lists representing the rows for that column. It then generates
+    an HTML table from this data and converts the HTML to a PDF document.
+
+    Args:
+        data (dict): A dictionary representing the table data.
+                     The format is {"column 1": ["row 1", ..., "row n"],
+                                    "column 2": ["row 1", ..., "row n"]}.
+                     For example:
+                     {
+                         "criterion": ["heating", "windows", "ventilation"],
+                         "example product": ["Viessmann Vitocal 250-A", "EcoTherm Dreifachverglasung", "AirPro 200"]
+                     }
+        output_path (str): The file path where the generated PDF will be saved.
     """
 
     df = pd.DataFrame(data)
