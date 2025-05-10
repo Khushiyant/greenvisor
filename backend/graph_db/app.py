@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException
 from models import QueryRequest
 from utils.query import initialize_query_chain
 import os
-from graph_db.vectorizer import process_and_store_documents
+from graph_db.vectorizer import process_and_store_documents_async
 
 BASE_DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data"))
 
@@ -32,7 +32,7 @@ async def process_folder(folder_path: str):
         raise HTTPException(status_code=404, detail="Folder not found")
 
     try:
-        process_and_store_documents(abs_folder_path)
+        await process_and_store_documents_async(abs_folder_path)
         return {"message": f"Successfully processed folder: {abs_folder_path}"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
