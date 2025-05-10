@@ -236,7 +236,7 @@ def process_directory(directory_path, language='english'):
         else:
             print(f"Skipping non-file item: {filename}")
             
-    print(f"\n--- Batch processing finished ---")
+    print("\n--- Batch processing finished ---")
     print(f"Successfully processed files: {processed_files_count}")
     print(f"Failed to process files: {failed_files_count}")
 

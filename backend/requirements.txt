@@ -1,3 +1,8 @@
 fastapi
 dotenv
 uvicorn
+langchain 
+langchain-experimental 
+langchain-openai 
+langchain-neo4j 
+neo4j
