@@ -33,11 +33,43 @@
   },
   "common": {
     "submit": "Absenden",
-    "loading": "Wird geladen..."
+    "loading": "Wird geladen...",
+    "continue": "Fortfahren",
+    "back": "Zurück"
   },
   "theme": {
     "light": "Hell",
     "dark": "Dunkel",
     "system": "System"
+  },
+  "setup": {
+    "selectLocation": "Standort auswählen",
+    "loadingMap": "Karte wird geladen...",
+    "mapInstructions": "Klicken Sie auf die Karte, um Ihren Standort auszuwählen",
+    "selectedCoordinates": "Ausgewählte Koordinaten",
+    "finalizeSetup": "Setup abschließen",
+    "completeDetails": "Vervollständigen Sie die Gebäudedetails, um das Setup abzuschließen",
+    "buildingName": "Gebäudename",
+    "enterBuildingName": "Gebäudename eingeben",
+    "buildingType": "Gebäudetyp",
+    "selectType": "Gebäudetyp auswählen",
+    "residential": "Wohngebäude",
+    "commercial": "Gewerbegebäude",
+    "industrial": "Industriegebäude",
+    "mixed": "Gemischt genutzt",
+    "yearBuilt": "Baujahr",
+    "yearBuiltDescription": "Geben Sie das Baujahr des Gebäudes ein",
+    "squareMeters": "Quadratmeter",
+    "totalArea": "Gesamtfläche des Gebäudes in Quadratmetern",
+    "previouslyRenovated": "Bereits renoviert",
+    "renovatedDescription": "Wurde dieses Gebäude bereits renoviert?",
+    "locationCoordinates": "Standortkoordinaten",
+    "complete": "Setup abschließen"
+  },
+  "validation": {
+    "buildingNameRequired": "Gebäudename ist erforderlich",
+    "buildingTypeRequired": "Bitte wählen Sie einen Gebäudetyp aus",
+    "yearBuiltFormat": "Das Jahr muss eine 4-stellige Zahl sein",
+    "squareMetersNumber": "Muss eine gültige Zahl sein"
   }
 }

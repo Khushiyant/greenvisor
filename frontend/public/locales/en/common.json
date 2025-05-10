@@ -33,11 +33,43 @@
   },
   "common": {
     "submit": "Submit",
-    "loading": "Loading..."
+    "loading": "Loading...",
+    "back": "Back",
+    "continue": "Continue"
   },
   "theme": {
     "dark": "Dark",
     "light": "Light",
     "system": "System"
+  },
+  "setup": {
+    "selectLocation": "Select Your Location",
+    "loadingMap": "Loading map...",
+    "mapInstructions": "Click on the map to select your location",
+    "selectedCoordinates": "Selected coordinates",
+    "finalizeSetup": "Finalize Setup",
+    "completeDetails": "Complete your building details to finish setup",
+    "buildingName": "Building Name",
+    "enterBuildingName": "Enter building name",
+    "buildingType": "Building Type",
+    "selectType": "Select building type",
+    "residential": "Residential",
+    "commercial": "Commercial",
+    "industrial": "Industrial",
+    "mixed": "Mixed Use",
+    "yearBuilt": "Year Built",
+    "yearBuiltDescription": "Enter the year the building was constructed",
+    "squareMeters": "Square Meters",
+    "totalArea": "Total area of the building in square meters",
+    "previouslyRenovated": "Previously Renovated",
+    "renovatedDescription": "Has this building been renovated before?",
+    "locationCoordinates": "Location Coordinates",
+    "complete": "Complete Setup"
+  },
+  "validation": {
+    "buildingNameRequired": "Building name is required",
+    "buildingTypeRequired": "Please select a building type",
+    "yearBuiltFormat": "Year must be a 4-digit number",
+    "squareMetersNumber": "Must be a valid number"
   }
 }

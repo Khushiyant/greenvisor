@@ -7,4 +7,5 @@ export const Icons = {
   moon: Moon,
   sun: Sun,
   X: X,
+  loader: Loader2,
 };
