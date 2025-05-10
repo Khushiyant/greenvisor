@@ -57,6 +57,20 @@ OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 
 async def load_text_documents_async(folder_path):
+    """
+    Asynchronously loads text documents from a specified folder.
+
+    Reads all .txt files in the given folder, processes their content,
+    and creates Document objects. The source of each document is derived
+    from its filename.
+
+    Args:
+        folder_path (str): The path to the folder containing the text files.
+
+    Returns:
+        list[Document]: A list of Document objects, where each document
+                        contains the page content and metadata (source).
+    """
     documents = []
     filenames = os.listdir(folder_path)
 
@@ -75,6 +89,22 @@ async def load_text_documents_async(folder_path):
 
 
 async def convert_docs_to_graph(graph_transformer, document):
+    """
+    Asynchronously converts a single document to its graph representation.
+
+    Uses the provided graph_transformer to process the document.
+    Includes error handling for the conversion process.
+
+    Args:
+        graph_transformer (OpenRouterGraphTransformer): An instance of the
+            graph transformer (e.g., OpenRouterGraphTransformer).
+        document (Document): The Document object to be converted.
+
+    Returns:
+        list: A list containing the graph representation of the document.
+              Returns an empty list if no nodes are extracted or if an error occurs.
+    """
+    
     try:
         result = await asyncio.to_thread(
             graph_transformer.convert_to_graph_documents, [document]
@@ -90,6 +120,28 @@ async def convert_docs_to_graph(graph_transformer, document):
 
 
 async def process_and_store_documents_async(folder_path):
+    """
+    Asynchronously processes text documents from a folder, converts them to graph
+    documents, stores them in a pickle file, and then adds them to a Neo4j database.
+
+    This function orchestrates the entire pipeline:
+    1. Loads text documents from the specified folder.
+    2. Initializes a graph transformer.
+    3. Concurrently converts documents to graph format.
+    4. Saves the generated graph documents to a .pkl file.
+    5. Connects to Neo4j and stores the graph documents.
+
+    Args:
+        folder_path (str): The path to the folder containing text documents.
+
+    Returns:
+        dict: A dictionary containing a success message and the number of
+              processed documents.
+
+    Raises:
+        ValueError: If no valid graph documents are generated after processing.
+    """
+    
     documents = await load_text_documents_async(folder_path)
 
     graph_transformer = OpenRouterGraphTransformer(
