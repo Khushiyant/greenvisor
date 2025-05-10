@@ -8,3 +8,4 @@ langchain-neo4j
 neo4j
 pdfkit
 pandas
+aiofiles
