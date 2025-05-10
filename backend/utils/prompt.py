@@ -70,3 +70,25 @@ Based on the above contexts, answer the following question:
 {question}
 """,
 )
+
+
+cypher_chain_prompt = PromptTemplate(
+    template="""You are a helpful assistant answering questions about funding programs and organizations.
+Given the following question: {question}
+
+Generate a Cypher query to find relevant information. Available node types are:
+Program, Organization, Requirement, Amount, Document, Contact, Process, Benefit, Target, Purpose, Value
+
+Write a query that:
+1. Matches relevant patterns
+2. Uses basic WHERE clauses if needed
+3. Returns node properties AND source metadata
+4. Limits to 5 results
+
+Example:
+Question: "What programs exist?"
+Cypher: MATCH (p:Program) RETURN p, p.source AS source LIMIT 5
+
+Cypher: """,
+    input_variables=["question"],
+)

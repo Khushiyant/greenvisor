@@ -123,11 +123,14 @@ async def process_and_store_documents_async(folder_path):
     def store_to_neo4j(graph_doc):
         graph.add_graph_documents([graph_doc])
 
-    with ThreadPoolExecutor() as executor:
-        async_tqdm(
-            asyncio.gather(
-                *[asyncio.to_thread(store_to_neo4j, doc) for doc in graph_documents]
-            ),
-            desc="Storing in Neo4j",
-            unit="document",
-        )
+    storage_tasks = [asyncio.to_thread(store_to_neo4j, doc) for doc in graph_documents]
+
+    # Execute and track progress
+    async for _ in async_tqdm(
+        asyncio.as_completed(storage_tasks),
+        desc="Storing in Neo4j",
+        total=len(storage_tasks),
+    ):
+        await _
+
+    return {"message": f"Successfully processed {len(graph_documents)} documents"}
