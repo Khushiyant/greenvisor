@@ -1,6 +1,20 @@
 from langchain.prompts import PromptTemplate
 
 def validate_json(text):
+    """
+    Validates if the input text is a valid JSON string.
+
+    Tries to parse the input text using `json.loads()`. If successful,
+    it means the text is valid JSON and the function returns True.
+    If a `json.JSONDecodeError` or any other exception occurs during parsing,
+    it prints the error and returns False.
+
+    Args:
+        text: The string to be validated as JSON.
+
+    Returns:
+        True if the text is valid JSON, False otherwise.
+    """
     try:
         json.loads(text)
         return True
