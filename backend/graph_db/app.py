@@ -1,20 +1,24 @@
 from fastapi import APIRouter, HTTPException
 from models import QueryRequest
-from utils.query import initialize_query_chain
+from utils.query import combined_llm_response
 import os
 from graph_db.vectorizer import process_and_store_documents_async
 
 BASE_DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data"))
 
-query_chain = initialize_query_chain()
 router = APIRouter()
 
 
 @router.post("/query")
 async def query_graph(request: QueryRequest):
     try:
-        response = query_chain.run(request.question)
-        return {"response": response['result']}
+        result = combined_llm_response(user_context=None, question=request.question, lang=request.lang)
+
+        return {
+            "message": result
+        }
+        
+
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
     

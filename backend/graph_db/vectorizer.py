@@ -8,7 +8,6 @@ import asyncio
 
 import aiofiles
 from tqdm.asyncio import tqdm as async_tqdm
-from concurrent.futures import ThreadPoolExecutor
 
 
 load_dotenv()
