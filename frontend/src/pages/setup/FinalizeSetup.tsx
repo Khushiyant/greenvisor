@@ -1,22 +1,10 @@
-import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import { useTranslation } from "react-i18next";
-import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
+import React from "react";
 import { useForm } from "react-hook-form";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-} from "@/components/ui/card";
+import { zodResolver } from "@hookform/resolvers/zod";
+import * as z from "zod";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -30,256 +18,340 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Checkbox } from "@/components/ui/checkbox";
+import { Button } from "@/components/ui/button";
+import { useToast } from "@/hooks/useToast";
+import { useTranslation } from "react-i18next";
 
-export default function FinalizeSetup() {
+// Schema definition (unchanged)
+const formSchema = z.object({
+  buildingType: z.string().min(1, "setup.validation.buildingType"),
+  constructionYear: z
+    .number()
+    .min(1800, "setup.validation.constructionYearMin")
+    .max(new Date().getFullYear(), "setup.validation.constructionYearMax"),
+  livingArea: z.number().min(1, "setup.validation.livingArea"),
+  floors: z.number().min(1, "setup.validation.floors"),
+  roofType: z.string().min(1, "setup.validation.roofType"),
+  heatingSystem: z.string().min(1, "setup.validation.heatingSystem"),
+  insulationStatus: z.string().min(1, "setup.validation.insulationStatus"),
+  windows: z.string().min(1, "setup.validation.windows"),
+});
+
+type FormData = z.infer<typeof formSchema>;
+
+const SanierungsrechnerForm: React.FC = () => {
   const { t } = useTranslation();
-  const navigate = useNavigate();
-  const [coordinates, setCoordinates] = useState({ lat: null, lng: null });
+  const { info, success } = useToast();
 
-  // Set up form validation schema with Zod
-  const formSchema = z.object({
-    buildingName: z.string().min(2, {
-      message: t(
-        "validation.buildingNameRequired",
-        "Building name is required"
-      ),
-    }),
-    buildingType: z.string({
-      required_error: t(
-        "validation.buildingTypeRequired",
-        "Please select a building type"
-      ),
-    }),
-    yearBuilt: z.string().regex(/^\d{4}$/, {
-      message: t("validation.yearBuiltFormat", "Year must be a 4-digit number"),
-    }),
-    squareMeters: z.string().refine((val) => !isNaN(parseInt(val, 10)), {
-      message: t("validation.squareMetersNumber", "Must be a valid number"),
-    }),
-    hasRenovated: z.boolean().default(false),
-  });
+  // Localized select options
+  const buildingTypes = [
+    {
+      value: "einfamilienhaus",
+      label: t("setup.buildingTypes.einfamilienhaus"),
+    },
+    {
+      value: "zweifamilienhaus",
+      label: t("setup.buildingTypes.zweifamilienhaus"),
+    },
+    {
+      value: "mehrfamilienhaus",
+      label: t("setup.buildingTypes.mehrfamilienhaus"),
+    },
+    { value: "reihenhaus", label: t("setup.buildingTypes.reihenhaus") },
+    {
+      value: "doppelhaushälfte",
+      label: t("setup.buildingTypes.doppelhaushälfte"),
+    },
+    { value: "wohnung", label: t("setup.buildingTypes.wohnung") },
+  ];
 
-  // Get coordinates from localStorage (from previous step)
-  useEffect(() => {
-    const storedCoordinates = localStorage.getItem("setupCoordinates");
-    if (storedCoordinates) {
-      setCoordinates(JSON.parse(storedCoordinates));
-    } else {
-      // If no coordinates, go back to the map step
-      navigate("/setup");
-    }
-  }, [navigate]);
+  const roofTypes = [
+    { value: "satteldach", label: t("setup.roofTypes.satteldach") },
+    { value: "flachdach", label: t("setup.roofTypes.flachdach") },
+    { value: "pultdach", label: t("setup.roofTypes.pultdach") },
+    { value: "walmdach", label: t("setup.roofTypes.walmdach") },
+    { value: "mansarddach", label: t("setup.roofTypes.mansarddach") },
+  ];
 
-  // Set up react-hook-form with zod validation
-  const form = useForm<z.infer<typeof formSchema>>({
+  const heatingSystems = [
+    { value: "gas", label: t("setup.heatingSystems.gas") },
+    { value: "öl", label: t("setup.heatingSystems.öl") },
+    { value: "wärmepumpe", label: t("setup.heatingSystems.wärmepumpe") },
+    { value: "fernwaerme", label: t("setup.heatingSystems.fernwaerme") },
+    { value: "pellets", label: t("setup.heatingSystems.pellets") },
+    { value: "elektro", label: t("setup.heatingSystems.elektro") },
+  ];
+
+  const insulationStatuses = [
+    { value: "keine", label: t("setup.insulationStatuses.keine") },
+    { value: "teilweise", label: t("setup.insulationStatuses.teilweise") },
+    {
+      value: "vollstaendig",
+      label: t("setup.insulationStatuses.vollstaendig"),
+    },
+  ];
+
+  const windowTypes = [
+    { value: "einfach", label: t("setup.windowTypes.einfach") },
+    { value: "doppel", label: t("setup.windowTypes.doppel") },
+    { value: "dreifach", label: t("setup.windowTypes.dreifach") },
+  ];
+
+  const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      buildingName: "",
       buildingType: "",
-      yearBuilt: "",
-      squareMeters: "",
-      hasRenovated: false,
+      constructionYear: 2000,
+      livingArea: 100,
+      floors: 1,
+      roofType: "",
+      heatingSystem: "",
+      insulationStatus: "",
+      windows: "",
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Combine form data with coordinates
-    const fullData = {
-      ...values,
-      coordinates,
-    };
-
-    console.log("Submitting data:", fullData);
-
-    // Here you would send the data to your backend API
-    // For now, we'll just simulate success and redirect
-    alert("Setup complete! Data saved successfully.");
-    navigate("/");
-  }
+  const onSubmit = (data: FormData) => {
+    console.log(data);
+    info(t("setup.calculationStarted"), {
+      description: t("setup.calculationProcessing"),
+    });
+    setTimeout(() => {
+      success(t("setup.calculationFinished"), {
+        description: t("setup.calculationReady"),
+      });
+    }, 2000);
+  };
 
   return (
-    <div className="container mx-auto py-8">
-      <Card className="max-w-2xl mx-auto">
-        <CardHeader>
-          <CardTitle>{t("setup.finalizeSetup", "Finalize Setup")}</CardTitle>
-          <CardDescription>
-            {t(
-              "setup.completeDetails",
-              "Complete your building details to finish setup"
-            )}
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-              {/* Building name */}
-              <FormField
-                control={form.control}
-                name="buildingName"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>
-                      {t("setup.buildingName", "Building Name")}
-                    </FormLabel>
+    <div className="container mx-auto p-4">
+      <div className="bg-white shadow rounded-lg p-6">
+        <h1 className="text-2xl font-bold mb-4">
+          {t("setup.calculatorTitle", "Sanierungsrechner")}
+        </h1>
+        <p className="mb-6">
+          {t(
+            "setup.calculatorIntro",
+            "Geben Sie die Daten Ihres Gebäudes ein, um eine Abschätzung des Energieeffizienzzustands zu erhalten."
+          )}
+        </p>
+        <Form {...form}>
+          <form
+            onSubmit={form.handleSubmit(onSubmit)}
+            className="grid grid-cols-1 md:grid-cols-2 gap-6"
+          >
+            <FormField
+              control={form.control}
+              name="buildingType"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>{t("setup.buildingType")}</FormLabel>
+                  <Select
+                    onValueChange={field.onChange}
+                    defaultValue={field.value}
+                  >
                     <FormControl>
-                      <Input
-                        placeholder={t(
-                          "setup.enterBuildingName",
-                          "Enter building name"
-                        )}
-                        {...field}
-                      />
+                      <SelectTrigger>
+                        <SelectValue placeholder={t("setup.selectType")} />
+                      </SelectTrigger>
                     </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
-              {/* Building type */}
-              <FormField
-                control={form.control}
-                name="buildingType"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>
-                      {t("setup.buildingType", "Building Type")}
-                    </FormLabel>
-                    <Select
-                      onValueChange={field.onChange}
-                      defaultValue={field.value}
-                    >
-                      <FormControl>
-                        <SelectTrigger>
-                          <SelectValue
-                            placeholder={t(
-                              "setup.selectType",
-                              "Select building type"
-                            )}
-                          />
-                        </SelectTrigger>
-                      </FormControl>
-                      <SelectContent>
-                        <SelectItem value="residential">
-                          {t("setup.residential", "Residential")}
+                    <SelectContent>
+                      {buildingTypes.map((type) => (
+                        <SelectItem key={type.value} value={type.value}>
+                          {type.label}
                         </SelectItem>
-                        <SelectItem value="commercial">
-                          {t("setup.commercial", "Commercial")}
-                        </SelectItem>
-                        <SelectItem value="industrial">
-                          {t("setup.industrial", "Industrial")}
-                        </SelectItem>
-                        <SelectItem value="mixed">
-                          {t("setup.mixed", "Mixed Use")}
-                        </SelectItem>
-                      </SelectContent>
-                    </Select>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
-              {/* Year built */}
-              <FormField
-                control={form.control}
-                name="yearBuilt"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>{t("setup.yearBuilt", "Year Built")}</FormLabel>
-                    <FormControl>
-                      <Input placeholder="1990" {...field} />
-                    </FormControl>
-                    <FormDescription>
-                      {t(
-                        "setup.yearBuiltDescription",
-                        "Enter the year the building was constructed"
+                      ))}
+                    </SelectContent>
+                  </Select>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="constructionYear"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>
+                    {t("setup.constructionYear", "Baujahr")}
+                  </FormLabel>
+                  <FormControl>
+                    <Input
+                      type="number"
+                      placeholder={t(
+                        "setup.constructionYearPlaceholder",
+                        "z.B. 1990"
                       )}
-                    </FormDescription>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
-              {/* Square meters */}
-              <FormField
-                control={form.control}
-                name="squareMeters"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>
-                      {t("setup.squareMeters", "Square Meters")}
-                    </FormLabel>
+                      {...field}
+                      onChange={(e) => field.onChange(Number(e.target.value))}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="livingArea"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>
+                    {t("setup.livingArea", "Wohnfläche (m²)")}
+                  </FormLabel>
+                  <FormControl>
+                    <Input
+                      type="number"
+                      placeholder={t("setup.livingAreaPlaceholder", "z.B. 150")}
+                      {...field}
+                      onChange={(e) => field.onChange(Number(e.target.value))}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="floors"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>
+                    {t("setup.floors", "Anzahl der Stockwerke")}
+                  </FormLabel>
+                  <FormControl>
+                    <Input
+                      type="number"
+                      placeholder={t("setup.floorsPlaceholder", "z.B. 2")}
+                      {...field}
+                      onChange={(e) => field.onChange(Number(e.target.value))}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="roofType"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>{t("setup.roofType")}</FormLabel>
+                  <Select
+                    onValueChange={field.onChange}
+                    defaultValue={field.value}
+                  >
                     <FormControl>
-                      <Input placeholder="150" {...field} />
+                      <SelectTrigger>
+                        <SelectValue placeholder={t("setup.selectRoofType")} />
+                      </SelectTrigger>
                     </FormControl>
-                    <FormDescription>
-                      {t(
-                        "setup.totalArea",
-                        "Total area of the building in square meters"
-                      )}
-                    </FormDescription>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
-              {/* Has been renovated */}
-              <FormField
-                control={form.control}
-                name="hasRenovated"
-                render={({ field }) => (
-                  <FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md border p-4">
+                    <SelectContent>
+                      {roofTypes.map((type) => (
+                        <SelectItem key={type.value} value={type.value}>
+                          {type.label}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="heatingSystem"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>{t("setup.heatingSystem")}</FormLabel>
+                  <Select
+                    onValueChange={field.onChange}
+                    defaultValue={field.value}
+                  >
                     <FormControl>
-                      <Checkbox
-                        checked={field.value}
-                        onCheckedChange={field.onChange}
-                      />
+                      <SelectTrigger>
+                        <SelectValue
+                          placeholder={t("setup.selectHeatingSystem")}
+                        />
+                      </SelectTrigger>
                     </FormControl>
-                    <div className="space-y-1 leading-none">
-                      <FormLabel>
-                        {t("setup.previouslyRenovated", "Previously Renovated")}
-                      </FormLabel>
-                      <FormDescription>
-                        {t(
-                          "setup.renovatedDescription",
-                          "Has this building been renovated before?"
-                        )}
-                      </FormDescription>
-                    </div>
-                  </FormItem>
-                )}
-              />
-
-              {/* Coordinates display (read-only) */}
-              <div className="rounded-md border p-4">
-                <h3 className="font-medium mb-2">
-                  {t("setup.locationCoordinates", "Location Coordinates")}
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  {coordinates.lat
-                    ? `${coordinates.lat.toFixed(6)}, ${coordinates.lng.toFixed(
-                        6
-                      )}`
-                    : "No coordinates selected"}
-                </p>
-              </div>
-
-              <CardFooter className="flex justify-between px-0">
-                <Button
-                  type="button"
-                  variant="outline"
-                  onClick={() => navigate("/setup")}
-                >
-                  {t("common.back", "Back")}
-                </Button>
-                <Button type="submit">
-                  {t("setup.complete", "Complete Setup")}
-                </Button>
-              </CardFooter>
-            </form>
-          </Form>
-        </CardContent>
-      </Card>
+                    <SelectContent>
+                      {heatingSystems.map((system) => (
+                        <SelectItem key={system.value} value={system.value}>
+                          {system.label}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="insulationStatus"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>{t("setup.insulationStatus")}</FormLabel>
+                  <Select
+                    onValueChange={field.onChange}
+                    defaultValue={field.value}
+                  >
+                    <FormControl>
+                      <SelectTrigger>
+                        <SelectValue
+                          placeholder={t("setup.selectInsulationStatus")}
+                        />
+                      </SelectTrigger>
+                    </FormControl>
+                    <SelectContent>
+                      {insulationStatuses.map((status) => (
+                        <SelectItem key={status.value} value={status.value}>
+                          {status.label}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="windows"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>{t("setup.windows")}</FormLabel>
+                  <Select
+                    onValueChange={field.onChange}
+                    defaultValue={field.value}
+                  >
+                    <FormControl>
+                      <SelectTrigger>
+                        <SelectValue
+                          placeholder={t("setup.selectWindowType")}
+                        />
+                      </SelectTrigger>
+                    </FormControl>
+                    <SelectContent>
+                      {windowTypes.map((type) => (
+                        <SelectItem key={type.value} value={type.value}>
+                          {type.label}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <div className="col-span-2">
+              <Button type="submit">{t("common.submit", "Berechnen")}</Button>
+            </div>
+          </form>
+        </Form>
+      </div>
     </div>
   );
-}
+};
+
+export default SanierungsrechnerForm;

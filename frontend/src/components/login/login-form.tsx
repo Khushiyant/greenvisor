@@ -10,6 +10,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useTranslation } from "react-i18next";
+import { Icons } from "../ui/icons";
 
 export function LoginForm({
   className,
@@ -57,12 +58,13 @@ export function LoginForm({
                 {t("auth.login")}
               </Button>
               <Button variant="outline" className="w-full">
-                {t("auth.loginWithGoogle", "Login with Google")}
+                <Icons.discord />
+                {t("auth.loginwithDiscord", "Login with Discord")}
               </Button>
             </div>
             <div className="mt-4 text-center text-sm">
               {t("auth.dontHaveAccount")}{" "}
-              <a href="#" className="underline underline-offset-4">
+              <a href="#" className="underline underline</svg>-offset-4">
                 {t("auth.signup")}
               </a>
             </div>

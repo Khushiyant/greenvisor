@@ -1,13 +1,6 @@
-import { toast } from 'sonner';
+import { toast, type ExternalToast } from 'sonner';
 
-type ToastOptions = {
-    duration?: number;
-    position?: 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right' | 'top-center' | 'bottom-center';
-    action?: {
-        label: string;
-        onClick: () => void;
-    };
-};
+type ToastOptions = ExternalToast
 
 export function useToast() {
     const showToast = (message: string, options?: ToastOptions) => {

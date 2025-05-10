@@ -17,7 +17,7 @@ export function ModeToggle() {
   const isHome = location.pathname === "/";
   const { t } = useTranslation();
 
-  const iconColor = isHome ? "text-white" : "";
+  const iconColor = isHome ? "text-white" : "text-foreground";
 
   return (
     <DropdownMenu>
@@ -29,7 +29,7 @@ export function ModeToggle() {
           <Moon
             className={`absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 ${iconColor}`}
           />
-          <span className="sr-only">Toggle theme</span>
+          <span className="sr-only">{t("theme.toggle", "Toggle theme")}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">

@@ -64,12 +64,74 @@
     "previouslyRenovated": "Bereits renoviert",
     "renovatedDescription": "Wurde dieses Gebäude bereits renoviert?",
     "locationCoordinates": "Standortkoordinaten",
-    "complete": "Setup abschließen"
+    "complete": "Setup abschließen",
+    "calculatorTitle": "Sanierungsrechner",
+    "calculatorIntro": "Geben Sie die Daten Ihres Gebäudes ein, um eine Abschätzung des Energieeffizienzzustands zu erhalten.",
+    "calculationStarted": "Berechnung gestartet",
+    "calculationProcessing": "Ihre Daten werden verarbeitet. Bitte warten...",
+    "calculationFinished": "Berechnung abgeschlossen",
+    "calculationReady": "Ihre Ergebnisse sind bereit.",
+    "constructionYear": "Baujahr",
+    "constructionYearPlaceholder": "z.B. 1990",
+    "livingArea": "Wohnfläche (m²)",
+    "livingAreaPlaceholder": "z.B. 150",
+    "floors": "Anzahl der Stockwerke",
+    "floorsPlaceholder": "z.B. 2",
+    "roofType": "Dachtyp",
+    "selectRoofType": "Wählen Sie einen Dachtyp",
+    "heatingSystem": "Heizsystem",
+    "selectHeatingSystem": "Wählen Sie ein Heizsystem",
+    "insulationStatus": "Dämmstatus",
+    "selectInsulationStatus": "Wählen Sie den Dämmstatus",
+    "windows": "Fensterart",
+    "selectWindowType": "Wählen Sie die Fensterart",
+    "buildingTypes": {
+      "einfamilienhaus": "Einfamilienhaus",
+      "zweifamilienhaus": "Zweifamilienhaus",
+      "mehrfamilienhaus": "Mehrfamilienhaus",
+      "reihenhaus": "Reihenhaus",
+      "doppelhaushälfte": "Doppelhaushälfte",
+      "wohnung": "Wohnung"
+    },
+    "roofTypes": {
+      "satteldach": "Satteldach",
+      "flachdach": "Flachdach",
+      "pultdach": "Pultdach",
+      "walmdach": "Walmdach",
+      "mansarddach": "Mansarddach"
+    },
+    "heatingSystems": {
+      "gas": "Gasheizung",
+      "öl": "Ölheizung",
+      "wärmepumpe": "Wärmepumpe",
+      "fernwaerme": "Fernwärme",
+      "pellets": "Pelletheizung",
+      "elektro": "Elektroheizung"
+    },
+    "insulationStatuses": {
+      "keine": "Keine Dämmung",
+      "teilweise": "Teilweise gedämmt",
+      "vollstaendig": "Vollständig gedämmt"
+    },
+    "windowTypes": {
+      "einfach": "Einfachverglasung",
+      "doppel": "Doppelverglasung",
+      "dreifach": "Dreifachverglasung"
+    }
   },
   "validation": {
     "buildingNameRequired": "Gebäudename ist erforderlich",
     "buildingTypeRequired": "Bitte wählen Sie einen Gebäudetyp aus",
     "yearBuiltFormat": "Das Jahr muss eine 4-stellige Zahl sein",
-    "squareMetersNumber": "Muss eine gültige Zahl sein"
+    "squareMetersNumber": "Muss eine gültige Zahl sein",
+    "setup.validation.buildingType": "Bitte wählen Sie einen Gebäudetyp",
+    "setup.validation.constructionYearMin": "Baujahr muss mindestens 1800 sein",
+    "setup.validation.constructionYearMax": "Baujahr kann nicht in der Zukunft liegen",
+    "setup.validation.livingArea": "Wohnfläche muss mindestens 1 m² sein",
+    "setup.validation.floors": "Anzahl der Stockwerke muss mindestens 1 sein",
+    "setup.validation.roofType": "Bitte wählen Sie einen Dachtyp",
+    "setup.validation.heatingSystem": "Bitte wählen Sie ein Heizsystem",
+    "setup.validation.insulationStatus": "Bitte wählen Sie den Dämmstatus",
+    "setup.validation.windows": "Bitte wählen Sie die Fensterart"
   }
 }

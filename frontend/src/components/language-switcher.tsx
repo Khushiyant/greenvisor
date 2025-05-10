@@ -13,13 +13,16 @@ export function LanguageSwitcher() {
   const location = useLocation();
   const isHome = location.pathname === "/";
 
+  // Always white on home, otherwise white in dark mode, black in light mode
+  const textColor = isHome ? "text-white" : "text-foreground";
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
           variant="ghost"
           size="icon"
-          className={`rounded-full ${isHome ? "text-white" : ""}`}
+          className={`rounded-full ${textColor}`}
         >
           <span className="font-semibold uppercase">
             {i18n.language.slice(0, 2)}
