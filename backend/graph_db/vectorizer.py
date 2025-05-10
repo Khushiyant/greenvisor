@@ -25,19 +25,22 @@ ALLOWED_NODES = [
     "Process",  # For application processes
     "Benefit",  # For promotional benefits, grants
     "Target",  # For target groups, beneficiaries
-    "Purpose",  # For funding purposes
+    "Purpose",  # For funding purposes,
+    "Value",  # For specific numerical values and amounts
 ]
 
 ALLOWED_RELATIONSHIPS = [
     "REQUIRES",  # Program ->REQUIRES-> Document/Requirement
     "OFFERS",  # Organization ->OFFERS-> Program
-    "PROVIDES",  # Program ->PROVIDES-> Benefit/Amount
+    "HAS_VALUE",  # Amount ->HAS_VALUE-> Value
     "TARGETS",  # Program ->TARGETS-> Target
     "MANAGED_BY",  # Program ->MANAGED_BY-> Organization
     "APPLIES_TO",  # Requirement ->APPLIES_TO-> Target
     "FOLLOWS",  # Process ->FOLLOWS-> Process
     "SERVES",  # Program ->SERVES-> Purpose
     "LOCATED_AT",  # Organization ->LOCATED_AT-> Contact
+    "GRANTS",  # Program ->GRANTS-> Amount
+    "INCLUDES",  # Benefit ->INCLUDES-> Amount
 ]
 
 def load_text_documents(folder_path):
@@ -46,7 +49,7 @@ def load_text_documents(folder_path):
         if filename.endswith(".txt"):
             with open(os.path.join(folder_path, filename), 'r', encoding='utf-8') as file:
                 content = file.read()
-                source = filename.split("_")[0]
+                source = "_".join(filename.split("_")[:-1])  
                 content = content.replace("\n", " ")
                 documents.append(Document(page_content=content, metadata={"source": source}))
     return documents

@@ -14,7 +14,7 @@ router = APIRouter()
 async def query_graph(request: QueryRequest):
     try:
         response = query_chain.run(request.question)
-        return {"response": response}
+        return {"response": response['result']}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
     
