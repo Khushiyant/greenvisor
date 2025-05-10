@@ -1,6 +1,5 @@
 import os
-from langchain.chains import GraphCypherQAChain
-from langchain_neo4j import Neo4jGraph
+from langchain_neo4j import Neo4jGraph, GraphCypherQAChain
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 from typing import Optional
