@@ -21,6 +21,8 @@ import {
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/useToast";
 import { useTranslation } from "react-i18next";
+import { tryJsonParse } from "@/lib/utils";
+import type { Coordinates } from "@/hooks/useMap";
 
 // Schema definition (unchanged)
 const formSchema = z.object({
@@ -39,9 +41,12 @@ const formSchema = z.object({
 
 type FormData = z.infer<typeof formSchema>;
 
-const SanierungsrechnerForm: React.FC = () => {
+const FinaliseSetupForm: React.FC = () => {
   const { t } = useTranslation();
   const { info, success } = useToast();
+  const coordinates: Coordinates = tryJsonParse<Coordinates>(
+    localStorage.getItem("coordinates") || "{lat: 0, lng: 0}"
+  ); // Default to {lat: 0, lng: 0} if not found
 
   // Localized select options
   const buildingTypes = [
@@ -354,4 +359,4 @@ const SanierungsrechnerForm: React.FC = () => {
   );
 };
 
-export default SanierungsrechnerForm;
+export default FinaliseSetupForm;

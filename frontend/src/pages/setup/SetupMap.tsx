@@ -120,24 +120,23 @@ export default function SetupMap() {
     name: string
   ) => {
     updateMarker(lat, lng, 19); // Maximum zoom
-    success(t("setup.locationFound", `Location found: ${name}`));
+    success(t("setup.locationFound", { name }));
+    console.log(t("setup.locationFound", { name }), t("setup.locationFound"));
   };
 
   return (
-    <>
+    <main className="min-h-screen flex items-center bg-background justify-center px-4 py-8">
       {/* Add global styles to fix z-index issues */}
       <style>{globalStyles}</style>
 
       <div className="container mx-auto py-8">
         <Card className="max-w-4xl mx-auto">
           <CardHeader>
-            <CardTitle>
-              {t("setup.selectLocation", "Select Your Location")}
-            </CardTitle>
+            <CardTitle>{t("setup.selectLocation")}</CardTitle>
             <CardDescription>
               {t(
                 "setup.locationDescription",
-                "We'll use this to show local weather and climate data."
+                "We'll use this to get accurate location data of your home"
               )}
             </CardDescription>
           </CardHeader>
@@ -159,10 +158,12 @@ export default function SetupMap() {
               {mapError ? (
                 <div className="w-full h-[500px] rounded-md flex items-center justify-center bg-muted">
                   <div className="text-center p-4">
-                    <p className="text-red-500 mb-2">⚠️ {mapError}</p>
+                    <p className="text-red-500 mb-2">
+                      ⚠️ {t("setup.mapError", mapError)}
+                    </p>
                     <p className="text-sm text-muted-foreground">
                       {t(
-                        "setup.mapError",
+                        "setup.mapErrorHint",
                         "Please try refreshing the page or using a different browser."
                       )}
                     </p>
@@ -175,7 +176,7 @@ export default function SetupMap() {
                     <div className="absolute inset-0 flex items-center justify-center bg-background/80 z-10">
                       <div className="text-center">
                         <Loader2 className="h-8 w-8 animate-spin mx-auto mb-2 text-primary" />
-                        <p>{t("setup.loadingMap", "Loading map...")}</p>
+                        <p>{t("setup.loadingMap")}</p>
                       </div>
                     </div>
                   )}
@@ -220,24 +221,33 @@ export default function SetupMap() {
                           <div className="grid gap-4 py-4">
                             <div className="grid gap-2">
                               <label htmlFor="latitude">
-                                Latitude (-90 to 90)
+                                {t("setup.latitude", "Latitude (-90 to 90)")}
                               </label>
                               <Input
                                 id="latitude"
                                 value={manualLat}
                                 onChange={(e) => setManualLat(e.target.value)}
-                                placeholder="e.g. 51.5074"
+                                placeholder={t(
+                                  "setup.latitudePlaceholder",
+                                  "e.g. 51.5074"
+                                )}
                               />
                             </div>
                             <div className="grid gap-2">
                               <label htmlFor="longitude">
-                                Longitude (-180 to 180)
+                                {t(
+                                  "setup.longitude",
+                                  "Longitude (-180 to 180)"
+                                )}
                               </label>
                               <Input
                                 id="longitude"
                                 value={manualLng}
                                 onChange={(e) => setManualLng(e.target.value)}
-                                placeholder="e.g. -0.1278"
+                                placeholder={t(
+                                  "setup.longitudePlaceholder",
+                                  "e.g. -0.1278"
+                                )}
                               />
                             </div>
                           </div>
@@ -255,37 +265,38 @@ export default function SetupMap() {
 
               {locationError && (
                 <div className="p-4 bg-yellow-50 text-yellow-800 rounded-md text-sm">
-                  <p className="font-medium">Location access failed</p>
+                  <p className="font-medium">
+                    {t("setup.locationAccessFailed", "Location access failed")}
+                  </p>
                   <p>{locationError}</p>
                   <p className="mt-1">
-                    You can click on the map or use the "Enter coordinates"
-                    button instead.
+                    {t(
+                      "setup.locationAccessHint",
+                      'You can click on the map or use the "Enter coordinates" button instead.'
+                    )}
                   </p>
                 </div>
               )}
 
               {coordinates.lat !== null && coordinates.lng !== null && (
                 <p className="text-sm text-muted-foreground text-center">
-                  {t("setup.selectedCoordinates", "Selected coordinates")}:{" "}
-                  {coordinates.lat.toFixed(6)}, {coordinates.lng.toFixed(6)}
+                  {t("setup.selectedCoordinates")}: {coordinates.lat.toFixed(6)}
+                  , {coordinates.lng.toFixed(6)}
                 </p>
               )}
             </div>
           </CardContent>
 
           <CardFooter className="flex justify-between">
-            <Button variant="outline" onClick={() => navigate(-1)}>
-              {t("common.back", "Back")}
-            </Button>
             <Button
               onClick={handleContinue}
               disabled={coordinates.lat === null || coordinates.lng === null}
             >
-              {t("common.continue", "Continue")}
+              {t("common.continue")}
             </Button>
           </CardFooter>
         </Card>
       </div>
-    </>
+    </main>
   );
 }

@@ -13,22 +13,27 @@ import { Label } from "@/components/ui/label";
 import { useTranslation } from "react-i18next";
 import { Icons } from "../ui/icons";
 import { useAuth } from "@/context/AuthContext";
-import { useNavigate } from "react-router-dom";
 
-type LoginFormProps = React.ComponentPropsWithoutRef<"div"> & {
+type SignupFormProps = React.ComponentPropsWithoutRef<"div"> & {
   toggleMode?: () => void;
 };
 
-export function LoginForm({ className, toggleMode, ...props }: LoginFormProps) {
+export function SignupForm({
+  className,
+  toggleMode,
+  ...props
+}: SignupFormProps) {
   const { t } = useTranslation();
-  const { login, loginWithDiscord } = useAuth();
-  const navigate = useNavigate();
+  const { signUp, loginWithDiscord } = useAuth();
 
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [errors, setErrors] = useState<{ email?: string; password?: string }>(
-    {}
-  );
+  const [errors, setErrors] = useState<{
+    name?: string;
+    email?: string;
+    password?: string;
+  }>({});
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -36,6 +41,10 @@ export function LoginForm({ className, toggleMode, ...props }: LoginFormProps) {
     let valid = true;
     const newErrors: typeof errors = {};
 
+    if (!name.trim()) {
+      newErrors.name = t("auth.invalidName", "Please enter your name");
+      valid = false;
+    }
     if (!isValidEmail(email)) {
       newErrors.email = t(
         "auth.invalidEmail",
@@ -56,31 +65,48 @@ export function LoginForm({ className, toggleMode, ...props }: LoginFormProps) {
 
     setLoading(true);
     try {
-      await login(email, password);
+      await signUp(email, password, name);
     } catch (err: any) {
       setErrors({
-        password: err?.message || t("auth.loginFailed", "Login failed"),
+        password: err?.message || t("auth.signupFailed", "Signup failed"),
       });
     } finally {
       setLoading(false);
     }
   };
 
-  const handleForgotPassword = async (e: React.MouseEvent) => {
-    e.preventDefault();
-    navigate("/forgot-password");
-  };
-
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <Card className="border-border bg-card text-card-foreground">
         <CardHeader>
-          <CardTitle className="text-2xl">{t("auth.login")}</CardTitle>
-          <CardDescription>{t("auth.enterEmail")}</CardDescription>
+          <CardTitle className="text-2xl">{t("auth.signup")}</CardTitle>
+          <CardDescription>
+            {t(
+              "auth.enterEmail",
+              "Enter your email below to create your account"
+            )}
+          </CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit}>
             <div className="flex flex-col gap-6">
+              <div className="grid gap-2">
+                <Label htmlFor="name">{t("auth.name", "Name")}</Label>
+                <Input
+                  id="name"
+                  type="text"
+                  placeholder={t("auth.namePlaceholder", "Your name")}
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                  disabled={loading}
+                />
+                {errors.name && (
+                  <span className="text-sm text-destructive">
+                    {errors.name}
+                  </span>
+                )}
+              </div>
               <div className="grid gap-2">
                 <Label htmlFor="email">{t("auth.email")}</Label>
                 <Input
@@ -100,25 +126,18 @@ export function LoginForm({ className, toggleMode, ...props }: LoginFormProps) {
                 )}
               </div>
               <div className="grid gap-2">
-                <div className="flex items-center">
-                  <Label htmlFor="password">{t("auth.password")}</Label>
-                  <button
-                    type="button"
-                    className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
-                    onClick={handleForgotPassword}
-                    disabled={loading}
-                  >
-                    {t("auth.forgotPassword")}
-                  </button>
-                </div>
+                <Label htmlFor="password">{t("auth.password")}</Label>
                 <Input
                   id="password"
                   type="password"
-                  placeholder="somesuperstrongpassword"
+                  placeholder={t(
+                    "auth.passwordPlaceholder",
+                    "Choose a strong password"
+                  )}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
-                  autoComplete="current-password"
+                  autoComplete="new-password"
                   disabled={loading}
                 />
                 {errors.password && (
@@ -128,7 +147,7 @@ export function LoginForm({ className, toggleMode, ...props }: LoginFormProps) {
                 )}
               </div>
               <Button type="submit" className="w-full" disabled={loading}>
-                {loading ? t("common.loading", "Loading...") : t("auth.login")}
+                {loading ? t("common.loading", "Loading...") : t("auth.signup")}
               </Button>
               <Button
                 variant="outline"
@@ -138,18 +157,18 @@ export function LoginForm({ className, toggleMode, ...props }: LoginFormProps) {
                 disabled={loading}
               >
                 <Icons.discord />
-                {t("auth.loginwithDiscord", "Login with Discord")}
+                {t("auth.signupWithDiscord", "Sign up with Discord")}
               </Button>
             </div>
             <div className="mt-4 text-center text-sm">
-              {t("auth.dontHaveAccount")}{" "}
+              {t("auth.alreadyHaveAccount", "Already have an account?")}{" "}
               <button
                 type="button"
                 className="underline underline-offset-4"
                 onClick={toggleMode}
                 disabled={loading}
               >
-                {t("auth.signup")}
+                {t("auth.login")}
               </button>
             </div>
           </form>

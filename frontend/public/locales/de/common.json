@@ -4,17 +4,21 @@
     "description": "Ihre Finanzmanagement-Lösung"
   },
   "auth": {
-    "login": "Anmelden",
-    "signup": "Registrieren",
-    "email": "E-Mail",
-    "password": "Passwort",
-    "forgotPassword": "Passwort vergessen?",
-    "continueWith": "Oder fortfahren mit",
-    "signInWithEmail": "Mit E-Mail anmelden",
-    "signInWithGithub": "GitHub",
-    "dontHaveAccount": "Noch kein Konto?",
-    "createAccount": "Konto erstellen",
-    "enterEmail": "Geben Sie Ihre E-Mail-Adresse ein, um Ihr Konto zu erstellen"
+    "login": "Login",
+    "signup": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot your password?",
+    "continueWith": "Or continue with",
+    "signInWithEmail": "Sign In with Email",
+    "signInWithDiscord": "Mit Discord anmelden",
+    "dontHaveAccount": "Don't have an account?",
+    "alreadyHaveAccount": "Already have an account?",
+    "createAccount": "Create an account",
+    "enterEmail": "Enter your email below to create your account",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "passwordPlaceholder": "Choose a strong password"
   },
   "chatbot": {
     "title": "Grün.Zuhause",
@@ -32,21 +36,39 @@
     "subline": "Weniger Emissionen, mehr Ersparnis – finde die besten Maßnahmen, die deinem Budget und der Umwelt helfen!"
   },
   "common": {
-    "submit": "Absenden",
-    "loading": "Wird geladen...",
-    "continue": "Fortfahren",
-    "back": "Zurück"
+    "submit": "Submit",
+    "loading": "Loading...",
+    "continue": "Continue",
+    "back": "Back"
   },
   "theme": {
     "light": "Hell",
     "dark": "Dunkel",
-    "system": "System"
+    "system": "System",
+    "toggle": "Thema umschalten"
   },
   "setup": {
     "selectLocation": "Standort auswählen",
     "loadingMap": "Karte wird geladen...",
     "mapInstructions": "Klicken Sie auf die Karte, um Ihren Standort auszuwählen",
     "selectedCoordinates": "Ausgewählte Koordinaten",
+    "selectedLocation": "Ausgewählter Standort",
+    "locationDescription": "Wir verwenden dies, um genaue Standortdaten Ihres Hauses zu erhalten.",
+    "searchLocation": "Suche nach einer Stadt, Adresse oder einem Wahrzeichen...",
+    "locationSaved": "Standort erfolgreich gespeichert",
+    "noLocation": "Bitte wählen Sie einen Standort auf der Karte aus",
+    "locationFound": "Standort gefunden: {{name}}",
+    "mapError": "Kartenfehler",
+    "mapErrorHint": "Bitte versuchen Sie, die Seite zu aktualisieren oder einen anderen Browser zu verwenden.",
+    "useMyLocation": "Meinen Standort verwenden",
+    "enterCoordinates": "Koordinaten eingeben",
+    "latitude": "Breitengrad (-90 bis 90)",
+    "latitudePlaceholder": "z.B. 51.5074",
+    "longitude": "Längengrad (-180 bis 180)",
+    "longitudePlaceholder": "z.B. -0.1278",
+    "setLocation": "Standort festlegen",
+    "locationAccessFailed": "Standortzugriff fehlgeschlagen",
+    "locationAccessHint": "Sie können auf die Karte klicken oder die Schaltfläche \"Koordinaten eingeben\" verwenden.",
     "finalizeSetup": "Setup abschließen",
     "completeDetails": "Vervollständigen Sie die Gebäudedetails, um das Setup abzuschließen",
     "buildingName": "Gebäudename",

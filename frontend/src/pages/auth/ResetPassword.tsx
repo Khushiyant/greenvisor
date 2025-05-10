@@ -40,7 +40,7 @@ export default function ResetPassword() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-muted px-4 py-8">
+    <div className="min-h-screen flex items-center bg-background justify-center px-4 py-8">
       <Card className="w-full max-w-md shadow-md border-0">
         <CardHeader className="pb-2">
           <CardTitle className="text-2xl">Reset Password</CardTitle>
