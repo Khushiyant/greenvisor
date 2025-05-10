@@ -1,0 +1,37 @@
+{
+  "app": {
+    "title": "GreenVisor",
+    "description": "Ihre Finanzmanagement-Lösung"
+  },
+  "auth": {
+    "login": "Anmelden",
+    "signup": "Registrieren",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "forgotPassword": "Passwort vergessen?",
+    "continueWith": "Oder fortfahren mit",
+    "signInWithEmail": "Mit E-Mail anmelden",
+    "signInWithGithub": "GitHub",
+    "dontHaveAccount": "Noch kein Konto?",
+    "createAccount": "Konto erstellen",
+    "enterEmail": "Geben Sie Ihre E-Mail-Adresse ein, um Ihr Konto zu erstellen"
+  },
+  "chatbot": {
+    "welcomeMessage": {
+      "welcome1": "Hallo und willkommen bei <strong>Grün.Zuhause!</strong> 🌱",
+      "welcome2": "Ich bin dein digitaler Sanierungsberater und begleite Sie Schritt für Schritt auf dem Weg zu einem klimaneutralen Zuhause.",
+      "welcome3": "In deiner Kommune wurde eine kommunale Wärmeleitplanung durchgeführt, die das Ziel verfolgt, bis 2040 einen klimaneutralen Gebäudebestand zu erreichen. Im Rahmen dieser Planung wurden aktuelle Daten zu deinem Gebäude und zur Versorgungs-/Netzinfrastruktur erfasst.",
+      "welcome4": "Mit <strong>Grün.Zuhause</strong> kannst du dein Gebäude energetisch zukunftsfähig machen und die geplanten Veränderungen in der Infrastruktur nachvollziehen. Gemeinsam finden wir die besten Maßnahmen, um deine Energiekosten und CO₂-Emissionen zu senken – und das immer im Rahmen deines Budgets."
+    },
+    "startNow": "Jetzt Starten",
+    "openChat": "Chat öffnen"
+  },
+  "welcome": {
+    "headline": "Dein Gebäude fit für morgen – modernisieren, optimieren, profitieren.",
+    "subline": "Weniger Emissionen, mehr Ersparnis – finde die besten Maßnahmen, die deinem Budget und der Umwelt helfen!"
+  },
+  "common": {
+    "submit": "Absenden",
+    "loading": "Wird geladen..."
+  }
+}

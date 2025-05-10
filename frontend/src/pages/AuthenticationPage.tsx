@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { UserAuthForm } from "@/components/user-auth-form";
 
 const AuthenticationPage: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="md:hidden">
@@ -70,10 +73,10 @@ const AuthenticationPage: React.FC = () => {
           <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
             <div className="flex flex-col space-y-2 text-center">
               <h1 className="text-2xl font-semibold tracking-tight">
-                Create an account
+                {t("auth.createAccount")}
               </h1>
               <p className="text-sm text-muted-foreground">
-                Enter your email below to create your account
+                {t("auth.enterEmail")}
               </p>
             </div>
             <UserAuthForm />
