@@ -4,7 +4,6 @@
 
 import json
 import pandas as pd
-import jinja2
 import pdfkit
 
 # pdfkit is just a wrapper for whktmltopdf. you need to install wkhtml and have it on the path

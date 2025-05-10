@@ -1,4 +1,4 @@
-from fastapi import APIRouter, FastAPI, HTTPException
+from fastapi import APIRouter, HTTPException
 from models import QueryRequest
 from utils.query import initialize_query_chain
 import os

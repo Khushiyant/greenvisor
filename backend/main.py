@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from graph_db import router as graph_router
+from pdf_export import pdf_router
 
 
 app = FastAPI(
@@ -25,6 +26,9 @@ app.add_middleware(
 
 # Include the graph router
 app.include_router(graph_router, prefix="/graph", tags=["graph"])
+
+# Include the PDF export router
+app.include_router(pdf_router, prefix="/pdf", tags=["pdf"])
 
 @app.get("/")
 def read_root():

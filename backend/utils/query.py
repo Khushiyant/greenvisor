@@ -40,3 +40,10 @@ def initialize_query_chain():
         prompt=custom_prompt
     )
     return chain
+
+
+if __name__ == "__main__":
+    query_chain = initialize_query_chain()
+    query_chain.invoke(
+        "What are the addresses and contact details of the KfW Bankengruppe's main office and its branches in Berlin and Bonn?"
+    )

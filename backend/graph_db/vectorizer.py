@@ -14,6 +14,32 @@ NEO4J_PASSWORD=os.getenv("NEO4J_PASSWORD")
 DIFFBOT_API_KEY=os.getenv("DIFFBOT_API_KEY")
 OPENROUTER_API_KEY=os.getenv("OPENROUTER_API_KEY")
 
+
+ALLOWED_NODES = [
+    "Program",  # For funding programs/products
+    "Organization",  # For KfW, banks, institutions
+    "Requirement",  # For eligibility criteria
+    "Amount",  # For funding amounts, limits
+    "Document",  # For required documents
+    "Contact",  # For addresses, contact details
+    "Process",  # For application processes
+    "Benefit",  # For promotional benefits, grants
+    "Target",  # For target groups, beneficiaries
+    "Purpose",  # For funding purposes
+]
+
+ALLOWED_RELATIONSHIPS = [
+    "REQUIRES",  # Program ->REQUIRES-> Document/Requirement
+    "OFFERS",  # Organization ->OFFERS-> Program
+    "PROVIDES",  # Program ->PROVIDES-> Benefit/Amount
+    "TARGETS",  # Program ->TARGETS-> Target
+    "MANAGED_BY",  # Program ->MANAGED_BY-> Organization
+    "APPLIES_TO",  # Requirement ->APPLIES_TO-> Target
+    "FOLLOWS",  # Process ->FOLLOWS-> Process
+    "SERVES",  # Program ->SERVES-> Purpose
+    "LOCATED_AT",  # Organization ->LOCATED_AT-> Contact
+]
+
 def load_text_documents(folder_path):
     documents = []
     for filename in tqdm(os.listdir(folder_path), desc="Loading documents", unit="file"):
@@ -30,7 +56,9 @@ def process_and_store_documents(folder_path):
     # diffbot_api_key = DIFFBOT_API_KEY
     graph_transformer = OpenRouterGraphTransformer(
         api_key=OPENROUTER_API_KEY,
-        model="openai/gpt-4.1"  # You can change this to other models
+        model="openai/gpt-4.1",
+        allowed_nodes=ALLOWED_NODES,
+        allowed_relationships=ALLOWED_RELATIONSHIPS,
     )
     graph_documents = []
     for doc in tqdm(documents, desc="Processing documents"):
