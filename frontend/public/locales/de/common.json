@@ -17,6 +17,7 @@
     "enterEmail": "Geben Sie Ihre E-Mail-Adresse ein, um Ihr Konto zu erstellen"
   },
   "chatbot": {
+    "title": "Grün.Zuhause",
     "welcomeMessage": {
       "welcome1": "Hallo und willkommen bei <strong>Grün.Zuhause!</strong> 🌱",
       "welcome2": "Ich bin dein digitaler Sanierungsberater und begleite Sie Schritt für Schritt auf dem Weg zu einem klimaneutralen Zuhause.",
@@ -33,5 +34,10 @@
   "common": {
     "submit": "Absenden",
     "loading": "Wird geladen..."
+  },
+  "theme": {
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System"
   }
 }

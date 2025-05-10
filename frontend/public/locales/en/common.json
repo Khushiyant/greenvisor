@@ -18,12 +18,13 @@
   },
   "chatbot": {
     "welcomeMessage": {
-      "welcome1": "Hello and welcome to <strong>Green.Home!</strong> 🌱",
+      "welcome1": "Hello and welcome to <strong>Green Visor!</strong> 🌱",
       "welcome2": "I am your digital renovation advisor and will guide you step by step on your way to a climate-neutral home.",
       "welcome3": "In your municipality, a municipal heat planning has been carried out with the goal of achieving a climate-neutral building stock by 2040. As part of this planning, current data about your building and the supply/network infrastructure has been collected.",
       "welcome4": "With <strong>Green.Home</strong> you can make your building fit for the energy future and understand the planned changes in the infrastructure. Together, we will find the best measures to reduce your energy costs and CO₂ emissions – always within your budget."
     },
     "startNow": "Start Now",
+    "title": "Green Visor",
     "openChat": "Open Chat"
   },
   "welcome": {
@@ -33,5 +34,10 @@
   "common": {
     "submit": "Submit",
     "loading": "Loading..."
+  },
+  "theme": {
+    "dark": "Dark",
+    "light": "Light",
+    "system": "System"
   }
 }

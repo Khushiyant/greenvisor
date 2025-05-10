@@ -6,16 +6,20 @@ import { Card, CardContent } from "@/components/ui/card";
 import { MoreVertical, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+
+import { useDarkMode } from "@/hooks/useDarkMode";
 
 export default function ChatBot() {
-  // Track message indices instead of message content
   const [visibleMessageIndices, setVisibleMessageIndices] = useState<number[]>(
     []
   );
   const [open, setOpen] = useState(true);
   const { t } = useTranslation();
+  const isDark = useDarkMode();
 
-  // Create the message keys (not the translated content)
+  const messageBgClass = isDark ? "bg-green-900" : "bg-gray-100";
+
   const messageKeys = [
     "chatbot.welcomeMessage.welcome1",
     "chatbot.welcomeMessage.welcome2",
@@ -40,7 +44,7 @@ export default function ChatBot() {
       }
     }, 1800);
     return () => clearInterval(interval);
-  }, [open]); // Only depend on open, not on translations
+  }, [messageKeys.length, open]); // Only depend on open, not on translations
 
   return (
     <div className="absolute bottom-8 right-8 z-20">
@@ -52,9 +56,9 @@ export default function ChatBot() {
             exit={{ opacity: 0, scale: 0.95 }}
             className="w-[360px]"
           >
-            <Card className="bg-white shadow-xl rounded-xl overflow-hidden gap-0">
+            <Card className="shadow-xl rounded-xl overflow-hidden gap-0">
               {/* Header */}
-              <div className="flex items-center justify-between px-4 py-3 border-b bg-white">
+              <div className="flex items-center justify-between px-4 py-3 mb-4 border-b ">
                 <h2 className="text-sm font-medium">
                   {t("chatbot.title", "Grün.Zuhause")}
                 </h2>
@@ -66,7 +70,7 @@ export default function ChatBot() {
                 </div>
               </div>
 
-              <CardContent className="p-4 space-y-4">
+              <CardContent className="px-4 space-y-4 ">
                 <ScrollArea className="h-[400px] pr-2">
                   <div className="space-y-3">
                     {/* Container with spacing for messages */}
@@ -79,7 +83,7 @@ export default function ChatBot() {
                       >
                         <div
                           className={cn(
-                            "bg-gray-100 text-sm px-3 py-2 rounded-md",
+                            `${messageBgClass} text-foreground text-sm px-3 py-2 rounded-md`,
                             idx === 0 && "font-medium"
                           )}
                           dangerouslySetInnerHTML={{
@@ -91,9 +95,11 @@ export default function ChatBot() {
                   </div>
                 </ScrollArea>
 
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
-                  {t("chatbot.startNow", "Jetzt Starten")}
-                </Button>
+                <Link to="/auth">
+                  <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
+                    {t("chatbot.startNow", "Jetzt Starten")}
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
           </motion.div>
@@ -103,7 +109,7 @@ export default function ChatBot() {
       {!open && (
         <Button
           onClick={() => setOpen(true)}
-          className="rounded-full px-4 shadow-lg"
+          className="rounded-sm px-4 shadow-lg bg-white text-green-700  hover:bg-green-50"
         >
           {t("chatbot.openChat", "Chat öffnen")}
         </Button>

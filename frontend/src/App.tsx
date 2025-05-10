@@ -2,15 +2,14 @@ import { lazy, Suspense } from "react";
 import { ThemeProvider } from "./components/theme-provider";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
-import Welcome from "./pages/Welcome";
-const LoginPage = lazy(() => import("./pages/Login"));
+const Welcome = lazy(() => import("./pages/Welcome"));
+const AuthPage = lazy(() => import("./pages/auth/auth"));
 // const Home = lazy(() => import("./pages/Home"));
 const NotFound = lazy(() => import("./pages/NotFound"));
-const AuthenticationPage = lazy(() => import("./pages/AuthenticationPage"));
 
 export default function App() {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+    <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
       <BrowserRouter>
         <Navbar />
         <Suspense
@@ -22,8 +21,7 @@ export default function App() {
         >
           <Routes>
             <Route path="/" element={<Welcome />} />
-            <Route path="/auth" element={<AuthenticationPage />} />
-            <Route path="/login" element={<LoginPage />} />
+            <Route path="/auth" element={<AuthPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
