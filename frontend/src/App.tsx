@@ -39,6 +39,7 @@ export default function App() {
               {/* Protected routes */}
               <Route element={<ProtectedRoute />}>
                 <Route path="/home" element={<RootRedirect />} />
+                <Route path="/dashboard" element={<RootRedirect />} />
                 <Route path="/setup" element={<SetupMap />} />
                 <Route path="/setup/finalize" element={<FinalizeSetup />} />
               </Route>

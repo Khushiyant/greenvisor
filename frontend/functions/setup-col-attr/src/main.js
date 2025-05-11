@@ -36,7 +36,7 @@ export default async ({ req, res, log, error }) => {
     { method: 'createStringAttribute', key: 'gebaeude_nachtraeglich_gedaemmt', size: 32, required: true, array: false },
     { method: 'createStringAttribute', key: 'postleitzahl_immobilie', size: 16, required: false, array: false },
     { method: 'createStringAttribute', key: 'heizung_energietraeger', size: 32, required: true, array: false },
-    { method: 'createStringAttribute', key: 'heizung_baujahr', size: 16, required: true, array: false },
+    { method: 'createStringAttribute', key: 'heizung_baujahr', size: 64, required: true, array: false },
     { method: 'createStringAttribute', key: 'heizung_heizflaechen', size: 32, required: true, array: false },
     { method: 'createStringAttribute', key: 'heizung_rohre_gedaemmt', size: 32, required: true, array: false },
     { method: 'createStringAttribute', key: 'warmwasseraufbereitung', size: 32, required: true, array: false },

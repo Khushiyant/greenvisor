@@ -16,9 +16,14 @@ import { useToast } from "@/hooks/useToast";
 import { useTranslation } from "react-i18next";
 import { Checkbox } from "@/components/ui/checkbox";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { useUserData } from "@/hooks/useUserData";
+import { useNavigate } from "react-router-dom";
+import { tryJsonParse } from "@/lib/utils";
+import { Coordinates } from "@/hooks/useMap";
+import { SETUP_COORDINATES } from "@/lib/constants";
 
 // --- Zod Schema ---
-const formSchema = z.object({
+export const formSchema = z.object({
   // Section 1
   baujahr: z.string().min(1, "setup.validation.baujahr"),
   anzahl_wohneinheiten: z
@@ -110,6 +115,11 @@ type FormData = z.infer<typeof formSchema>;
 const FinaliseSetupForm: React.FC = () => {
   const { t } = useTranslation();
   const { info, success } = useToast();
+  const { upsertUserData } = useUserData();
+  const coordinates = tryJsonParse<Coordinates>(
+    localStorage.getItem(SETUP_COORDINATES) ||
+      JSON.stringify({ lat: 0, lng: 0 })
+  );
 
   // --- Options ---
   const angrenzendeGebaeudeOptions = [
@@ -257,15 +267,31 @@ const FinaliseSetupForm: React.FC = () => {
     },
   });
 
-  const onSubmit = (data: FormData) => {
+  const navigate = useNavigate();
+
+  const onSubmit = async (data: FormData) => {
     info(t("setup.calculationStarted"), {
       description: t("setup.calculationProcessing"),
     });
+    const formData = {
+      ...data,
+      latitude: coordinates.lat,
+      longitude: coordinates.lng,
+      foerderbonus_einkommensbonus: data.foerderbonus_heizung_einkommensbonus,
+      foerderbonus_klimageschwind:
+        data.foerderbonus_heizung_klimageschwindigkeitsbonus,
+    };
+    delete formData.foerderbonus_heizung_einkommensbonus;
+    delete formData.foerderbonus_heizung_klimageschwindigkeitsbonus;
+
+    // Upload data to Appwrite
+    await upsertUserData(formData);
     setTimeout(() => {
       success(t("setup.calculationFinished"), {
         description: t("setup.calculationReady"),
       });
     }, 2000);
+    navigate("/home");
   };
 
   return (
