@@ -37,7 +37,7 @@
   },
   "common": {
     "submit": "Abschicken",
-    "loading": "Loading...",
+    "loading": "Lädt...",
     "continue": "Weiter",
     "back": "Zurück",
     "Ja": "Ja",
@@ -325,5 +325,37 @@
     "setup.validation.windows": "Bitte wählen Sie die Fensterart",
     "required": "Dieses Feld ist erforderlich.",
     "year": "Bitte ein gültiges Jahr eingeben."
+  },
+  "sidebar": {
+    "Energieprofil": "Energieprofil",
+    "Eckdaten": "Eckdaten",
+    "Heizung": "Heizung",
+    "Dämmung.Isolation": "Dämmung & Isolation",
+    "Solarenergie": "Solarenergie",
+    "Lüftungssysteme": "Lüftungssysteme",
+    "Fenster.Türen": "Fenster & Türen",
+    "Smart_Home": "Smart Home",
+    "Gründach.Begrünung": "Gründach & Begrünung",
+    "Grün.Check": "Grün Check",
+    "Potenziale": "Potenziale",
+    "Abmelden": "Logout"
+  },
+  "dashboard": {
+    "energyEfficiency": "Gesamtenergieeffizienz",
+    "insulation": "Dämmung",
+    "window": "Fenster",
+    "current": "Aktuell",
+    "recommended": "Empfohlen"
+  },
+  "energyGrades": {
+    "A+": "A+",
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D",
+    "E": "E",
+    "F": "F",
+    "G": "G",
+    "H": "H"
   }
 }

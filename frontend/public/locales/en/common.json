@@ -304,6 +304,20 @@
       "foerderbonus_isfp": "10.2 Subsidy bonus for an integrated renovation roadmap: ISFP bonus"
     }
   },
+  "sidebar": {
+    "Energieprofil": "Energy Profile",
+    "Eckdaten": "Key Data",
+    "Heizung": "Heating",
+    "Dämmung.Isolation": "Insulation",
+    "Solarenergie": "Solar Energy",
+    "Lüftungssysteme": "Ventilation Systems",
+    "Fenster.Türen": "Windows & Doors",
+    "Smart_Home": "Smart Home",
+    "Gründach.Begrünung": "Green Roof & Greening",
+    "Grün.Check": "Green.Check",
+    "Potenziale": "Potentials",
+    "Abmelden": "Logout"
+  },
   "validation": {
     "buildingNameRequired": "Building name is required",
     "buildingTypeRequired": "Please select a building type",
@@ -318,5 +332,23 @@
     "setup.validation.heatingSystem": "Please select a heating system",
     "setup.validation.insulationStatus": "Please select the insulation status",
     "setup.validation.windows": "Please select the window type"
+  },
+  "dashboard": {
+    "energyEfficiency": "Overall Energy Efficiency",
+    "insulation": "Insulation",
+    "window": "Window",
+    "current": "Current",
+    "recommended": "Recommended"
+  },
+  "energyGrades": {
+    "A+": "A+",
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D",
+    "E": "E",
+    "F": "F",
+    "G": "G",
+    "H": "H"
   }
 }
