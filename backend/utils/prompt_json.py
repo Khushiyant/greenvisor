@@ -1,4 +1,13 @@
+"""
+Process the output of language model to produce:
+1) suggested renovations
+2) total summary
+"""
+
+import json
+
 def strip_answer(text):
+  """ Remove JSON formatting ```json ... ``` of the language model """
   return text.replace("```json", "").replace("```", "")
 
 def validate_json(text):
@@ -6,7 +15,6 @@ def validate_json(text):
         json.loads(text)
         return True
     except Exception as error:
-        print(error)
         return False
 
 prompt_en="""
@@ -20,7 +28,7 @@ Which renovations can I make to my house to reduce the monthly cost? If a renova
 
 The renovations should be at least 3 years apart.
 
-Here is an example output JSON. Generate the answer in same format, possibly with more dicts in the array. Write the values in the JSON in German language. Don't output anything except the JSON. Don't add quotes around the JSON.
+Here is an example output JSON. Generate the answer in same format, possibly with more dicts in the array. Write the values in the JSON in English language. Don't output anything except the JSON. Don't add quotes around the JSON.
 
 --- BEGIN OF EXAMPLE JSON ---
 
@@ -54,42 +62,40 @@ Here is an example output JSON. Generate the answer in same format, possibly wit
 --- END OF EXAMPLE JSON ---
 """
 
+def limit_str_length(string, length):
+  if len(string) > length:
+    return string[:length] + "..."
+  return string
 
+def form_renovations_json(data):
+  """
+  Convert language model JSON to key-column format.
+  """
+  cols = list(data[0].keys())
+  result = {col: [] for col in cols}
+  for renovation in data:
+      result['Measure'].append(renovation['Measure'])
+      result['ExampleProduct'].append(renovation['ExampleProduct'])
+      result['InvestmentCostsEuro'].append(str(renovation['InvestmentCostsEuro']))
+      result['HeatingCostPerYear'].append(
+        "from {} €/year to {} €/year".format(renovation['HeatingCostPerYear']['current'], renovation['HeatingCostPerYear']['future'])
+      )
+      result['CO2KgPerYear'].append(
+        "from {} kg/year to {} kg/year".format(renovation['CO2KgPerYear']['current'], renovation['CO2KgPerYear']['future'])
+      )
 
-"""
-# Currently I spend 2200 euro per year for heating
-# Write the values in the JSON in German language
-
-[
-  {
-    "TotalHeatingUsage": {
-        "before": 20000,
-        "after": 10000
-    },
-    "TotalElectricityUsage": {
-        "before": 4500,
-        "after": 2000
-    },
-    "TotalHeatingCost": {
-        "before": 4100,
-        "after": 700
-    },
-    "TotalElectricityCost": {
-        "before": 1200,
-        "after": 900
-    },
-    "EnergyEfficiency": {
-        "before": "F",
-        "after": "C"
-    },
-    "CO2Emissions": {
-        "before": 8500,
-        "after": 2000
-    }
-  }
-]
-"""
-
+      bool_to_str = {
+        False: 'no',
+        True: 'yes'
+      }
+      LIMIT = 50
+      result['SubsidiesPercentage'].append(
+        limit_str_length(renovation['SubsidiesPercentage']['comment'], LIMIT))
+      result['obligatory'].append(
+        bool_to_str[renovation['obligatory']['value']])
+      result['RecommendedChangeDate'].append(
+        limit_str_length(str(renovation['RecommendedChangeDate']['value']), LIMIT))
+  return result
 
 
 
@@ -141,3 +147,21 @@ CO2Emissions: CO2 emissions of the household in kg per year.
 
 --- END OF OUTPUT JSON ---
 """
+
+def form_total_json(total):
+  """
+  Convert language model JSON to column-key format.
+  """
+  result = {
+      'aspect': [],
+      'before': [],
+      'after': []
+  }
+  total = total[0]
+  for key in total:
+      result['aspect'].append(key)
+      values = total[key]
+      result['before'].append(str(values['before']))
+      result['after'].append(str(values['after']))
+  return result
+
