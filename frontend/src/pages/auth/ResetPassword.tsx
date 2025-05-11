@@ -4,6 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Helmet } from "react-helmet-async";
+import { t } from "i18next";
 
 export default function ResetPassword() {
   const [searchParams] = useSearchParams();
@@ -40,62 +42,76 @@ export default function ResetPassword() {
   };
 
   return (
-    <div className="min-h-screen flex items-center bg-background justify-center px-4 py-8">
-      <Card className="w-full max-w-md shadow-md border-0">
-        <CardHeader className="pb-2">
-          <CardTitle className="text-2xl">Reset Password</CardTitle>
-          <p className="text-sm text-muted-foreground">
-            Enter your new password.
-          </p>
-        </CardHeader>
-        <CardContent>
-          {success ? (
-            <div className="text-green-600 text-sm text-center py-4">
-              ✅ Password has been reset! You may now log in.
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="space-y-6">
-              {error && (
-                <p className="text-red-500 text-sm p-2 bg-red-50 rounded-md">
-                  {error}
-                </p>
-              )}
-
-              <div className="space-y-2">
-                <Label htmlFor="password" className="block mb-1.5">
-                  New Password
-                </Label>
-                <Input
-                  id="password"
-                  type="password"
-                  required
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  className="mt-1 py-2"
-                />
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="confirm" className="block mb-1.5">
-                  Confirm Password
-                </Label>
-                <Input
-                  id="confirm"
-                  type="password"
-                  required
-                  value={confirm}
-                  onChange={(e) => setConfirm(e.target.value)}
-                  className="mt-1 py-2"
-                />
-              </div>
-
-              <Button type="submit" className="w-full mt-6">
-                Reset Password
-              </Button>
-            </form>
+    <>
+      <Helmet>
+        <title>
+          {t("app.title")} - {t("auth.resetPassword", "Reset Password")}
+        </title>
+        <meta
+          name="description"
+          content={t(
+            "auth.resetPasswordDesc",
+            "Enter your new password and confirm it."
           )}
-        </CardContent>
-      </Card>
-    </div>
+        />
+      </Helmet>
+      <div className="min-h-screen flex items-center bg-background justify-center px-4 py-8">
+        <Card className="w-full max-w-md shadow-md border-0">
+          <CardHeader className="pb-2">
+            <CardTitle className="text-2xl">Reset Password</CardTitle>
+            <p className="text-sm text-muted-foreground">
+              Enter your new password.
+            </p>
+          </CardHeader>
+          <CardContent>
+            {success ? (
+              <div className="text-green-600 text-sm text-center py-4">
+                ✅ Password has been reset! You may now log in.
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-6">
+                {error && (
+                  <p className="text-red-500 text-sm p-2 bg-red-50 rounded-md">
+                    {error}
+                  </p>
+                )}
+
+                <div className="space-y-2">
+                  <Label htmlFor="password" className="block mb-1.5">
+                    New Password
+                  </Label>
+                  <Input
+                    id="password"
+                    type="password"
+                    required
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    className="mt-1 py-2"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="confirm" className="block mb-1.5">
+                    Confirm Password
+                  </Label>
+                  <Input
+                    id="confirm"
+                    type="password"
+                    required
+                    value={confirm}
+                    onChange={(e) => setConfirm(e.target.value)}
+                    className="mt-1 py-2"
+                  />
+                </div>
+
+                <Button type="submit" className="w-full mt-6">
+                  Reset Password
+                </Button>
+              </form>
+            )}
+          </CardContent>
+        </Card>
+      </div>
+    </>
   );
 }

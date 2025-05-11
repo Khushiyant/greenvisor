@@ -4,6 +4,7 @@
     "description": "Your financial management solution"
   },
   "auth": {
+    "auth": "Let's Get Started",
     "login": "Login",
     "signup": "Sign Up",
     "email": "Email",

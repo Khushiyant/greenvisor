@@ -4,6 +4,7 @@
     "description": "Ihre Finanzmanagement-Lösung"
   },
   "auth": {
+    "auth": "Los geht's",
     "login": "Login",
     "signup": "Sign Up",
     "email": "Email",

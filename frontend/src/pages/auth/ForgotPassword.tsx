@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { useTranslation } from "react-i18next";
 import { useAuth } from "@/context/AuthContext";
 import { isValidEmail } from "@/lib/utils";
+import { Helmet } from "react-helmet-async";
 
 export default function ForgotPassword() {
   const { t } = useTranslation();
@@ -41,48 +42,62 @@ export default function ForgotPassword() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <Card className="w-full max-w-md shadow-md border-0">
-        <CardHeader>
-          <CardTitle className="text-2xl">
-            {t("auth.forgotPassword", "Forgot Password")}
-          </CardTitle>
-          <p className="text-sm text-muted-foreground">
-            {t(
-              "auth.forgotPasswordDesc",
-              "Enter your email and we’ll send you a reset link."
-            )}
-          </p>
-        </CardHeader>
-        <CardContent>
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div>
-              <Label htmlFor="email" className="pb-2 block">
-                {t("auth.email", "Email")}
-              </Label>
-              <Input
-                id="email"
-                type="email"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                disabled={loading}
-              />
-              {error && (
-                <div className="text-sm text-destructive mt-1">{error}</div>
+    <>
+      <Helmet>
+        <title>
+          {t("app.title")} - {t("auth.forgotPassword", "Forgot Password")}
+        </title>
+        <meta
+          name="description"
+          content={t(
+            "auth.forgotPasswordDesc",
+            "Enter your email and we’ll send you a reset link."
+          )}
+        />
+      </Helmet>
+      <div className="min-h-screen flex items-center justify-center bg-background">
+        <Card className="w-full max-w-md shadow-md border-0">
+          <CardHeader>
+            <CardTitle className="text-2xl">
+              {t("auth.forgotPassword", "Forgot Password")}
+            </CardTitle>
+            <p className="text-sm text-muted-foreground">
+              {t(
+                "auth.forgotPasswordDesc",
+                "Enter your email and we’ll send you a reset link."
               )}
-              {success && (
-                <div className="text-sm text-green-600 mt-1">{success}</div>
-              )}
-            </div>
-            <Button type="submit" className="w-full" disabled={loading}>
-              {loading
-                ? t("common.loading", "Loading...")
-                : t("auth.sendResetLink", "Send Reset Link")}
-            </Button>
-          </form>
-        </CardContent>
-      </Card>
-    </div>
+            </p>
+          </CardHeader>
+          <CardContent>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div>
+                <Label htmlFor="email" className="pb-2 block">
+                  {t("auth.email", "Email")}
+                </Label>
+                <Input
+                  id="email"
+                  type="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  disabled={loading}
+                />
+                {error && (
+                  <div className="text-sm text-destructive mt-1">{error}</div>
+                )}
+                {success && (
+                  <div className="text-sm text-green-600 mt-1">{success}</div>
+                )}
+              </div>
+              <Button type="submit" className="w-full" disabled={loading}>
+                {loading
+                  ? t("common.loading", "Loading...")
+                  : t("auth.sendResetLink", "Send Reset Link")}
+              </Button>
+            </form>
+          </CardContent>
+        </Card>
+      </div>
+    </>
   );
 }
