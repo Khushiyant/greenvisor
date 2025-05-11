@@ -143,7 +143,10 @@ export default function ChatBot() {
                 </h2>
                 <div className="flex gap-2 items-center">
                   <MoreVertical className="w-4 h-4 text-muted-foreground" />
-                  <button onClick={() => setOpen(false)}>
+                  <button
+                    onClick={() => setOpen(false)}
+                    aria-label={t("chatbot.closeChat", "Close chat")}
+                  >
                     <X className="w-4 h-4 text-muted-foreground" />
                   </button>
                 </div>
