@@ -38,7 +38,9 @@
     "back": "Back",
     "continue": "Continue",
     "Ja": "Yes",
-    "Nein": "No"
+    "Nein": "No",
+    "maximize": "Maximize",
+    "minimize": "Minimize"
   },
   "theme": {
     "dark": "Dark",
@@ -341,7 +343,11 @@
     "insulation": "Insulation",
     "window": "Window",
     "current": "Current",
-    "recommended": "Recommended"
+    "recommended": "Recommended",
+    "statusQuoHeader": "Your determined ",
+    "statusQuoHas": "has an energy efficiency of",
+    "statusQuoFooter": "To complete the status quo analysis, check & complete all 8 topics.",
+    "statusQuoButton": "Check Status Quo"
   },
   "energyGrades": {
     "A+": "A+",

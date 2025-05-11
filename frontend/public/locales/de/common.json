@@ -42,7 +42,9 @@
     "continue": "Weiter",
     "back": "Zurück",
     "Ja": "Ja",
-    "Nein": "Nein"
+    "Nein": "Nein",
+    "maximize": "Maximieren",
+    "minimize": "Minimieren"
   },
   "theme": {
     "light": "Hell",
@@ -348,7 +350,11 @@
     "insulation": "Dämmung",
     "window": "Fenster",
     "current": "Aktuell",
-    "recommended": "Empfohlen"
+    "recommended": "Empfohlen",
+    "statusQuoHeader": "Dein ermittelter ",
+    "statusQuoHas": "hat eine Energieeffizienz von",
+    "statusQuoFooter": "Um die Status Quo Analyse abzuschließen, überprüfen & ergänze alle 8 Themenbereich.",
+    "statusQuoButton": "Status Quo prüfen"
   },
   "energyGrades": {
     "A+": "A+",

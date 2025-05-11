@@ -4,6 +4,8 @@ import { Home, Power, CheckCircle2, Gauge, Building } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useAuth } from "@/context/AuthContext";
 import { useCallback } from "react";
+import { useUserData } from "@/hooks/useUserData";
+import { useAddress } from "@/hooks/useAddress";
 
 interface SidebarProps {
   onSwitchBackground: () => void;
@@ -17,6 +19,9 @@ export default function Sidebar({
   const { t } = useTranslation();
   const { pathname } = useLocation();
   const { logout } = useAuth();
+
+  const { data: address } = useAddress().fetch;
+
   const handleLogout = useCallback(async () => {
     await logout();
     window.location.href = "/";
@@ -63,9 +68,8 @@ export default function Sidebar({
               strokeWidth="2"
             />
           </svg>
-          <span>Marktstraße 15</span>
         </div>
-        <div className="text-muted-foreground text-sm ml-6">79106 Freiburg</div>
+        <div className="text-muted-foreground text-sm ml-6">{address}</div>
       </div>
 
       {/* Main Tiles */}
