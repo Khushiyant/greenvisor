@@ -24,7 +24,7 @@ export function SignupForm({
   ...props
 }: SignupFormProps) {
   const { t } = useTranslation();
-  const { signUp, loginWithDiscord } = useAuth();
+  const { signUp } = useAuth();
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -148,16 +148,6 @@ export function SignupForm({
               </div>
               <Button type="submit" className="w-full" disabled={loading}>
                 {loading ? t("common.loading", "Loading...") : t("auth.signup")}
-              </Button>
-              <Button
-                variant="outline"
-                className="w-full"
-                type="button"
-                onClick={loginWithDiscord}
-                disabled={loading}
-              >
-                <Icons.discord />
-                {t("auth.signupWithDiscord", "Sign up with Discord")}
               </Button>
             </div>
             <div className="mt-4 text-center text-sm">

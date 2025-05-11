@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, type ChangeEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -10,28 +10,31 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { useDarkMode } from "@/hooks/useDarkMode";
 import { useAuth } from "@/context/AuthContext";
-
-// Define the message type for the conversation history
-type Message = {
-  id: number;
-  text: string;
-  sender: "user" | "bot";
-};
+import { useVapiChat } from "@/hooks/useVapiChat";
+import { Icons } from "./ui/icons";
 
 export default function ChatBot() {
   const [visibleMessageIndices, setVisibleMessageIndices] = useState<number[]>(
     []
   );
   const [open, setOpen] = useState(true);
-  const [messages, setMessages] = useState<Message[]>([]);
   const [inputValue, setInputValue] = useState("");
   const { t } = useTranslation();
   const { authState } = useAuth();
   const isDark = useDarkMode();
   const scrollAreaRef = useRef<HTMLDivElement>(null);
 
+  const {
+    messages,
+    setMessages,
+    isConnected,
+    isSpeaking,
+    error,
+    initializeConnection,
+    stopConnection,
+  } = useVapiChat(authState === "authenticated");
+
   const messageBgClass = isDark ? "bg-green-900" : "bg-gray-100";
-  // Use magenta/pink as the complement of green
   const userMessageBgClass = isDark ? "bg-slate-800" : "bg-slate-600";
 
   const messageKeys = [
@@ -41,7 +44,7 @@ export default function ChatBot() {
     "chatbot.welcomeMessage.welcome4",
   ];
 
-  // Effect to show welcome messages for unauthenticated users
+  // Show welcome messages for unauthenticated users
   useEffect(() => {
     if (authState !== "unauthenticated" || !open) return;
     let index = 0;
@@ -61,18 +64,18 @@ export default function ChatBot() {
     return () => clearInterval(interval);
   }, [authState, open, messageKeys.length]);
 
-  // Effect to initialize conversation for authenticated users
+  // Initialize conversation for authenticated users
   useEffect(() => {
     if (authState === "authenticated" && messages.length === 0) {
       setMessages([
         {
-          id: Date.now(),
+          id: Date.now().toString(),
           text: t("chatbot.authenticatedPrompt", "How can I assist you today?"),
           sender: "bot",
         },
       ]);
     }
-  }, [authState, messages.length, t]);
+  }, [authState, messages.length, t, setMessages]);
 
   // Scroll to the bottom when messages change
   useEffect(() => {
@@ -86,33 +89,37 @@ export default function ChatBot() {
     }
   }, [messages, visibleMessageIndices]);
 
-  const handleSendMessage = () => {
-    if (!inputValue.trim()) return;
-
-    // Add user message
-    const userMessage: Message = {
-      id: Date.now(),
-      text: inputValue,
-      sender: "user",
-    };
-    setMessages((prev) => [...prev, userMessage]);
+  // Handle sending a message
+  const handleSendMessage = async () => {
+    const text = inputValue.trim();
+    if (!text) return;
     setInputValue("");
-
-    // Simulate bot response after a short delay
-    setTimeout(() => {
-      const botMessage: Message = {
-        id: Date.now() + 1,
-        text: t(
-          "chatbot.botResponse",
-          "I’m here to help! What else would you like to know?"
-        ),
-        sender: "bot",
-      };
-      setMessages((prev) => [...prev, botMessage]);
-    }, 1000);
+    if (authState === "authenticated") {
+      // await sendMessage(text);
+    } else {
+      // Add user message
+      setMessages((prev) => [
+        ...prev,
+        { id: Date.now().toString(), text, sender: "user" },
+      ]);
+      // Simulate bot response after a short delay
+      setTimeout(() => {
+        setMessages((prev) => [
+          ...prev,
+          {
+            id: (Date.now() + 1).toString(),
+            text: t(
+              "chatbot.botResponse",
+              "I’m here to help! What else would you like to know?"
+            ),
+            sender: "bot",
+          },
+        ]);
+      }, 1000);
+    }
   };
 
-  const handleKeyPress = (e: React.KeyboardEvent) => {
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       handleSendMessage();
     }
@@ -146,8 +153,7 @@ export default function ChatBot() {
                 <ScrollArea className="h-[400px] pr-2" ref={scrollAreaRef}>
                   <div className="space-y-3">
                     {authState === "unauthenticated"
-                      ? // Unauthenticated: Show welcome messages
-                        visibleMessageIndices.map((idx) => (
+                      ? visibleMessageIndices.map((idx) => (
                           <motion.div
                             key={idx}
                             initial={{ opacity: 0, translateY: 20 }}
@@ -165,8 +171,7 @@ export default function ChatBot() {
                             />
                           </motion.div>
                         ))
-                      : // Authenticated: Show conversation history
-                        messages.map((message) => (
+                      : messages.map((message) => (
                           <motion.div
                             key={message.id}
                             initial={{ opacity: 0, translateY: 20 }}
@@ -182,6 +187,16 @@ export default function ChatBot() {
                             {message.text}
                           </motion.div>
                         ))}
+                    {isSpeaking && (
+                      <div className="italic text-cyan-300 text-center">
+                        🎤 Speaking…
+                      </div>
+                    )}
+                    {error && (
+                      <div className="bg-red-100 text-red-700 rounded px-2 py-1 my-2 text-xs">
+                        ⚠️ {error}
+                      </div>
+                    )}
                   </div>
                 </ScrollArea>
 
@@ -195,20 +210,51 @@ export default function ChatBot() {
                   <div className="flex items-center gap-2">
                     <Input
                       value={inputValue}
-                      onChange={(e) => setInputValue(e.target.value)}
-                      onKeyPress={handleKeyPress}
+                      onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                        setInputValue(e.target.value)
+                      }
+                      onKeyDown={handleKeyPress}
                       placeholder={t(
                         "chatbot.inputPlaceholder",
                         "Type your message..."
                       )}
                       className="flex-1"
+                      disabled={isConnected}
                     />
                     <Button
                       onClick={handleSendMessage}
                       className="bg-green-600 hover:bg-green-700 text-white"
+                      disabled={!inputValue.trim() || !isConnected}
                     >
                       <Send className="w-4 h-4" />
                     </Button>
+                    {isConnected ? (
+                      isSpeaking ? (
+                        <Button
+                          onClick={stopConnection}
+                          className="bg-red-600 hover:bg-red-700 text-white"
+                          type="button"
+                        >
+                          <Icons.stop />
+                        </Button>
+                      ) : (
+                        <Button
+                          onClick={stopConnection}
+                          className="bg-yellow-400 hover:bg-yellow-500 text-white"
+                          type="button"
+                        >
+                          <Icons.listening />
+                        </Button>
+                      )
+                    ) : (
+                      <Button
+                        onClick={initializeConnection}
+                        className="bg-blue-600 hover:bg-blue-700 text-white"
+                        type="button"
+                      >
+                        <Icons.microphone />
+                      </Button>
+                    )}
                   </div>
                 )}
               </CardContent>

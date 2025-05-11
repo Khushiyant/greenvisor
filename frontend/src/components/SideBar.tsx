@@ -2,10 +2,17 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Home, Power, CheckCircle2, Gauge } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useAuth } from "@/context/AuthContext";
+import { useCallback } from "react";
 
 export default function Sidebar() {
   const { t } = useTranslation();
   const { pathname } = useLocation();
+  const { logout } = useAuth();
+  const handleLogout = useCallback(async () => {
+    await logout();
+    window.location.href = "/";
+  }, [logout]);
 
   // Helper to check if a route is active
   const isActive = (route: string) => {
@@ -100,13 +107,11 @@ export default function Sidebar() {
       </div>
       <div className="flex-grow" />
       <Button
+        onClick={handleLogout}
         variant="ghost"
         className="w-full text-xs text-muted-foreground hover:text-destructive justify-start"
-        asChild
       >
-        <Link to="/logout">
-          <Power className="w-4 h-4 mr-2" /> {t("sidebar.Abmelden")}
-        </Link>
+        <Power className="w-4 h-4 mr-2" /> {t("sidebar.Abmelden")}
       </Button>
     </aside>
   );
