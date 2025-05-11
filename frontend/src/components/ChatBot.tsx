@@ -21,6 +21,7 @@ export default function ChatBot() {
   );
   const [open, setOpen] = useState(true);
   const [inputValue, setInputValue] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const { t } = useTranslation();
   const { authState } = useAuth();
   const isDark = useDarkMode();
@@ -122,6 +123,7 @@ export default function ChatBot() {
     const text = inputValue.trim();
     if (!text) return;
     setInputValue("");
+    setIsLoading(true);
     if (authState === "authenticated") {
       setMessages((prev) => [
         ...prev,
@@ -134,6 +136,7 @@ export default function ChatBot() {
           { id: (Date.now() + 1).toString(), text: response, sender: "bot" },
         ]);
       }
+      setIsLoading(false);
     } else {
       // Add user message
       setMessages((prev) => [
@@ -153,6 +156,7 @@ export default function ChatBot() {
             sender: "bot",
           },
         ]);
+        setIsLoading(false);
       }, 1000);
     }
   };
@@ -223,6 +227,12 @@ export default function ChatBot() {
                         ⚠️ {error}
                       </div>
                     )}
+                    {isLoading && (
+                      <div className="flex items-center justify-center text-xs text-gray-400">
+                        <span className="animate-spin mr-2">⏳</span>{" "}
+                        {t("common.loading", "Loading...")}
+                      </div>
+                    )}
                   </div>
                 </ScrollArea>
 
@@ -250,7 +260,7 @@ export default function ChatBot() {
                     <Button
                       onClick={handleSendMessage}
                       className="bg-green-600 hover:bg-green-700 text-white"
-                      disabled={!inputValue.trim() && !isConnected}
+                      disabled={!inputValue.trim() || isLoading || isConnected}
                     >
                       <Send className="w-4 h-4" />
                     </Button>
