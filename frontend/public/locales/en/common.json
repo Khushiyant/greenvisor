@@ -47,6 +47,7 @@
   },
   "setup": {
     "selectLocation": "Select Your Location",
+    "selectOption": "Please select...",
     "locationDescription": "We'll use this to get accurate location data of your home",
     "searchLocation": "Search for a city, address, or landmark...",
     "locationSaved": "Location saved successfully",
@@ -84,7 +85,7 @@
     "renovatedDescription": "Has this building been renovated before?",
     "locationCoordinates": "Location Coordinates",
     "complete": "Complete Setup",
-    "calculatorTitle": "Renovation Calculator",
+    "calculatorTitle": "Complete your building data",
     "calculatorIntro": "Enter your building's data to get an estimate of its energy efficiency.",
     "calculationStarted": "Calculation started",
     "calculationProcessing": "Your data is being processed. Please wait...",

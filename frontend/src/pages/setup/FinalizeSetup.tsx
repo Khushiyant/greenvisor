@@ -11,13 +11,6 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/useToast";
 import { useTranslation } from "react-i18next";
@@ -279,14 +272,14 @@ const FinaliseSetupForm: React.FC = () => {
     <main className="min-h-screen bg-background text-foreground">
       <div className="container mx-auto p-4">
         <div className="shadow rounded-lg p-6 bg-card text-card-foreground">
-          <h1 className="text-2xl font-bold mb-4 text-foreground">
+          <h1 className="text-3xl font-bold mb-8 text-foreground">
             {t("setup.calculatorTitle", "KFW Sanierungsrechner")}
           </h1>
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-10">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-12">
               {/* Section 1 */}
               <section>
-                <h2 className="text-lg font-semibold mb-2">
+                <h2 className="text-2xl font-bold mb-4">
                   {t("setup.section1.title", "1/10 - Objekt allgemein")}
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -374,25 +367,22 @@ const FinaliseSetupForm: React.FC = () => {
                         <FormLabel>
                           {t("setup.section1.angrenzende_gebaeude")}
                         </FormLabel>
-                        <RadioGroup
-                          onValueChange={field.onChange}
-                          value={field.value}
-                          className="flex flex-col gap-2"
-                        >
-                          {angrenzendeGebaeudeOptions.map((opt) => (
-                            <div
-                              key={opt}
-                              className="flex items-center space-x-2"
-                            >
-                              <FormControl>
-                                <RadioGroupItem value={opt} id={opt} />
-                              </FormControl>
-                              <label htmlFor={opt} className="ml-2">
+                        <FormControl>
+                          <select
+                            className="w-full border rounded px-3 py-2"
+                            value={field.value}
+                            onChange={(e) => field.onChange(e.target.value)}
+                          >
+                            <option value="">
+                              {t("setup.selectOption", "Bitte wählen...")}
+                            </option>
+                            {angrenzendeGebaeudeOptions.map((opt) => (
+                              <option key={opt} value={opt}>
                                 {t(`setup.angrenzende_gebaeude.${opt}`, opt)}
-                              </label>
-                            </div>
-                          ))}
-                        </RadioGroup>
+                              </option>
+                            ))}
+                          </select>
+                        </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -405,25 +395,22 @@ const FinaliseSetupForm: React.FC = () => {
                         <FormLabel>
                           {t("setup.section1.gebaeude_nachtraeglich_gedaemmt")}
                         </FormLabel>
-                        <RadioGroup
-                          onValueChange={field.onChange}
-                          value={field.value}
-                          className="flex flex-row gap-4"
-                        >
+                        <div className="flex gap-4">
                           {jaNeinOptions.map((opt) => (
-                            <div
+                            <label
                               key={opt}
-                              className="flex items-center space-x-2"
+                              className="flex items-center gap-2"
                             >
-                              <FormControl>
-                                <RadioGroupItem value={opt} id={opt} />
-                              </FormControl>
-                              <label htmlFor={opt} className="ml-2">
-                                {opt}
-                              </label>
-                            </div>
+                              <input
+                                type="radio"
+                                value={opt}
+                                checked={field.value === opt}
+                                onChange={() => field.onChange(opt)}
+                              />
+                              {opt}
+                            </label>
                           ))}
-                        </RadioGroup>
+                        </div>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -448,7 +435,7 @@ const FinaliseSetupForm: React.FC = () => {
 
               {/* Section 2 */}
               <section>
-                <h2 className="text-lg font-semibold mb-2">
+                <h2 className="text-2xl font-bold mb-4">
                   {t("setup.section2.title", "2/10 - Heizung")}
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -460,25 +447,22 @@ const FinaliseSetupForm: React.FC = () => {
                         <FormLabel>
                           {t("setup.heizung_energietraeger.label")}
                         </FormLabel>
-                        <RadioGroup
-                          onValueChange={field.onChange}
-                          value={field.value}
-                          className="flex flex-col gap-2"
-                        >
-                          {heizungEnergietraegerOptions.map((opt, i) => (
-                            <div
-                              key={i}
-                              className="flex items-center space-x-2"
-                            >
-                              <FormControl>
-                                <RadioGroupItem value={opt} id={opt} />
-                              </FormControl>
-                              <label htmlFor={opt} className="ml-2">
+                        <FormControl>
+                          <select
+                            className="w-full border rounded px-3 py-2"
+                            value={field.value}
+                            onChange={(e) => field.onChange(e.target.value)}
+                          >
+                            <option value="">
+                              {t("setup.selectOption", "Bitte wählen...")}
+                            </option>
+                            {heizungEnergietraegerOptions.map((opt) => (
+                              <option key={opt} value={opt}>
                                 {opt}
-                              </label>
-                            </div>
-                          ))}
-                        </RadioGroup>
+                              </option>
+                            ))}
+                          </select>
+                        </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -491,25 +475,22 @@ const FinaliseSetupForm: React.FC = () => {
                         <FormLabel>
                           {t("setup.heizung_baujahr.label")}
                         </FormLabel>
-                        <RadioGroup
-                          onValueChange={field.onChange}
-                          value={field.value}
-                          className="flex flex-col gap-2"
-                        >
-                          {heizungBaujahrOptions.map((opt, i) => (
-                            <div
-                              key={i}
-                              className="flex items-center space-x-2"
-                            >
-                              <FormControl>
-                                <RadioGroupItem value={opt} id={opt} />
-                              </FormControl>
-                              <label htmlFor={opt} className="ml-2">
+                        <FormControl>
+                          <select
+                            className="w-full border rounded px-3 py-2"
+                            value={field.value}
+                            onChange={(e) => field.onChange(e.target.value)}
+                          >
+                            <option value="">
+                              {t("setup.selectOption", "Bitte wählen...")}
+                            </option>
+                            {heizungBaujahrOptions.map((opt) => (
+                              <option key={opt} value={opt}>
                                 {opt}
-                              </label>
-                            </div>
-                          ))}
-                        </RadioGroup>
+                              </option>
+                            ))}
+                          </select>
+                        </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -522,25 +503,22 @@ const FinaliseSetupForm: React.FC = () => {
                         <FormLabel>
                           {t("setup.heizung_heizflaechen.label")}
                         </FormLabel>
-                        <RadioGroup
-                          onValueChange={field.onChange}
-                          value={field.value}
-                          className="flex flex-col gap-2"
-                        >
-                          {heizungHeizflaechenOptions.map((opt, i) => (
-                            <div
-                              key={i}
-                              className="flex items-center space-x-2"
-                            >
-                              <FormControl>
-                                <RadioGroupItem value={opt} id={opt} />
-                              </FormControl>
-                              <label htmlFor={opt} className="ml-2">
+                        <FormControl>
+                          <select
+                            className="w-full border rounded px-3 py-2"
+                            value={field.value}
+                            onChange={(e) => field.onChange(e.target.value)}
+                          >
+                            <option value="">
+                              {t("setup.selectOption", "Bitte wählen...")}
+                            </option>
+                            {heizungHeizflaechenOptions.map((opt) => (
+                              <option key={opt} value={opt}>
                                 {opt}
-                              </label>
-                            </div>
-                          ))}
-                        </RadioGroup>
+                              </option>
+                            ))}
+                          </select>
+                        </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -553,25 +531,22 @@ const FinaliseSetupForm: React.FC = () => {
                         <FormLabel>
                           {t("setup.section2.heizung_rohre_gedaemmt")}
                         </FormLabel>
-                        <RadioGroup
-                          onValueChange={field.onChange}
-                          value={field.value}
-                          className="flex flex-row gap-4"
-                        >
+                        <div className="flex gap-4">
                           {jaNeinOptions.map((opt) => (
-                            <div
+                            <label
                               key={opt}
-                              className="flex items-center space-x-2"
+                              className="flex items-center gap-2"
                             >
-                              <FormControl>
-                                <RadioGroupItem value={opt} id={opt} />
-                              </FormControl>
-                              <label htmlFor={opt} className="ml-2">
-                                {opt}
-                              </label>
-                            </div>
+                              <input
+                                type="radio"
+                                value={opt}
+                                checked={field.value === opt}
+                                onChange={() => field.onChange(opt)}
+                              />
+                              {opt}
+                            </label>
                           ))}
-                        </RadioGroup>
+                        </div>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -581,7 +556,7 @@ const FinaliseSetupForm: React.FC = () => {
 
               {/* Section 3 */}
               <section>
-                <h2 className="text-lg font-semibold mb-2">
+                <h2 className="text-2xl font-bold mb-4">
                   {t("setup.section3.title", "3/10 - Warmwasser")}
                 </h2>
                 <FormField
@@ -616,7 +591,7 @@ const FinaliseSetupForm: React.FC = () => {
 
               {/* Section 4 */}
               <section>
-                <h2 className="text-lg font-semibold mb-2">
+                <h2 className="text-2xl font-bold mb-4">
                   {t("setup.section4.title", "4/10 - Dach")}
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -626,25 +601,22 @@ const FinaliseSetupForm: React.FC = () => {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel>{t("setup.section4.dach_form")}</FormLabel>
-                        <RadioGroup
-                          onValueChange={field.onChange}
-                          value={field.value}
-                          className="flex flex-col gap-2"
-                        >
-                          {dachFormOptions.map((opt, i) => (
-                            <div
-                              key={i}
-                              className="flex items-center space-x-2"
-                            >
-                              <FormControl>
-                                <RadioGroupItem value={opt} id={opt} />
-                              </FormControl>
-                              <label htmlFor={opt} className="ml-2">
+                        <FormControl>
+                          <select
+                            className="w-full border rounded px-3 py-2"
+                            value={field.value}
+                            onChange={(e) => field.onChange(e.target.value)}
+                          >
+                            <option value="">
+                              {t("setup.selectOption", "Bitte wählen...")}
+                            </option>
+                            {dachFormOptions.map((opt) => (
+                              <option key={opt} value={opt}>
                                 {opt}
-                              </label>
-                            </div>
-                          ))}
-                        </RadioGroup>
+                              </option>
+                            ))}
+                          </select>
+                        </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -657,25 +629,22 @@ const FinaliseSetupForm: React.FC = () => {
                         <FormLabel>
                           {t("setup.section4.dach_ausrichtung")}
                         </FormLabel>
-                        <RadioGroup
-                          onValueChange={field.onChange}
-                          value={field.value}
-                          className="flex flex-col gap-2"
-                        >
-                          {dachAusrichtungOptions.map((opt, i) => (
-                            <div
-                              key={i}
-                              className="flex items-center space-x-2"
-                            >
-                              <FormControl>
-                                <RadioGroupItem value={opt} id={opt} />
-                              </FormControl>
-                              <label htmlFor={opt} className="ml-2">
+                        <FormControl>
+                          <select
+                            className="w-full border rounded px-3 py-2"
+                            value={field.value}
+                            onChange={(e) => field.onChange(e.target.value)}
+                          >
+                            <option value="">
+                              {t("setup.selectOption", "Bitte wählen...")}
+                            </option>
+                            {dachAusrichtungOptions.map((opt) => (
+                              <option key={opt} value={opt}>
                                 {opt}
-                              </label>
-                            </div>
-                          ))}
-                        </RadioGroup>
+                              </option>
+                            ))}
+                          </select>
+                        </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -688,25 +657,22 @@ const FinaliseSetupForm: React.FC = () => {
                         <FormLabel>
                           {t("setup.section4.dach_dachboden_nutzung_zustand")}
                         </FormLabel>
-                        <RadioGroup
-                          onValueChange={field.onChange}
-                          value={field.value}
-                          className="flex flex-col gap-2"
-                        >
-                          {dachbodenNutzungOptions.map((opt, i) => (
-                            <div
-                              key={i}
-                              className="flex items-center space-x-2"
-                            >
-                              <FormControl>
-                                <RadioGroupItem value={opt} id={opt} />
-                              </FormControl>
-                              <label htmlFor={opt} className="ml-2">
+                        <FormControl>
+                          <select
+                            className="w-full border rounded px-3 py-2"
+                            value={field.value}
+                            onChange={(e) => field.onChange(e.target.value)}
+                          >
+                            <option value="">
+                              {t("setup.selectOption", "Bitte wählen...")}
+                            </option>
+                            {dachbodenNutzungOptions.map((opt) => (
+                              <option key={opt} value={opt}>
                                 {opt}
-                              </label>
-                            </div>
-                          ))}
-                        </RadioGroup>
+                              </option>
+                            ))}
+                          </select>
+                        </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -719,25 +685,19 @@ const FinaliseSetupForm: React.FC = () => {
                         <FormLabel>
                           {t("setup.section4.dach_unbeheizte_flaeche_nutzung")}
                         </FormLabel>
-                        <RadioGroup
-                          onValueChange={field.onChange}
-                          value={field.value}
-                          className="flex flex-row gap-4"
-                        >
+                        <div className="flex gap-4">
                           {dachUnbeheizteFlaecheNutzungOptions.map((opt, i) => (
-                            <div
-                              key={i}
-                              className="flex items-center space-x-2"
-                            >
-                              <FormControl>
-                                <RadioGroupItem value={opt} id={opt} />
-                              </FormControl>
-                              <label htmlFor={opt} className="ml-2">
-                                {opt}
-                              </label>
-                            </div>
+                            <label key={i} className="flex items-center gap-2">
+                              <input
+                                type="radio"
+                                value={opt}
+                                checked={field.value === opt}
+                                onChange={() => field.onChange(opt)}
+                              />
+                              {opt}
+                            </label>
                           ))}
-                        </RadioGroup>
+                        </div>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -764,7 +724,7 @@ const FinaliseSetupForm: React.FC = () => {
 
               {/* Section 5 */}
               <section>
-                <h2 className="text-lg font-semibold mb-2">
+                <h2 className="text-2xl font-bold mb-4">
                   {t("setup.section5.title", "5/10 - Fassade")}
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -776,25 +736,22 @@ const FinaliseSetupForm: React.FC = () => {
                         <FormLabel>
                           {t("setup.section5.fassade_bauweise")}
                         </FormLabel>
-                        <RadioGroup
-                          onValueChange={field.onChange}
-                          value={field.value}
-                          className="flex flex-row gap-4"
-                        >
-                          {fassadeBauweiseOptions.map((opt, i) => (
-                            <div
-                              key={i}
-                              className="flex items-center space-x-2"
-                            >
-                              <FormControl>
-                                <RadioGroupItem value={opt} id={opt} />
-                              </FormControl>
-                              <label htmlFor={opt} className="ml-2">
+                        <FormControl>
+                          <select
+                            className="w-full border rounded px-3 py-2"
+                            value={field.value}
+                            onChange={(e) => field.onChange(e.target.value)}
+                          >
+                            <option value="">
+                              {t("setup.selectOption", "Bitte wählen...")}
+                            </option>
+                            {fassadeBauweiseOptions.map((opt, i) => (
+                              <option key={i} value={opt}>
                                 {opt}
-                              </label>
-                            </div>
-                          ))}
-                        </RadioGroup>
+                              </option>
+                            ))}
+                          </select>
+                        </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -807,25 +764,22 @@ const FinaliseSetupForm: React.FC = () => {
                         <FormLabel>
                           {t("setup.section5.fassade_zustand")}
                         </FormLabel>
-                        <RadioGroup
-                          onValueChange={field.onChange}
-                          value={field.value}
-                          className="flex flex-col gap-2"
-                        >
-                          {fassadeZustandOptions.map((opt, i) => (
-                            <div
-                              key={i}
-                              className="flex items-center space-x-2"
-                            >
-                              <FormControl>
-                                <RadioGroupItem value={opt} id={opt} />
-                              </FormControl>
-                              <label htmlFor={opt} className="ml-2">
+                        <FormControl>
+                          <select
+                            className="w-full border rounded px-3 py-2"
+                            value={field.value}
+                            onChange={(e) => field.onChange(e.target.value)}
+                          >
+                            <option value="">
+                              {t("setup.selectOption", "Bitte wählen...")}
+                            </option>
+                            {fassadeZustandOptions.map((opt, i) => (
+                              <option key={i} value={opt}>
                                 {opt}
-                              </label>
-                            </div>
-                          ))}
-                        </RadioGroup>
+                              </option>
+                            ))}
+                          </select>
+                        </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -835,7 +789,7 @@ const FinaliseSetupForm: React.FC = () => {
 
               {/* Section 6 */}
               <section>
-                <h2 className="text-lg font-semibold mb-2">
+                <h2 className="text-2xl font-bold mb-4">
                   {t("setup.section6.title", "6/10 - Fenster")}
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -847,25 +801,22 @@ const FinaliseSetupForm: React.FC = () => {
                         <FormLabel>
                           {t("setup.section6.fenster_verglasung")}
                         </FormLabel>
-                        <RadioGroup
-                          onValueChange={field.onChange}
-                          value={field.value}
-                          className="flex flex-row gap-4"
-                        >
-                          {fensterVerglasungOptions.map((opt, i) => (
-                            <div
-                              key={i}
-                              className="flex items-center space-x-2"
-                            >
-                              <FormControl>
-                                <RadioGroupItem value={opt} id={opt} />
-                              </FormControl>
-                              <label htmlFor={opt} className="ml-2">
+                        <FormControl>
+                          <select
+                            className="w-full border rounded px-3 py-2"
+                            value={field.value}
+                            onChange={(e) => field.onChange(e.target.value)}
+                          >
+                            <option value="">
+                              {t("setup.selectOption", "Bitte wählen...")}
+                            </option>
+                            {fensterVerglasungOptions.map((opt, i) => (
+                              <option key={i} value={opt}>
                                 {opt}
-                              </label>
-                            </div>
-                          ))}
-                        </RadioGroup>
+                              </option>
+                            ))}
+                          </select>
+                        </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -878,25 +829,22 @@ const FinaliseSetupForm: React.FC = () => {
                         <FormLabel>
                           {t("setup.section6.fenster_rahmenmaterial")}
                         </FormLabel>
-                        <RadioGroup
-                          onValueChange={field.onChange}
-                          value={field.value}
-                          className="flex flex-row gap-4"
-                        >
-                          {fensterRahmenmaterialOptions.map((opt, i) => (
-                            <div
-                              key={i}
-                              className="flex items-center space-x-2"
-                            >
-                              <FormControl>
-                                <RadioGroupItem value={opt} id={opt} />
-                              </FormControl>
-                              <label htmlFor={opt} className="ml-2">
+                        <FormControl>
+                          <select
+                            className="w-full border rounded px-3 py-2"
+                            value={field.value}
+                            onChange={(e) => field.onChange(e.target.value)}
+                          >
+                            <option value="">
+                              {t("setup.selectOption", "Bitte wählen...")}
+                            </option>
+                            {fensterRahmenmaterialOptions.map((opt, i) => (
+                              <option key={i} value={opt}>
                                 {opt}
-                              </label>
-                            </div>
-                          ))}
-                        </RadioGroup>
+                              </option>
+                            ))}
+                          </select>
+                        </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -946,7 +894,7 @@ const FinaliseSetupForm: React.FC = () => {
 
               {/* Section 7 */}
               <section>
-                <h2 className="text-lg font-semibold mb-2">
+                <h2 className="text-2xl font-bold mb-4">
                   {t("setup.section7.title", "7/10 - Keller")}
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -958,25 +906,22 @@ const FinaliseSetupForm: React.FC = () => {
                         <FormLabel>
                           {t("setup.section7.keller_vorhanden")}
                         </FormLabel>
-                        <RadioGroup
-                          onValueChange={field.onChange}
-                          value={field.value}
-                          className="flex flex-col gap-2"
-                        >
-                          {kellerVorhandenOptions.map((opt, i) => (
-                            <div
-                              key={i}
-                              className="flex items-center space-x-2"
-                            >
-                              <FormControl>
-                                <RadioGroupItem value={opt} id={opt} />
-                              </FormControl>
-                              <label htmlFor={opt} className="ml-2">
+                        <FormControl>
+                          <select
+                            className="w-full border rounded px-3 py-2"
+                            value={field.value}
+                            onChange={(e) => field.onChange(e.target.value)}
+                          >
+                            <option value="">
+                              {t("setup.selectOption", "Bitte wählen...")}
+                            </option>
+                            {kellerVorhandenOptions.map((opt, i) => (
+                              <option key={i} value={opt}>
                                 {opt}
-                              </label>
-                            </div>
-                          ))}
-                        </RadioGroup>
+                              </option>
+                            ))}
+                          </select>
+                        </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -989,25 +934,22 @@ const FinaliseSetupForm: React.FC = () => {
                         <FormLabel>
                           {t("setup.section7.keller_art_kellerdecke")}
                         </FormLabel>
-                        <RadioGroup
-                          onValueChange={field.onChange}
-                          value={field.value}
-                          className="flex flex-row gap-4"
-                        >
-                          {kellerArtKellerdeckeOptions.map((opt, i) => (
-                            <div
-                              key={i}
-                              className="flex items-center space-x-2"
-                            >
-                              <FormControl>
-                                <RadioGroupItem value={opt} id={opt} />
-                              </FormControl>
-                              <label htmlFor={opt} className="ml-2">
+                        <FormControl>
+                          <select
+                            className="w-full border rounded px-3 py-2"
+                            value={field.value}
+                            onChange={(e) => field.onChange(e.target.value)}
+                          >
+                            <option value="">
+                              {t("setup.selectOption", "Bitte wählen...")}
+                            </option>
+                            {kellerArtKellerdeckeOptions.map((opt, i) => (
+                              <option key={i} value={opt}>
                                 {opt}
-                              </label>
-                            </div>
-                          ))}
-                        </RadioGroup>
+                              </option>
+                            ))}
+                          </select>
+                        </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -1020,25 +962,19 @@ const FinaliseSetupForm: React.FC = () => {
                         <FormLabel>
                           {t("setup.section7.keller_gewoelbekeller")}
                         </FormLabel>
-                        <RadioGroup
-                          onValueChange={field.onChange}
-                          value={field.value}
-                          className="flex flex-row gap-4"
-                        >
+                        <div className="flex gap-4">
                           {kellerGewoelbekellerOptions.map((opt, i) => (
-                            <div
-                              key={i}
-                              className="flex items-center space-x-2"
-                            >
-                              <FormControl>
-                                <RadioGroupItem value={opt} id={opt} />
-                              </FormControl>
-                              <label htmlFor={opt} className="ml-2">
-                                {opt}
-                              </label>
-                            </div>
+                            <label key={i} className="flex items-center gap-2">
+                              <input
+                                type="radio"
+                                value={opt}
+                                checked={field.value === opt}
+                                onChange={() => field.onChange(opt)}
+                              />
+                              {opt}
+                            </label>
                           ))}
-                        </RadioGroup>
+                        </div>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -1051,25 +987,22 @@ const FinaliseSetupForm: React.FC = () => {
                         <FormLabel>
                           {t("setup.section7.keller_raumhoehe")}
                         </FormLabel>
-                        <RadioGroup
-                          onValueChange={field.onChange}
-                          value={field.value}
-                          className="flex flex-row gap-4"
-                        >
-                          {kellerRaumhoeheOptions.map((opt, i) => (
-                            <div
-                              key={i}
-                              className="flex items-center space-x-2"
-                            >
-                              <FormControl>
-                                <RadioGroupItem value={opt} id={opt} />
-                              </FormControl>
-                              <label htmlFor={opt} className="ml-2">
+                        <FormControl>
+                          <select
+                            className="w-full border rounded px-3 py-2"
+                            value={field.value}
+                            onChange={(e) => field.onChange(e.target.value)}
+                          >
+                            <option value="">
+                              {t("setup.selectOption", "Bitte wählen...")}
+                            </option>
+                            {kellerRaumhoeheOptions.map((opt, i) => (
+                              <option key={i} value={opt}>
                                 {opt}
-                              </label>
-                            </div>
-                          ))}
-                        </RadioGroup>
+                              </option>
+                            ))}
+                          </select>
+                        </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -1079,7 +1012,7 @@ const FinaliseSetupForm: React.FC = () => {
 
               {/* Section 8 */}
               <section>
-                <h2 className="text-lg font-semibold mb-2">
+                <h2 className="text-2xl font-bold mb-4">
                   {t("setup.section8.title", "8/10 - Photovoltaik")}
                 </h2>
                 <FormField
@@ -1090,22 +1023,19 @@ const FinaliseSetupForm: React.FC = () => {
                       <FormLabel>
                         {t("setup.section8.photovoltaik_vorhanden")}
                       </FormLabel>
-                      <RadioGroup
-                        onValueChange={field.onChange}
-                        value={field.value}
-                        className="flex flex-row gap-4"
-                      >
+                      <div className="flex gap-4">
                         {photovoltaikVorhandenOptions.map((opt, i) => (
-                          <div key={i} className="flex items-center space-x-2">
-                            <FormControl>
-                              <RadioGroupItem value={opt} id={opt} />
-                            </FormControl>
-                            <label htmlFor={opt} className="ml-2">
-                              {opt}
-                            </label>
-                          </div>
+                          <label key={i} className="flex items-center gap-2">
+                            <input
+                              type="radio"
+                              value={opt}
+                              checked={field.value === opt}
+                              onChange={() => field.onChange(opt)}
+                            />
+                            {opt}
+                          </label>
                         ))}
-                      </RadioGroup>
+                      </div>
                       <FormMessage />
                     </FormItem>
                   )}
@@ -1114,7 +1044,7 @@ const FinaliseSetupForm: React.FC = () => {
 
               {/* Section 9 */}
               <section>
-                <h2 className="text-lg font-semibold mb-2">
+                <h2 className="text-2xl font-bold mb-4">
                   {t("setup.section9.title", "9/10 - Sanierungswunsch")}
                 </h2>
                 <FormField
@@ -1162,7 +1092,7 @@ const FinaliseSetupForm: React.FC = () => {
 
               {/* Section 10 */}
               <section>
-                <h2 className="text-lg font-semibold mb-2">
+                <h2 className="text-2xl font-bold mb-4">
                   {t("setup.section10.title", "10/10 - Förderboni")}
                 </h2>
                 <div className="flex flex-col gap-2">
