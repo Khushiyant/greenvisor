@@ -30,6 +30,7 @@ import "leaflet/dist/leaflet.css";
 import icon from "leaflet/dist/images/marker-icon.png";
 import iconShadow from "leaflet/dist/images/marker-shadow.png";
 import L from "leaflet";
+import { SETUP_COORDINATES } from "@/lib/constants";
 
 // Fix default icon issue
 delete (L.Icon.Default.prototype as any)._getIconUrl;
@@ -105,7 +106,7 @@ export default function SetupMap() {
 
   const handleContinue = () => {
     if (coordinates.lat && coordinates.lng) {
-      localStorage.setItem("setupCoordinates", JSON.stringify(coordinates));
+      localStorage.setItem(SETUP_COORDINATES, JSON.stringify(coordinates));
       success(t("setup.locationSaved", "Location saved successfully"));
       navigate("/setup/finalize");
     } else {
