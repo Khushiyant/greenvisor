@@ -6,11 +6,19 @@ from dotenv import load_dotenv
 from langchain_neo4j import GraphCypherQAChain, Neo4jGraph
 from langchain_openai import ChatOpenAI
 
-from .prompt import custom_prompt, cypher_chain_prompt
+from prompt import custom_prompt, cypher_chain_prompt
 
+from appwrite.client import Client
+from appwrite.services.databases import Databases
 
 
 load_dotenv()
+
+client = Client()
+
+client.set_endpoint("https://cloud.appwrite.io/v1")
+client.set_project("greenvisor")
+client.set_key(os.getenv("APPWRITE_API_KEY"))
 
 
 class ChatOpenRouter(ChatOpenAI):
@@ -94,8 +102,32 @@ def initialize_query_chain():
     )
     return chain
 
+def _get_user_context(userid:str):
+    databases = Databases(client)
+    response:dict = databases.get_document(
+        database_id="greenvisordb",
+        collection_id="users",
+        document_id=userid
+    )
 
-def combined_llm_response(user_context:str, question:str, lang:str):
+    for i in [
+        "$permissions",
+        "$createdAt",
+        "$updatedAt",
+        "$collectionId",
+        "$databaseId",
+        "$id",
+        "latitude",
+        "longitude",
+    ]:
+        response.pop(i)
+
+
+    return response
+
+
+
+def combined_llm_response(question:str, lang:str, userid:str):
     """
     Generates a response by first querying a Neo4j graph and then using that
     context along with user-provided context to answer a question via an LLM.
@@ -121,6 +153,8 @@ def combined_llm_response(user_context:str, question:str, lang:str):
     query_chain = initialize_query_chain()
     result = query_chain.invoke({"query": question})
 
+    user_context = str(_get_user_context(userid=userid))
+
     graph_context = result['result']
 
     combined_llm = ChatOpenRouter(
@@ -136,7 +170,7 @@ def combined_llm_response(user_context:str, question:str, lang:str):
         {
             "output_language": lang,
             "question": f"{question}",
-            "user_context": "",
+            "user_context": user_context,
             "graph_context": graph_context,
         }
     )

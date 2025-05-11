@@ -10,6 +10,8 @@ class QueryRequest(BaseModel):
     Attributes:
         question: The text of the question being asked.
         lang: The language code (e.g., "english", "german") for the question.
+        userid: stored userid
     """
     question: str
     lang: str
+    userid: str

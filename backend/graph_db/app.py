@@ -12,7 +12,7 @@ router = APIRouter()
 @router.post("/query")
 async def query_graph(request: QueryRequest):
     try:
-        result = combined_llm_response(user_context=None, question=request.question, lang=request.lang)
+        result = combined_llm_response(question=request.question, lang=request.lang, userid=request.userid)
 
         return {
             "message": result
