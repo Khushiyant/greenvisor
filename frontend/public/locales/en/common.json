@@ -35,7 +35,9 @@
     "submit": "Submit",
     "loading": "Loading...",
     "back": "Back",
-    "continue": "Continue"
+    "continue": "Continue",
+    "Ja": "Yes",
+    "Nein": "No"
   },
   "theme": {
     "dark": "Dark",
@@ -134,6 +136,171 @@
       "einfach": "Single glazing",
       "doppel": "Double glazing",
       "dreifach": "Triple glazing"
+    },
+    "angrenzende_gebaeude": {
+      "Nein": "No",
+      "An einer Seite": "On one side",
+      "An beiden Seiten": "On both sides"
+    },
+    "heizung_energietraeger": {
+      "label": "Energy source",
+      "Erdgas": "Natural gas",
+      "Öl": "Oil",
+      "Pellets": "Pellets",
+      "Strom": "Electricity",
+      "Stückholz": "Firewood",
+      "Fernwärme": "District heating",
+      "Anderes": "Other"
+    },
+    "heizung_baujahr": {
+      "label": "Year (heating)",
+      "Wie Baujahr des Hauses": "Same as year built",
+      "Anderes": "Other"
+    },
+    "heizung_heizflaechen": {
+      "label": "Heating surfaces",
+      "Fußbodenheizung": "Underfloor heating",
+      "Heizkörper": "Radiators"
+    },
+    "warmwasser": {
+      "label": "Hot water supply",
+      "ueber_heizung": "Only via heating",
+      "mit_solar": "With solar support",
+      "durchlauferhitzer": "Instantaneous water heater / small boiler"
+    },
+    "dach_form": {
+      "label": "Roof shape",
+      "Walmdach": "Hip roof",
+      "Satteldach": "Gable roof",
+      "Pultdach": "Mono-pitch roof",
+      "Flachdach": "Flat roof",
+      "Mansarddach": "Mansard roof"
+    },
+    "dach_ausrichtung": {
+      "label": "Roof orientation",
+      "Nord": "North",
+      "Nord-Ost": "Northeast",
+      "Ost": "East",
+      "Süd-Ost": "Southeast",
+      "Süd": "South",
+      "Süd-West": "Southwest",
+      "West": "West",
+      "Nord-West": "Northwest"
+    },
+    "dachboden": {
+      "label": "Attic use/condition",
+      "teilweise": "Partially used/heated",
+      "vollstaendig": "Fully used/heated",
+      "nicht": "Not used/heated"
+    },
+    "dach": {
+      "unbeheizt": {
+        "label": "Unheated area use",
+        "gar_nicht": "Not at all",
+        "ausbauen": "Expand and use"
+      }
+    },
+    "fassade": {
+      "label": "Facade",
+      "holz": "Wood",
+      "massiv": "Solid",
+      "keine_schaeden": "No damage",
+      "neu_streichen": "Needs repainting",
+      "risse": "Small cracks, crumbling plaster"
+    },
+    "fenster": {
+      "label": "Window",
+      "einfach": "Single glazing",
+      "zweifach": "Double glazing",
+      "dreifach": "Triple glazing",
+      "kastenfenster": "Box window",
+      "holz": "Wood",
+      "kunststoff": "Plastic"
+    },
+    "keller": {
+      "label": "Basement",
+      "nein": "No",
+      "beheizt": "Yes - heated",
+      "teilweise": "Yes - partially heated",
+      "unbeheizt": "Yes - unheated",
+      "massiv": "Solid",
+      "andere": "Other (e.g. wood)",
+      "weniger_2m": "Less than 2 m",
+      "2_2_2m": "2.00 - 2.20 m",
+      "mehr_2_2m": "More than 2.20 m"
+    },
+    "sanierung": {
+      "label": "Renovation measures",
+      "heizung": "Renew heating system",
+      "fassade": "Renovate facade",
+      "dach": "Renovate roof",
+      "eingangstuer": "Renew entrance door",
+      "photovoltaik": "Install photovoltaic system",
+      "solarthermie": "Install solar thermal system",
+      "fenster": "Replace windows",
+      "kellerdeckendaemmung": "Basement ceiling insulation"
+    },
+    "section1": {
+      "title": "1/10 - General Information",
+      "baujahr": "Year built*",
+      "anzahl_wohneinheiten": "Number of residential units*",
+      "wohnflaeche_qm": "Living area in sqm (m²)*",
+      "anzahl_vollgeschosse": "Number of full floors*",
+      "angrenzende_gebaeude": "Adjacent buildings*",
+      "gebaeude_nachtraeglich_gedaemmt": "Was the building subsequently insulated?*",
+      "postleitzahl_immobilie": "Property postal code"
+    },
+    "section2": {
+      "title": "2/10 - Heating",
+      "heizung_energietraeger": "Energy source",
+      "heizung_baujahr": "Year (heating)",
+      "heizung_heizflaechen": "Heating surfaces",
+      "heizung_rohre_gedaemmt": "Are the pipes insulated?"
+    },
+    "section3": {
+      "title": "3/10 - Hot Water",
+      "warmwasseraufbereitung": "Hot water supply"
+    },
+    "section4": {
+      "title": "4/10 - Roof",
+      "dach_form": "Roof shape",
+      "dach_ausrichtung": "Roof orientation",
+      "dach_dachboden_nutzung_zustand": "Attic use/condition",
+      "dach_unbeheizte_flaeche_nutzung": "How should the unheated area be used?",
+      "dach_anzahl_dachgauben_dachfenster": "Number of dormers or roof windows"
+    },
+    "section5": {
+      "title": "5/10 - Facade",
+      "fassade_bauweise": "Construction type",
+      "fassade_zustand": "Condition"
+    },
+    "section6": {
+      "title": "6/10 - Windows",
+      "fenster_verglasung": "Glazing 1",
+      "fenster_rahmenmaterial": "Frame material",
+      "fenster_erneuerung_jahr": "When were the windows renewed? (year)",
+      "fenster_anteil_verglasung_prozent": "Share of windows with this glazing in %"
+    },
+    "section7": {
+      "title": "7/10 - Basement",
+      "keller_vorhanden": "Is there a basement?",
+      "keller_art_kellerdecke": "Type of basement ceiling",
+      "keller_gewoelbekeller": "Vaulted cellar",
+      "keller_raumhoehe": "Room height in basement in m"
+    },
+    "section8": {
+      "title": "8/10 - Photovoltaics",
+      "photovoltaik_vorhanden": "Photovoltaic system available?"
+    },
+    "section9": {
+      "title": "9/10 - Renovation wishes",
+      "sanierungswunsch_massnahmen": "What should be renewed?"
+    },
+    "section10": {
+      "title": "10/10 - Subsidy bonuses",
+      "foerderbonus_heizung_einkommensbonus": "10.1 Subsidy bonus for heating replacement: income bonus",
+      "foerderbonus_heizung_klimageschwindigkeitsbonus": "10.1 Subsidy bonus for heating replacement: climate speed bonus",
+      "foerderbonus_isfp": "10.2 Subsidy bonus for an integrated renovation roadmap: ISFP bonus"
     }
   },
   "validation": {

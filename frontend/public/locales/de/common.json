@@ -36,10 +36,12 @@
     "subline": "Weniger Emissionen, mehr Ersparnis – finde die besten Maßnahmen, die deinem Budget und der Umwelt helfen!"
   },
   "common": {
-    "submit": "Submit",
+    "submit": "Abschicken",
     "loading": "Loading...",
-    "continue": "Continue",
-    "back": "Back"
+    "continue": "Weiter",
+    "back": "Zurück",
+    "Ja": "Ja",
+    "Nein": "Nein"
   },
   "theme": {
     "light": "Hell",
@@ -139,6 +141,172 @@
       "einfach": "Einfachverglasung",
       "doppel": "Doppelverglasung",
       "dreifach": "Dreifachverglasung"
+    },
+    "formTitle": "KFW Sanierungsrechner",
+    "section1": {
+      "title": "1/10 - Objekt allgemein",
+      "baujahr": "Baujahr*",
+      "anzahl_wohneinheiten": "Anzahl Wohneinheiten*",
+      "wohnflaeche_qm": "Wohnfläche in qm (m²)*",
+      "anzahl_vollgeschosse": "Anzahl Vollgeschosse*",
+      "angrenzende_gebaeude": "Angrenzende Gebäude*",
+      "gebaeude_nachtraeglich_gedaemmt": "Wurde das Gebäude nachträglich gedämmt?*",
+      "postleitzahl_immobilie": "Postleitzahl der Immobilie"
+    },
+    "section2": {
+      "title": "2/10 - Heizung",
+      "heizung_energietraeger": "Energieträger",
+      "heizung_baujahr": "Baujahr (Heizung)",
+      "heizung_heizflaechen": "Heizflächen",
+      "heizung_rohre_gedaemmt": "Sind die Rohre gedämmt?"
+    },
+    "section3": {
+      "title": "3/10 - Warmwasser",
+      "warmwasseraufbereitung": "Warmwasseraufbereitung"
+    },
+    "section4": {
+      "title": "4/10 - Dach",
+      "dach_form": "Dachform",
+      "dach_ausrichtung": "Dachausrichtung",
+      "dach_dachboden_nutzung_zustand": "Dachboden Nutzung/Zustand",
+      "dach_unbeheizte_flaeche_nutzung": "Wie soll die unbeheizte Fläche genutzt werden?",
+      "dach_anzahl_dachgauben_dachfenster": "Anzahl Dachgauben oder Dachfenster"
+    },
+    "section5": {
+      "title": "5/10 - Fassade",
+      "fassade_bauweise": "Bauweise",
+      "fassade_zustand": "Zustand"
+    },
+    "section6": {
+      "title": "6/10 - Fenster",
+      "fenster_verglasung": "Verglasung 1",
+      "fenster_rahmenmaterial": "Rahmenmaterial",
+      "fenster_erneuerung_jahr": "Wann wurden die Fenster erneuert? (Baujahr)",
+      "fenster_anteil_verglasung_prozent": "Anteil der Fenster mit dieser Verglasung in %"
+    },
+    "section7": {
+      "title": "7/10 - Keller",
+      "keller_vorhanden": "Ist ein Keller vorhanden?",
+      "keller_art_kellerdecke": "Art der Kellerdecke",
+      "keller_gewoelbekeller": "Gewölbekeller",
+      "keller_raumhoehe": "Raumhöhe im Keller in m"
+    },
+    "section8": {
+      "title": "8/10 - Photovoltaik",
+      "photovoltaik_vorhanden": "Photovoltaikanlage vorhanden?"
+    },
+    "section9": {
+      "title": "9/10 - Sanierungswunsch",
+      "sanierungswunsch_massnahmen": "Was soll erneuert werden?"
+    },
+    "section10": {
+      "title": "10/10 - Förderboni",
+      "foerderbonus_heizung_einkommensbonus": "10.1 Förderbonus bei einem Heizungstausch: Einkommensbonus",
+      "foerderbonus_heizung_klimageschwindigkeitsbonus": "10.1 Förderbonus bei einem Heizungstausch: Klimageschwindigkeitsbonus",
+      "foerderbonus_isfp": "10.2 Förderbonus bei einem integrierten Sanierungsfahrplan: ISFP-Bonus"
+    },
+    "options": {
+      "nein": "Nein",
+      "an_einer_seite": "An einer Seite",
+      "an_beiden_seiten": "An beiden Seiten",
+      "ja": "Ja"
+    },
+    "angrenzende_gebaeude": {
+      "Nein": "Nein",
+      "An einer Seite": "An einer Seite",
+      "An beiden Seiten": "An beiden Seiten"
+    },
+    "heizung_energietraeger": {
+      "Erdgas": "Erdgas",
+      "Öl": "Öl",
+      "Pellets": "Pellets",
+      "Strom": "Strom",
+      "Stückholz": "Stückholz",
+      "Fernwärme": "Fernwärme",
+      "Anderes": "Anderes"
+    },
+    "heizung_baujahr": {
+      "Wie Baujahr des Hauses": "Wie Baujahr des Hauses",
+      "Anderes": "Anderes"
+    },
+    "heizung_heizflaechen": {
+      "Fußbodenheizung": "Fußbodenheizung",
+      "Heizkörper": "Heizkörper"
+    },
+    "warmwasser": {
+      "ueber_heizung": "Ausschließlich über Heizung",
+      "mit_solar": "Mit Solarunterstützung",
+      "durchlauferhitzer": "Durchlauferhitzer leinboiler"
+    },
+    "dach_form": {
+      "Walmdach": "Walmdach",
+      "Satteldach": "Satteldach",
+      "Pultdach": "Pultdach",
+      "Flachdach": "Flachdach",
+      "Mansarddach": "Mansarddach"
+    },
+    "dach_ausrichtung": {
+      "Nord": "Nord",
+      "Nord-Ost": "Nord-Ost",
+      "Ost": "Ost",
+      "Süd-Ost": "Süd-Ost",
+      "Süd": "Süd",
+      "Süd-West": "Süd-West",
+      "West": "West",
+      "Nord-West": "Nord-West"
+    },
+    "dachboden": {
+      "teilweise": "Teilweise genutzt/beheizt",
+      "vollstaendig": "Vollständig genutzt/beheizt",
+      "nicht": "Nicht genutzt/beheizt"
+    },
+    "dach": {
+      "unbeheizt": {
+        "gar_nicht": "Gar nicht",
+        "ausbauen": "Ausbauen und nutzen"
+      }
+    },
+    "fassade": {
+      "holz": "Holz",
+      "massiv": "Massiv",
+      "keine_schaeden": "Keine Schäden",
+      "neu_streichen": "Muss neu gestrichen werden",
+      "risse": "Kleine Risse röckelnder Putz"
+    },
+    "fenster": {
+      "einfach": "Einfach",
+      "zweifach": "Zweifach",
+      "dreifach": "Dreifach",
+      "kastenfenster": "Kastenfenster",
+      "holz": "Holz",
+      "kunststoff": "Kunststoff"
+    },
+    "keller": {
+      "nein": "Nein",
+      "beheizt": "Ja - beheizt",
+      "teilweise": "Ja - teilweise beheizt",
+      "unbeheizt": "Ja - unbeheizt",
+      "massiv": "Massiv",
+      "andere": "Andere (z.B. Holz)",
+      "weniger_2m": "Weniger als 2 m",
+      "2_2_2m": "2,00 - 2,20 m",
+      "mehr_2_2m": "mehr als 2,20 m"
+    },
+    "sanierung": {
+      "heizung": "Heizung eizsystem erneuern",
+      "fassade": "Fassade sanieren",
+      "dach": "Dach sanieren",
+      "eingangstuer": "Eingangstür erneuern",
+      "photovoltaik": "Photovoltaikanlage installieren",
+      "solarthermie": "Solarthermische Anlage installieren",
+      "fenster": "Fenster austauschen",
+      "kellerdeckendaemmung": "Kellerdeckendämmung"
+    },
+    "selectOption": "Bitte wählen...",
+    "formSubmitted": "Formular erfolgreich abgeschickt!",
+    "validation": {
+      "required": "Dieses Feld ist erforderlich.",
+      "year": "Bitte ein gültiges Jahr eingeben."
     }
   },
   "validation": {
@@ -154,6 +322,8 @@
     "setup.validation.roofType": "Bitte wählen Sie einen Dachtyp",
     "setup.validation.heatingSystem": "Bitte wählen Sie ein Heizsystem",
     "setup.validation.insulationStatus": "Bitte wählen Sie den Dämmstatus",
-    "setup.validation.windows": "Bitte wählen Sie die Fensterart"
+    "setup.validation.windows": "Bitte wählen Sie die Fensterart",
+    "required": "Dieses Feld ist erforderlich.",
+    "year": "Bitte ein gültiges Jahr eingeben."
   }
 }
