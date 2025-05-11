@@ -7,10 +7,16 @@
 **Version:** 0.0.1
 **Last Updated:** May 10, 2025
 
+## Documentation Index
+
+For detailed documentation on specific parts of the project, please refer to:
+
+* [**Backend Documentation**](./backend/README.md)
+* [**Frontend Documentation**](./frontend/README.md)
+
 ## Description
 
 Greenvisor is an AI-powered energy consultation application designed to provide advice on home renovations for energy efficiency, with a focus on the German context. It leverages Large Language Models (LLMs) to answer user questions, considering German laws, government subsidies, and potential cost savings. The application can interact with a Neo4j graph database for retrieving contextual information and can export data to PDF format.
-2
 
 ## Features
 
