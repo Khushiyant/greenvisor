@@ -12,7 +12,7 @@ export default function RootRedirect() {
     if (!userData) {
       navigate("/setup", { replace: true });
     } else {
-      navigate("/home", { replace: true });
+      navigate("/dashboard", { replace: true });
     }
   }, [userData, navigate, isLoading]);
 

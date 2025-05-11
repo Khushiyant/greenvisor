@@ -8,7 +8,7 @@ import { ProtectedRoute } from "@/components/ProtectedRoute";
 import { PublicRoute } from "@/components/PublicRoute";
 import { SessionProvider } from "@/context/AuthContext";
 import RootRedirect from "@/pages/RootRedirect";
-
+const Dashboard = lazy(() => import("./pages/Dashboard"));
 const Callback = lazy(() => import("./pages/auth/Callback"));
 const Welcome = lazy(() => import("./pages/Welcome"));
 const AuthPage = lazy(() => import("./pages/auth/auth"));
@@ -39,7 +39,9 @@ export default function App() {
               {/* Protected routes */}
               <Route element={<ProtectedRoute />}>
                 <Route path="/home" element={<RootRedirect />} />
-                <Route path="/dashboard" element={<RootRedirect />} />
+                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/dashboard/potential" element={<Dashboard />} />
+                <Route path="/dashboard/check" element={<Dashboard />} />
                 <Route path="/setup" element={<SetupMap />} />
                 <Route path="/setup/finalize" element={<FinalizeSetup />} />
               </Route>
