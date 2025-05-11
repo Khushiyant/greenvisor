@@ -1,1 +1,3 @@
 ./downloaded*
+./*.json
+./.DS_Store

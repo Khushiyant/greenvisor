@@ -8,8 +8,19 @@ from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 
 # ensure output folder exists
-OUTPUT_DIR = 'downloaded_files'
+OUTPUT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'raw'))
 os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+def load_start_urls(file_path):
+    """Load start URLs from a file, one per line."""
+    with open(file_path, 'r', encoding='utf-8') as f:
+        urls = []
+        for line in f:
+            if line.strip():
+                # Strip any quotes and whitespace that might be present
+                url = line.strip().strip('\'"')
+                urls.append(url)
+        return urls
 
 class BadenEnergySpider(CrawlSpider):
     name = 'baden_energy'
@@ -21,10 +32,7 @@ class BadenEnergySpider(CrawlSpider):
         'sanierungsfahrplan-badenova.de', 'viessmann.de',
         'aroundhome.de', 'schwaebisch-hall.de'
     ]
-    start_urls = [
-        'https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestehende-Immobilie/Energieeffizient-sanieren/Maßnahmen-für-Energieeffizienz/',
-
-    ]
+    start_urls = []  # will be set in __init__
 
     custom_settings = {
         # store files and html in OUTPUT_DIR
@@ -43,6 +51,10 @@ class BadenEnergySpider(CrawlSpider):
     rules = (
         Rule(LinkExtractor(allow_domains=allowed_domains), callback='parse_page', follow=True),
     )
+
+    def __init__(self, start_urls_file='start_urls.txt', *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.start_urls = load_start_urls(start_urls_file)
 
     def parse_page(self, response):
         url = response.url
@@ -65,6 +77,11 @@ class RawItemPipeline:
         return item
 
 if __name__ == '__main__':
+    import argparse
+    parser = argparse.ArgumentParser(description="Scrapy-based Baden energy legislation crawler.")
+    parser.add_argument('--start-urls', type=str, default='start_urls.txt',
+                        help='Path to file containing start URLs (one per line)')
+    args = parser.parse_args()
     process = CrawlerProcess()
-    process.crawl(BadenEnergySpider)
+    process.crawl(BadenEnergySpider, start_urls_file=args.start_urls)
     process.start()

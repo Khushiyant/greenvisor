@@ -15,10 +15,11 @@ import threading
 import time
 
 # Configuration
-OUTPUT_DIR = 'downloaded_files_soup'  # Directory where data is saved
+OUTPUT_DIR = os.path.join(os.path.dirname(__file__), '..', 'data', 'raw')  # Directory where data is saved
+OUTPUT_DIR = os.path.abspath(OUTPUT_DIR)
 MAX_CONCURRENT = 10
 REQUESTS_PER_SECOND = 2
-MAX_DEPTH = 3  # maximum crawl depth
+MAX_DEPTH = 3 # maximum crawl depth
 
 # Ensure output directory exists
 os.makedirs(OUTPUT_DIR, exist_ok=True)

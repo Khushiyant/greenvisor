@@ -1,6 +1,6 @@
 # fast_crawler.py: asyncio scraper with PDF text extraction
 # save this as fast_crawler.py and run with: python fast_crawler.py
-# All downloaded files (.html, .pdf) and extracted texts (.txt) are saved in the 'downloaded_files' folder
+# All downloaded files (.html, .pdf) and extracted texts (.txt) are saved in the 'crawler/data/raw' folder
 import os
 import asyncio
 from aiohttp import ClientSession, TCPConnector
@@ -11,13 +11,14 @@ import io
 import pdfplumber
 
 # Configuration
-OUTPUT_DIR = 'downloaded_files'  # Directory where data is saved
-START_URLS = [
-    'https://www.gesetze-im-internet.de/geg/GEG.pdf',
-    
-    # ... include all other URLs from your list ...
-]
-ALLOWED_DOMAINS = {urlparse(url).netloc for url in START_URLS}
+OUTPUT_DIR = os.path.join(os.path.dirname(__file__), '..', 'data', 'raw')  
+OUTPUT_DIR = os.path.abspath(OUTPUT_DIR)
+
+def load_start_urls(file_path):
+    """Load start URLs from a file, one per line."""
+    with open(file_path, 'r', encoding='utf-8') as f:
+        return [line.strip() for line in f if line.strip()]
+
 MAX_CONCURRENT = 10
 REQUESTS_PER_SECOND = 2
 
@@ -95,7 +96,10 @@ async def worker(name: str, session: ClientSession, queue: asyncio.Queue, seen: 
         finally:
             queue.task_done()
 
-async def main():
+async def main(start_urls_file):
+    START_URLS = load_start_urls(start_urls_file)
+    global ALLOWED_DOMAINS
+    ALLOWED_DOMAINS = {urlparse(url).netloc for url in START_URLS}
     queue = asyncio.Queue()
     seen = set(START_URLS)
     for url in START_URLS:
@@ -110,11 +114,16 @@ async def main():
             t.cancel()
 
 if __name__ == '__main__':
+    import argparse
+    parser = argparse.ArgumentParser(description="Async PDF/HTML crawler.")
+    parser.add_argument('--start-urls', type=str, default='start_urls.txt',
+                        help='Path to file containing start URLs (one per line)')
+    args = parser.parse_args()
     print(f"Starting crawl; saving all data to '{OUTPUT_DIR}'")
-    asyncio.run(main())
+    asyncio.run(main(args.start_urls))
 
 # Usage:
 #   pip install aiohttp asyncio-throttle beautifulsoup4 lxml pdfplumber
-#   Populate START_URLS fully, then run:
-#   python fast_crawler.py
-# All resulting .html, .pdf, and .txt files will be in the 'downloaded_files' folder.
+#   Populate start_urls.txt, then run:
+#   python fast_crawler.py --start-urls start_urls.txt
+# All resulting .html, .pdf, and .txt files will be in the 'crawler/data/raw' folder.
