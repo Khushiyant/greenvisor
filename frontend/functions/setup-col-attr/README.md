@@ -37,11 +37,15 @@ This function is designed to automate the setup of your Appwrite database schema
 
 ## 🔒 Environment Variables
 
-- `APPWRITE_FUNCTION_API_ENDPOINT` (required)
-- `APPWRITE_FUNCTION_PROJECT_ID` (required)
-- `x-appwrite-key` (header, required)
+The following environment variables are required for this function to connect to your Appwrite instance:
 
-These are used to authenticate and connect to your Appwrite instance.
+| Variable                          | Description                                 |
+| ---------------------------------- | ------------------------------------------- |
+| APPWRITE_FUNCTION_API_ENDPOINT     | The Appwrite API endpoint URL                |
+| APPWRITE_FUNCTION_PROJECT_ID       | The Appwrite Project ID                      |
+| APPWRITE_FUNCTION_API_KEY          | The Appwrite API Key (with DB permissions)   |
+
+These must be set in your Appwrite function environment for successful execution.
 
 ## 📝 Notes
 
