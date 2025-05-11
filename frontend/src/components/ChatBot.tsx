@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, type ChangeEvent } from "react";
+import { useEffect, useState, useRef, useMemo, type ChangeEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -12,6 +12,8 @@ import { useDarkMode } from "@/hooks/useDarkMode";
 import { useAuth } from "@/context/AuthContext";
 import { useVapiChat } from "@/hooks/useVapiChat";
 import { Icons } from "./ui/icons";
+import { useChatBot } from "@/hooks/useChatBot";
+import { renderMarkdown } from "@/lib/markdown";
 
 export default function ChatBot() {
   const [visibleMessageIndices, setVisibleMessageIndices] = useState<number[]>(
@@ -34,6 +36,8 @@ export default function ChatBot() {
     stopConnection,
   } = useVapiChat(authState === "authenticated");
 
+  const sendMessage = useChatBot();
+
   const messageBgClass = isDark ? "bg-green-900" : "bg-gray-100";
   const userMessageBgClass = isDark ? "bg-slate-800" : "bg-slate-600";
 
@@ -43,6 +47,30 @@ export default function ChatBot() {
     "chatbot.welcomeMessage.welcome3",
     "chatbot.welcomeMessage.welcome4",
   ];
+
+  // Memoized chat message rendering for performance
+  const renderedMessages = useMemo(
+    () =>
+      messages.map((message) => (
+        <motion.div
+          key={message.id}
+          initial={{ opacity: 0, translateY: 20 }}
+          animate={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.4 }}
+          className={cn(
+            "text-sm px-3 py-2 rounded-md",
+            message.sender === "user"
+              ? `ml-auto ${userMessageBgClass} text-white max-w-[80%]`
+              : `${messageBgClass} text-foreground max-w-[80%]`
+          )}
+        >
+          {message.sender === "bot"
+            ? renderMarkdown(message.text)
+            : message.text}
+        </motion.div>
+      )),
+    [messages, userMessageBgClass, messageBgClass]
+  );
 
   // Show welcome messages for unauthenticated users
   useEffect(() => {
@@ -95,7 +123,17 @@ export default function ChatBot() {
     if (!text) return;
     setInputValue("");
     if (authState === "authenticated") {
-      // await sendMessage(text);
+      setMessages((prev) => [
+        ...prev,
+        { id: Date.now().toString(), text, sender: "user" },
+      ]);
+      const response = await sendMessage(text);
+      if (response) {
+        setMessages((prev) => [
+          ...prev,
+          { id: (Date.now() + 1).toString(), text: response, sender: "bot" },
+        ]);
+      }
     } else {
       // Add user message
       setMessages((prev) => [
@@ -174,22 +212,7 @@ export default function ChatBot() {
                             />
                           </motion.div>
                         ))
-                      : messages.map((message) => (
-                          <motion.div
-                            key={message.id}
-                            initial={{ opacity: 0, translateY: 20 }}
-                            animate={{ opacity: 1, translateY: 0 }}
-                            transition={{ duration: 0.4 }}
-                            className={cn(
-                              "text-sm px-3 py-2 rounded-md",
-                              message.sender === "user"
-                                ? `ml-auto ${userMessageBgClass} text-white max-w-[80%]`
-                                : `${messageBgClass} text-foreground max-w-[80%]`
-                            )}
-                          >
-                            {message.text}
-                          </motion.div>
-                        ))}
+                      : renderedMessages}
                     {isSpeaking && (
                       <div className="italic text-cyan-300 text-center">
                         🎤 Speaking…
@@ -227,7 +250,7 @@ export default function ChatBot() {
                     <Button
                       onClick={handleSendMessage}
                       className="bg-green-600 hover:bg-green-700 text-white"
-                      disabled={!inputValue.trim() || !isConnected}
+                      disabled={!inputValue.trim() && !isConnected}
                     >
                       <Send className="w-4 h-4" />
                     </Button>
