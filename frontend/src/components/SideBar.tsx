@@ -4,7 +4,6 @@ import { Home, Power, CheckCircle2, Gauge, Building } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useAuth } from "@/context/AuthContext";
 import { useCallback } from "react";
-import { useUserData } from "@/hooks/useUserData";
 import { useAddress } from "@/hooks/useAddress";
 
 interface SidebarProps {

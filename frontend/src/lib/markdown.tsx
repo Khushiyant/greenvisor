@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import { tryJsonParse } from "./utils";
 
 export function renderMarkdown(text: string) {

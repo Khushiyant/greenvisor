@@ -3,6 +3,7 @@ import { useUserData } from "./useUserData"
 
 export const useAddress = () => {
     const { data } = useUserData().fetch;
+    // data is now typed with latitude and longitude
 
     const getAddressFromCoords = async (lat: number, lon: number) => {
         const res = await fetch(

@@ -19,8 +19,8 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { useUserData } from "@/hooks/useUserData";
 import { useNavigate } from "react-router-dom";
 import { tryJsonParse } from "@/lib/utils";
-import { Coordinates } from "@/hooks/useMap";
 import { SETUP_COORDINATES } from "@/lib/constants";
+import type { Coordinates } from "@/hooks/useMap";
 
 // --- Zod Schema ---
 export const formSchema = z.object({

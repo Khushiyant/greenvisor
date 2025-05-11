@@ -1,29 +1,33 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowDown } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function Potenziale() {
+  const { t } = useTranslation();
+
   return (
     <div className="min-h-screen bg-background/80 py-10 px-4 flex flex-col items-center">
       {/* Header */}
       <div className="max-w-4xl w-full mb-8">
         <h1 className="text-4xl font-bold mb-2 text-gray-800">
-          Deine Potenziale auf einen Blick!
+          {t("potenziale.header")}
         </h1>
         <p className="text-lg text-gray-600 leading-relaxed">
-          Hier siehst du dein persönliches Einsparpotenzial passend zu deinem
-          Eigenheim, das in einem klimaneutralen Szenario erreicht werden kann.
+          {t("potenziale.subline1")}
           <br />
-          Setze ein weiteres Budget, um zu vergleichen.
+          {t("potenziale.subline2")}
         </p>
       </div>
 
       {/* Gesamtauswertung Card */}
       <Card className="w-full max-w-5xl mb-8 shadow-lg border border-gray-200">
         <div className="flex items-center justify-between bg-green-200/80 px-6 py-3 rounded-t-lg border-b border-green-300">
-          <span className="font-semibold text-lg">Gesamtauswertung</span>
+          <span className="font-semibold text-lg">
+            {t("potenziale.overview")}
+          </span>
           <Button className="bg-green-500 hover:bg-green-600 text-white text-sm font-medium rounded px-4 py-2">
-            Budget hinzufügen
+            {t("potenziale.addBudget")}
           </Button>
         </div>
         <CardContent className="p-0">
@@ -32,19 +36,21 @@ export default function Potenziale() {
               <thead>
                 <tr className="bg-white">
                   <th className="text-left px-6 py-3 font-medium text-gray-700">
-                    Aspekt
+                    {t("potenziale.aspect")}
                   </th>
                   <th className="text-left px-6 py-3 font-medium text-gray-700">
-                    Status Quo
+                    {t("potenziale.statusQuo")}
                   </th>
                   <th className="text-left px-6 py-3 font-medium text-gray-700">
-                    Grün.Check
+                    {t("potenziale.greenCheck")}
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-t">
-                  <td className="px-6 py-3">Wärmeverbrauch</td>
+                  <td className="px-6 py-3">
+                    {t("potenziale.heatConsumption")}
+                  </td>
                   <td className="px-6 py-3">20.000 kWh/Jahr</td>
                   <td className="px-6 py-3">
                     <div className="flex items-center gap-2">
@@ -56,7 +62,9 @@ export default function Potenziale() {
                   </td>
                 </tr>
                 <tr className="border-t">
-                  <td className="px-6 py-3">Stromverbrauch</td>
+                  <td className="px-6 py-3">
+                    {t("potenziale.electricityConsumption")}
+                  </td>
                   <td className="px-6 py-3">4.500 kWh/Jahr</td>
                   <td className="px-6 py-3">
                     <div className="flex items-center gap-2">
@@ -68,7 +76,7 @@ export default function Potenziale() {
                   </td>
                 </tr>
                 <tr className="border-t">
-                  <td className="px-6 py-3">Heizkosten</td>
+                  <td className="px-6 py-3">{t("potenziale.heatingCosts")}</td>
                   <td className="px-6 py-3">4.100 €/Jahr</td>
                   <td className="px-6 py-3">
                     <div className="flex items-center gap-2">
@@ -80,7 +88,9 @@ export default function Potenziale() {
                   </td>
                 </tr>
                 <tr className="border-t">
-                  <td className="px-6 py-3">Stromkosten</td>
+                  <td className="px-6 py-3">
+                    {t("potenziale.electricityCosts")}
+                  </td>
                   <td className="px-6 py-3">1.200 €/Jahr</td>
                   <td className="px-6 py-3">
                     <div className="flex items-center gap-2">
@@ -92,12 +102,14 @@ export default function Potenziale() {
                   </td>
                 </tr>
                 <tr className="border-t">
-                  <td className="px-6 py-3">Energieeffizienz</td>
+                  <td className="px-6 py-3">
+                    {t("potenziale.energyEfficiency")}
+                  </td>
                   <td className="px-6 py-3">F</td>
                   <td className="px-6 py-3">A</td>
                 </tr>
                 <tr className="border-t">
-                  <td className="px-6 py-3">Emissionen</td>
+                  <td className="px-6 py-3">{t("potenziale.emissions")}</td>
                   <td className="px-6 py-3">8.500 kg/Jahr</td>
                   <td className="px-6 py-3">
                     <div className="flex items-center gap-2">
@@ -109,20 +121,22 @@ export default function Potenziale() {
                   </td>
                 </tr>
                 <tr className="border-t">
-                  <td className="px-6 py-3">Gesamtinvestition</td>
+                  <td className="px-6 py-3">
+                    {t("potenziale.totalInvestment")}
+                  </td>
                   <td className="px-6 py-3"></td>
                   <td className="px-6 py-3">34.000 €</td>
                 </tr>
                 <tr className="border-t">
-                  <td className="px-6 py-3">Förderungen</td>
+                  <td className="px-6 py-3">{t("potenziale.subsidies")}</td>
                   <td className="px-6 py-3"></td>
                   <td className="px-6 py-3">
-                    Möglichkeit zur Förderung
+                    {t("potenziale.subsidyHint1")}
                     <br />
-                    von bis zu 50%
+                    {t("potenziale.subsidyHint2")}
                     <br />
                     <a href="#" className="text-green-700 underline text-xs">
-                      Erfahre mehr
+                      {t("potenziale.learnMore")}
                     </a>
                   </td>
                 </tr>
@@ -135,9 +149,11 @@ export default function Potenziale() {
       {/* Einzelmaßnahmen Card */}
       <Card className="w-full max-w-5xl mb-8 shadow-lg border border-gray-200">
         <div className="flex items-center justify-between bg-green-200/80 px-6 py-3 rounded-t-lg border-b border-green-300">
-          <span className="font-semibold text-lg">Einzelmaßnahmen</span>
+          <span className="font-semibold text-lg">
+            {t("potenziale.individualMeasures")}
+          </span>
           <Button className="bg-green-500 hover:bg-green-600 text-white text-sm font-medium rounded px-4 py-2">
-            Budget hinzufügen
+            {t("potenziale.addBudget")}
           </Button>
         </div>
         <CardContent className="p-0">
@@ -146,28 +162,28 @@ export default function Potenziale() {
               <thead>
                 <tr className="bg-white">
                   <th className="text-left px-6 py-3 font-medium text-gray-700">
-                    Maßnahme
+                    {t("potenziale.measure")}
                   </th>
                   <th className="text-left px-6 py-3 font-medium text-gray-700">
-                    Beispielprodukt
+                    {t("potenziale.exampleProduct")}
                   </th>
                   <th className="text-left px-6 py-3 font-medium text-gray-700">
-                    Investitionen
+                    {t("potenziale.investment")}
                   </th>
                   <th className="text-left px-6 py-3 font-medium text-gray-700">
-                    Heizkostenersparnis
+                    {t("potenziale.heatingSavings")}
                   </th>
                   <th className="text-left px-6 py-3 font-medium text-gray-700">
-                    CO₂-Ersparnis
+                    {t("potenziale.co2Savings")}
                   </th>
                   <th className="text-left px-6 py-3 font-medium text-gray-700">
-                    Förderungen
+                    {t("potenziale.subsidies")}
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-t">
-                  <td className="px-6 py-3">Heizung</td>
+                  <td className="px-6 py-3">{t("potenziale.heating")}</td>
                   <td className="px-6 py-3">Viessmann Vitocal 250-A</td>
                   <td className="px-6 py-3">11.000 €</td>
                   <td className="px-6 py-3">
@@ -175,7 +191,7 @@ export default function Potenziale() {
                       <span className="flex items-center text-green-600 font-semibold text-xs bg-green-100 px-2 py-0.5 rounded mb-1 w-fit">
                         <ArrowDown className="w-3 h-3 mr-1" /> 90%
                       </span>
-                      2.200 €/Jahr auf 300 €/Jahr
+                      2.200 €/Jahr {t("potenziale.to")} 300 €/Jahr
                     </div>
                   </td>
                   <td className="px-6 py-3">
@@ -187,15 +203,15 @@ export default function Potenziale() {
                     </div>
                   </td>
                   <td className="px-6 py-3">
-                    Bis zu 50%
+                    {t("potenziale.upTo")}
                     <br />
                     <a href="#" className="text-green-700 underline text-xs">
-                      mehr Infos
+                      {t("potenziale.moreInfo")}
                     </a>
                   </td>
                 </tr>
                 <tr className="border-t">
-                  <td className="px-6 py-3">Fenster & Türen</td>
+                  <td className="px-6 py-3">{t("potenziale.windowsDoors")}</td>
                   <td className="px-6 py-3">EcoTherm Dreifachverglasung</td>
                   <td className="px-6 py-3">15.000 €</td>
                   <td className="px-6 py-3">
@@ -203,7 +219,7 @@ export default function Potenziale() {
                       <span className="flex items-center text-green-600 font-semibold text-xs bg-green-100 px-2 py-0.5 rounded mb-1 w-fit">
                         <ArrowDown className="w-3 h-3 mr-1" /> 75%
                       </span>
-                      1.200 €/Jahr auf 300 €/Jahr
+                      1.200 €/Jahr {t("potenziale.to")} 300 €/Jahr
                     </div>
                   </td>
                   <td className="px-6 py-3">
@@ -215,15 +231,17 @@ export default function Potenziale() {
                     </div>
                   </td>
                   <td className="px-6 py-3">
-                    Bis zu 40%
+                    {t("potenziale.upTo40")}
                     <br />
                     <a href="#" className="text-green-700 underline text-xs">
-                      mehr Infos
+                      {t("potenziale.moreInfo")}
                     </a>
                   </td>
                 </tr>
                 <tr className="border-t">
-                  <td className="px-6 py-3">Lüftungssystem</td>
+                  <td className="px-6 py-3">
+                    {t("potenziale.ventilationSystem")}
+                  </td>
                   <td className="px-6 py-3">AirPro 200</td>
                   <td className="px-6 py-3">8.000 €</td>
                   <td className="px-6 py-3">
@@ -231,7 +249,7 @@ export default function Potenziale() {
                       <span className="flex items-center text-green-600 font-semibold text-xs bg-green-100 px-2 py-0.5 rounded mb-1 w-fit">
                         <ArrowDown className="w-3 h-3 mr-1" /> 80%
                       </span>
-                      700 €/Jahr auf 140 €/Jahr
+                      700 €/Jahr {t("potenziale.to")} 140 €/Jahr
                     </div>
                   </td>
                   <td className="px-6 py-3">
@@ -243,10 +261,10 @@ export default function Potenziale() {
                     </div>
                   </td>
                   <td className="px-6 py-3">
-                    Bis zu 35%
+                    {t("potenziale.upTo35")}
                     <br />
                     <a href="#" className="text-green-700 underline text-xs">
-                      mehr Infos
+                      {t("potenziale.moreInfo")}
                     </a>
                   </td>
                 </tr>
@@ -260,16 +278,18 @@ export default function Potenziale() {
       <Card className="w-full max-w-5xl shadow-lg border border-gray-200">
         <CardContent className="p-0">
           <div className="bg-green-500 rounded-b-lg px-8 py-10 flex flex-col items-start">
-            <h2 className="text-white text-3xl font-bold mb-2">Unsicher?</h2>
+            <h2 className="text-white text-3xl font-bold mb-2">
+              {t("potenziale.unsure")}
+            </h2>
             <p className="text-white text-lg mb-6">
-              Unser Expert:innenpool hilft dir gerne weiter.
+              {t("potenziale.expertHelp")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full">
               <Button className="bg-white text-green-700 hover:bg-green-100 font-semibold px-6 py-3 rounded w-full sm:w-auto">
-                Handwerker:in kontaktieren
+                {t("potenziale.contactCraftsman")}
               </Button>
               <Button className="bg-white text-green-700 hover:bg-green-100 font-semibold px-6 py-3 rounded w-full sm:w-auto">
-                Energieberater:in kontaktieren
+                {t("potenziale.contactEnergyConsultant")}
               </Button>
             </div>
           </div>
