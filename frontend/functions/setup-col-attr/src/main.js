@@ -60,6 +60,8 @@ export default async ({ req, res, log, error }) => {
     { method: 'createBooleanAttribute', key: 'foerderbonus_einkommensbonus', required: false, default: false, array: false },
     { method: 'createBooleanAttribute', key: 'foerderbonus_klimageschwind', required: false, default: false, array: false },
     { method: 'createBooleanAttribute', key: 'foerderbonus_isfp', required: false, default: false, array: false },
+    { method: 'createFloatAttribute', key: 'latitude', min: -90, max: 90, required: true, array: false },
+    { method: 'createFloatAttribute', key: 'longitude', min: -180, max: 180, required: true, array: false },
   ];
 
   // 3. Indexes (update keys to match shortened attribute names)
