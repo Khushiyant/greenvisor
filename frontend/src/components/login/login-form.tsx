@@ -57,6 +57,7 @@ export function LoginForm({ className, toggleMode, ...props }: LoginFormProps) {
     setLoading(true);
     try {
       await login(email, password);
+      window.location.href = "/";
     } catch (err: any) {
       setErrors({
         password: err?.message || t("auth.loginFailed", "Login failed"),

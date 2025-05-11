@@ -65,6 +65,7 @@ export function SignupForm({
     setLoading(true);
     try {
       await signUp(email, password, name);
+      window.location.href = "/";
     } catch (err: any) {
       setErrors({
         password: err?.message || t("auth.signupFailed", "Signup failed"),
