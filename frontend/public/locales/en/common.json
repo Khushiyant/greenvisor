@@ -317,7 +317,9 @@
     "Gründach.Begrünung": "Green Roof & Greening",
     "Grün.Check": "Green.Check",
     "Potenziale": "Potentials",
-    "Abmelden": "Logout"
+    "Abmelden": "Logout",
+    "switchToIndustrial": "Switch to Industrial",
+    "switchToResidential": "Switch to Residential"
   },
   "validation": {
     "buildingNameRequired": "Building name is required",

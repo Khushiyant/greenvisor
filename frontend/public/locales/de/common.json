@@ -339,7 +339,9 @@
     "Gründach.Begrünung": "Gründach & Begrünung",
     "Grün.Check": "Grün Check",
     "Potenziale": "Potenziale",
-    "Abmelden": "Logout"
+    "Abmelden": "Logout",
+    "switchToIndustrial": "Wechseln Sie zu Industrie",
+    "switchToResidential": "Wechseln Sie zu Wohngebäuden"
   },
   "dashboard": {
     "energyEfficiency": "Gesamtenergieeffizienz",

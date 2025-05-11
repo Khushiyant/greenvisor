@@ -1,11 +1,19 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Home, Power, CheckCircle2, Gauge } from "lucide-react";
+import { Home, Power, CheckCircle2, Gauge, Building } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useAuth } from "@/context/AuthContext";
 import { useCallback } from "react";
 
-export default function Sidebar() {
+interface SidebarProps {
+  onSwitchBackground: () => void;
+  currentBackground: "industrial" | "residential";
+}
+
+export default function Sidebar({
+  onSwitchBackground,
+  currentBackground,
+}: SidebarProps) {
   const { t } = useTranslation();
   const { pathname } = useLocation();
   const { logout } = useAuth();
@@ -106,6 +114,21 @@ export default function Sidebar() {
         </Button>
       </div>
       <div className="flex-grow" />
+      <Button
+        onClick={onSwitchBackground}
+        variant="ghost"
+        className="w-full text-xs text-muted-foreground hover:text-green-600 justify-start"
+      >
+        {currentBackground === "residential" && (
+          <Building className="w-4 h-4 mr-2" />
+        )}
+        {currentBackground === "industrial" && (
+          <Home className="w-4 h-4 mr-2" />
+        )}
+        {currentBackground === "industrial"
+          ? t("sidebar.switchToResidential")
+          : t("sidebar.switchToIndustrial")}
+      </Button>
       <Button
         onClick={handleLogout}
         variant="ghost"

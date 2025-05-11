@@ -1,4 +1,4 @@
-import { Loader2, Github, AlertCircle, Moon, Sun, X } from "lucide-react";
+import { Loader2, Github, AlertCircle, Moon, Sun, X, Menu } from "lucide-react";
 
 const DiscordIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -63,4 +63,5 @@ export const Icons = {
   microphone: MicrophoneIcon,
   listening: ListeningIcon,
   stop: StopIcon,
+  menu: Menu,
 };
