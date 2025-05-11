@@ -1,0 +1,354 @@
+{
+  "app": {
+    "title": "GreenVisor",
+    "description": "Votre solution de gestion financière"
+  },
+  "auth": {
+    "login": "Connexion",
+    "signup": "S'inscrire",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "forgotPassword": "Mot de passe oublié ?",
+    "continueWith": "Ou continuer avec",
+    "signInWithEmail": "Se connecter avec l'e-mail",
+    "signInWithDiscord": "Se connecter avec Discord",
+    "dontHaveAccount": "Vous n'avez pas de compte ?",
+    "createAccount": "Créer un compte",
+    "enterEmail": "Entrez votre e-mail ci-dessous pour créer votre compte"
+  },
+  "chatbot": {
+    "welcomeMessage": {
+      "welcome1": "Bonjour et bienvenue sur <strong>Green Visor !</strong> 🌱",
+      "welcome2": "Je suis votre conseiller numérique en rénovation et je vous guiderai étape par étape vers une maison neutre en carbone.",
+      "welcome3": "Dans votre commune, une planification thermique municipale a été réalisée dans le but d'atteindre un parc immobilier neutre en carbone d'ici 2040. Dans le cadre de cette planification, des données actuelles sur votre bâtiment et l'infrastructure de réseau/approvisionnement ont été collectées.",
+      "welcome4": "Avec <strong>Green Visor</strong>, vous pouvez préparer votre bâtiment pour l'avenir énergétique et comprendre les changements prévus dans l'infrastructure. Ensemble, nous trouverons les meilleures mesures pour réduire vos coûts énergétiques et vos émissions de CO₂ – toujours dans la limite de votre budget."
+    },
+    "startNow": "Commencer maintenant",
+    "title": "Green Visor",
+    "openChat": "Ouvrir le chat"
+  },
+  "welcome": {
+    "headline": "Préparez votre bâtiment pour demain – modernisez, optimisez, profitez.",
+    "subline": "Moins d'émissions, plus d'économies – trouvez les meilleures mesures pour votre budget et l'environnement !"
+  },
+  "common": {
+    "submit": "Envoyer",
+    "loading": "Chargement...",
+    "back": "Retour",
+    "continue": "Continuer",
+    "Ja": "Oui",
+    "Nein": "Non"
+  },
+  "theme": {
+    "dark": "Sombre",
+    "light": "Clair",
+    "system": "Système",
+    "toggle": "Changer de thème"
+  },
+  "setup": {
+    "selectLocation": "Sélectionnez votre emplacement",
+    "selectOption": "Veuillez sélectionner...",
+    "locationDescription": "Nous utiliserons ceci pour obtenir des données précises sur l'emplacement de votre maison",
+    "searchLocation": "Recherchez une ville, une adresse ou un point de repère...",
+    "locationSaved": "Emplacement enregistré avec succès",
+    "noLocation": "Veuillez sélectionner un emplacement sur la carte",
+    "locationFound": "Emplacement trouvé : {{name}}",
+    "mapError": "Erreur de carte",
+    "mapErrorHint": "Veuillez essayer d'actualiser la page ou d'utiliser un autre navigateur.",
+    "loadingMap": "Chargement de la carte...",
+    "useMyLocation": "Utiliser ma position",
+    "enterCoordinates": "Entrer les coordonnées",
+    "latitude": "Latitude (-90 à 90)",
+    "latitudePlaceholder": "ex. 51.5074",
+    "longitude": "Longitude (-180 à 180)",
+    "longitudePlaceholder": "ex. -0.1278",
+    "setLocation": "Définir l'emplacement",
+    "locationAccessFailed": "Accès à la localisation échoué",
+    "locationAccessHint": "Vous pouvez cliquer sur la carte ou utiliser le bouton \"Entrer les coordonnées\".",
+    "selectedCoordinates": "Coordonnées sélectionnées",
+    "selectedLocation": "Emplacement sélectionné",
+    "finalizeSetup": "Finaliser la configuration",
+    "completeDetails": "Complétez les détails de votre bâtiment pour terminer la configuration",
+    "buildingName": "Nom du bâtiment",
+    "enterBuildingName": "Entrez le nom du bâtiment",
+    "buildingType": "Type de bâtiment",
+    "selectType": "Sélectionnez le type de bâtiment",
+    "residential": "Résidentiel",
+    "commercial": "Commercial",
+    "industrial": "Industriel",
+    "mixed": "Usage mixte",
+    "yearBuilt": "Année de construction",
+    "yearBuiltDescription": "Entrez l'année de construction du bâtiment",
+    "squareMeters": "Mètres carrés",
+    "totalArea": "Surface totale du bâtiment en mètres carrés",
+    "previouslyRenovated": "Déjà rénové",
+    "renovatedDescription": "Ce bâtiment a-t-il déjà été rénové ?",
+    "locationCoordinates": "Coordonnées de l'emplacement",
+    "complete": "Terminer la configuration",
+    "calculatorTitle": "Complétez les données de votre bâtiment",
+    "calculatorIntro": "Entrez les données de votre bâtiment pour obtenir une estimation de son efficacité énergétique.",
+    "calculationStarted": "Calcul commencé",
+    "calculationProcessing": "Vos données sont en cours de traitement. Veuillez patienter...",
+    "calculationFinished": "Calcul terminé",
+    "calculationReady": "Vos résultats sont prêts.",
+    "constructionYear": "Année de construction",
+    "constructionYearPlaceholder": "ex. 1990",
+    "livingArea": "Surface habitable (m²)",
+    "livingAreaPlaceholder": "ex. 150",
+    "floors": "Nombre d'étages",
+    "floorsPlaceholder": "ex. 2",
+    "roofType": "Type de toit",
+    "selectRoofType": "Sélectionnez le type de toit",
+    "heatingSystem": "Système de chauffage",
+    "selectHeatingSystem": "Sélectionnez le système de chauffage",
+    "insulationStatus": "État de l'isolation",
+    "selectInsulationStatus": "Sélectionnez l'état de l'isolation",
+    "windows": "Type de fenêtre",
+    "selectWindowType": "Sélectionnez le type de fenêtre",
+    "buildingTypes": {
+      "einfamilienhaus": "Maison individuelle",
+      "zweifamilienhaus": "Maison bifamiliale",
+      "mehrfamilienhaus": "Immeuble collectif",
+      "reihenhaus": "Maison mitoyenne",
+      "doppelhaushälfte": "Maison jumelée",
+      "wohnung": "Appartement"
+    },
+    "roofTypes": {
+      "satteldach": "Toit à deux versants",
+      "flachdach": "Toit plat",
+      "pultdach": "Toit monopente",
+      "walmdach": "Toit en croupe",
+      "mansarddach": "Toit mansardé"
+    },
+    "heatingSystems": {
+      "gas": "Chauffage au gaz",
+      "öl": "Chauffage au fioul",
+      "wärmepumpe": "Pompe à chaleur",
+      "fernwaerme": "Chauffage urbain",
+      "pellets": "Chauffage aux granulés",
+      "elektro": "Chauffage électrique"
+    },
+    "insulationStatuses": {
+      "keine": "Pas d'isolation",
+      "teilweise": "Partiellement isolé",
+      "vollstaendig": "Entièrement isolé"
+    },
+    "windowTypes": {
+      "einfach": "Simple vitrage",
+      "doppel": "Double vitrage",
+      "dreifach": "Triple vitrage"
+    },
+    "angrenzende_gebaeude": {
+      "Nein": "Non",
+      "An einer Seite": "D'un côté",
+      "An beiden Seiten": "Des deux côtés"
+    },
+    "heizung_energietraeger": {
+      "label": "Source d'énergie",
+      "Erdgas": "Gaz naturel",
+      "Öl": "Fioul",
+      "Pellets": "Granulés",
+      "Strom": "Électricité",
+      "Stückholz": "Bois",
+      "Fernwärme": "Chauffage urbain",
+      "Anderes": "Autre"
+    },
+    "heizung_baujahr": {
+      "label": "Année (chauffage)",
+      "Wie Baujahr des Hauses": "Comme l'année de construction",
+      "Anderes": "Autre"
+    },
+    "heizung_heizflaechen": {
+      "label": "Surfaces chauffantes",
+      "Fußbodenheizung": "Chauffage au sol",
+      "Heizkörper": "Radiateurs"
+    },
+    "warmwasser": {
+      "label": "Production d'eau chaude",
+      "ueber_heizung": "Uniquement via le chauffage",
+      "mit_solar": "Avec soutien solaire",
+      "durchlauferhitzer": "Chauffe-eau instantané / petit ballon"
+    },
+    "dach_form": {
+      "label": "Forme du toit",
+      "Walmdach": "Toit en croupe",
+      "Satteldach": "Toit à deux versants",
+      "Pultdach": "Toit monopente",
+      "Flachdach": "Toit plat",
+      "Mansarddach": "Toit mansardé"
+    },
+    "dach_ausrichtung": {
+      "label": "Orientation du toit",
+      "Nord": "Nord",
+      "Nord-Ost": "Nord-Est",
+      "Ost": "Est",
+      "Süd-Ost": "Sud-Est",
+      "Süd": "Sud",
+      "Süd-West": "Sud-Ouest",
+      "West": "Ouest",
+      "Nord-West": "Nord-Ouest"
+    },
+    "dachboden": {
+      "label": "Utilisation/état du grenier",
+      "teilweise": "Partiellement utilisé/chauffé",
+      "vollstaendig": "Entièrement utilisé/chauffé",
+      "nicht": "Non utilisé/chauffé"
+    },
+    "dach": {
+      "unbeheizt": {
+        "label": "Utilisation de la zone non chauffée",
+        "gar_nicht": "Pas du tout",
+        "ausbauen": "Aménager et utiliser"
+      }
+    },
+    "fassade": {
+      "label": "Façade",
+      "holz": "Bois",
+      "massiv": "Massif",
+      "keine_schaeden": "Aucun dommage",
+      "neu_streichen": "Doit être repeinte",
+      "risse": "Petites fissures, enduit effrité"
+    },
+    "fenster": {
+      "label": "Fenêtre",
+      "einfach": "Simple vitrage",
+      "zweifach": "Double vitrage",
+      "dreifach": "Triple vitrage",
+      "kastenfenster": "Fenêtre à caisson",
+      "holz": "Bois",
+      "kunststoff": "Plastique"
+    },
+    "keller": {
+      "label": "Sous-sol",
+      "nein": "Non",
+      "beheizt": "Oui - chauffé",
+      "teilweise": "Oui - partiellement chauffé",
+      "unbeheizt": "Oui - non chauffé",
+      "massiv": "Massif",
+      "andere": "Autre (par ex. bois)",
+      "weniger_2m": "Moins de 2 m",
+      "2_2_2m": "2,00 - 2,20 m",
+      "mehr_2_2m": "Plus de 2,20 m"
+    },
+    "sanierung": {
+      "label": "Mesures de rénovation",
+      "heizung": "Renouveler le système de chauffage",
+      "fassade": "Rénover la façade",
+      "dach": "Rénover le toit",
+      "eingangstuer": "Renouveler la porte d'entrée",
+      "photovoltaik": "Installer un système photovoltaïque",
+      "solarthermie": "Installer un système solaire thermique",
+      "fenster": "Remplacer les fenêtres",
+      "kellerdeckendaemmung": "Isolation du plafond du sous-sol"
+    },
+    "section1": {
+      "title": "1/10 - Informations générales",
+      "baujahr": "Année de construction*",
+      "anzahl_wohneinheiten": "Nombre d'unités résidentielles*",
+      "wohnflaeche_qm": "Surface habitable en m²*",
+      "anzahl_vollgeschosse": "Nombre d'étages complets*",
+      "angrenzende_gebaeude": "Bâtiments adjacents*",
+      "gebaeude_nachtraeglich_gedaemmt": "Le bâtiment a-t-il été isolé par la suite ?*",
+      "postleitzahl_immobilie": "Code postal du bien"
+    },
+    "section2": {
+      "title": "2/10 - Chauffage",
+      "heizung_energietraeger": "Source d'énergie",
+      "heizung_baujahr": "Année (chauffage)",
+      "heizung_heizflaechen": "Surfaces chauffantes",
+      "heizung_rohre_gedaemmt": "Les tuyaux sont-ils isolés ?"
+    },
+    "section3": {
+      "title": "3/10 - Eau chaude",
+      "warmwasseraufbereitung": "Production d'eau chaude"
+    },
+    "section4": {
+      "title": "4/10 - Toit",
+      "dach_form": "Forme du toit",
+      "dach_ausrichtung": "Orientation du toit",
+      "dach_dachboden_nutzung_zustand": "Utilisation/état du grenier",
+      "dach_unbeheizte_flaeche_nutzung": "Comment utiliser la zone non chauffée ?",
+      "dach_anzahl_dachgauben_dachfenster": "Nombre de lucarnes ou fenêtres de toit"
+    },
+    "section5": {
+      "title": "5/10 - Façade",
+      "fassade_bauweise": "Type de construction",
+      "fassade_zustand": "État"
+    },
+    "section6": {
+      "title": "6/10 - Fenêtres",
+      "fenster_verglasung": "Vitrage 1",
+      "fenster_rahmenmaterial": "Matériau du cadre",
+      "fenster_erneuerung_jahr": "Quand les fenêtres ont-elles été renouvelées ? (année)",
+      "fenster_anteil_verglasung_prozent": "Part des fenêtres avec ce vitrage en %"
+    },
+    "section7": {
+      "title": "7/10 - Sous-sol",
+      "keller_vorhanden": "Y a-t-il un sous-sol ?",
+      "keller_art_kellerdecke": "Type de plafond du sous-sol",
+      "keller_gewoelbekeller": "Cave voûtée",
+      "keller_raumhoehe": "Hauteur sous plafond au sous-sol en m"
+    },
+    "section8": {
+      "title": "8/10 - Photovoltaïque",
+      "photovoltaik_vorhanden": "Système photovoltaïque disponible ?"
+    },
+    "section9": {
+      "title": "9/10 - Souhaits de rénovation",
+      "sanierungswunsch_massnahmen": "Que faut-il renouveler ?"
+    },
+    "section10": {
+      "title": "10/10 - Bonus de subvention",
+      "foerderbonus_heizung_einkommensbonus": "10.1 Bonus de subvention pour le remplacement du chauffage : bonus de revenu",
+      "foerderbonus_heizung_klimageschwindigkeitsbonus": "10.1 Bonus de subvention pour le remplacement du chauffage : bonus de rapidité climatique",
+      "foerderbonus_isfp": "10.2 Bonus de subvention pour un plan de rénovation intégré : bonus ISFP"
+    }
+  },
+  "sidebar": {
+    "Energieprofil": "Profil énergétique",
+    "Eckdaten": "Données clés",
+    "Heizung": "Chauffage",
+    "Dämmung.Isolation": "Isolation",
+    "Solarenergie": "Énergie solaire",
+    "Lüftungssysteme": "Systèmes de ventilation",
+    "Fenster.Türen": "Fenêtres & Portes",
+    "Smart_Home": "Smart Home",
+    "Gründach.Begrünung": "Toit végétalisé & Végétalisation",
+    "Grün.Check": "Grün.Check",
+    "Potenziale": "Potentiels",
+    "Abmelden": "Déconnexion"
+  },
+  "validation": {
+    "buildingNameRequired": "Le nom du bâtiment est requis",
+    "buildingTypeRequired": "Veuillez sélectionner un type de bâtiment",
+    "yearBuiltFormat": "L'année doit être un nombre à 4 chiffres",
+    "squareMetersNumber": "Doit être un nombre valide",
+    "setup.validation.buildingType": "Veuillez sélectionner un type de bâtiment",
+    "setup.validation.constructionYearMin": "L'année de construction doit être au moins 1800",
+    "setup.validation.constructionYearMax": "L'année de construction ne peut pas être dans le futur",
+    "setup.validation.livingArea": "La surface habitable doit être d'au moins 1 m²",
+    "setup.validation.floors": "Le nombre d'étages doit être d'au moins 1",
+    "setup.validation.roofType": "Veuillez sélectionner un type de toit",
+    "setup.validation.heatingSystem": "Veuillez sélectionner un système de chauffage",
+    "setup.validation.insulationStatus": "Veuillez sélectionner l'état de l'isolation",
+    "setup.validation.windows": "Veuillez sélectionner le type de fenêtre"
+  },
+  "dashboard": {
+    "energyEfficiency": "Efficacité énergétique globale",
+    "insulation": "Isolation",
+    "window": "Fenêtre",
+    "current": "Actuel",
+    "recommended": "Recommandé"
+  },
+  "energyGrades": {
+    "A+": "A+",
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D",
+    "E": "E",
+    "F": "F",
+    "G": "G",
+    "H": "H"
+  }
+}

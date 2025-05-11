@@ -1,0 +1,357 @@
+{
+  "app": {
+    "title": "GreenVisor",
+    "description": "Your financial management solution"
+  },
+  "auth": {
+    "auth": "Let's Get Started",
+    "login": "Login",
+    "signup": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot your password?",
+    "continueWith": "Or continue with",
+    "signInWithEmail": "Sign In with Email",
+    "signInWithDiscord": "Sign In with Discord",
+    "dontHaveAccount": "Don't have an account?",
+    "createAccount": "Create an account",
+    "enterEmail": "Enter your email below to create your account"
+  },
+  "chatbot": {
+    "welcomeMessage": {
+      "welcome1": "Hello and welcome to <strong>Green Visor!</strong> 🌱",
+      "welcome2": "I am your digital renovation advisor and will guide you step by step on your way to a climate-neutral home.",
+      "welcome3": "In your municipality, a municipal heat planning has been carried out with the goal of achieving a climate-neutral building stock by 2040. As part of this planning, current data about your building and the supply/network infrastructure has been collected.",
+      "welcome4": "With <strong>Green Visor</strong> you can make your building fit for the energy future and understand the planned changes in the infrastructure. Together, we will find the best measures to reduce your energy costs and CO₂ emissions – always within your budget."
+    },
+    "startNow": "Start Now",
+    "title": "Green Visor",
+    "openChat": "Open Chat"
+  },
+  "welcome": {
+    "headline": "Make your building fit for tomorrow – modernize, optimize, benefit.",
+    "subline": "Less emissions, more savings – find the best measures that help your budget and the environment!"
+  },
+  "common": {
+    "submit": "Submit",
+    "loading": "Loading...",
+    "back": "Back",
+    "continue": "Continue",
+    "Ja": "Yes",
+    "Nein": "No"
+  },
+  "theme": {
+    "dark": "Dark",
+    "light": "Light",
+    "system": "System",
+    "toggle": "Toggle theme"
+  },
+  "setup": {
+    "selectLocation": "Select Your Location",
+    "selectOption": "Please select...",
+    "locationDescription": "We'll use this to get accurate location data of your home",
+    "searchLocation": "Search for a city, address, or landmark...",
+    "locationSaved": "Location saved successfully",
+    "noLocation": "Please select a location on the map",
+    "locationFound": "Location found: {{name}}",
+    "mapError": "Map error",
+    "mapErrorHint": "Please try refreshing the page or using a different browser.",
+    "loadingMap": "Loading map...",
+    "useMyLocation": "Use my location",
+    "enterCoordinates": "Enter coordinates",
+    "latitude": "Latitude (-90 to 90)",
+    "latitudePlaceholder": "e.g. 51.5074",
+    "longitude": "Longitude (-180 to 180)",
+    "longitudePlaceholder": "e.g. -0.1278",
+    "setLocation": "Set Location",
+    "locationAccessFailed": "Location access failed",
+    "locationAccessHint": "You can click on the map or use the \"Enter coordinates\" button instead.",
+    "selectedCoordinates": "Selected coordinates",
+    "selectedLocation": "Selected location",
+    "finalizeSetup": "Finalize Setup",
+    "completeDetails": "Complete your building details to finish setup",
+    "buildingName": "Building Name",
+    "enterBuildingName": "Enter building name",
+    "buildingType": "Building Type",
+    "selectType": "Select building type",
+    "residential": "Residential",
+    "commercial": "Commercial",
+    "industrial": "Industrial",
+    "mixed": "Mixed Use",
+    "yearBuilt": "Year Built",
+    "yearBuiltDescription": "Enter the year the building was constructed",
+    "squareMeters": "Square Meters",
+    "totalArea": "Total area of the building in square meters",
+    "previouslyRenovated": "Previously Renovated",
+    "renovatedDescription": "Has this building been renovated before?",
+    "locationCoordinates": "Location Coordinates",
+    "complete": "Complete Setup",
+    "calculatorTitle": "Complete your building data",
+    "calculatorIntro": "Enter your building's data to get an estimate of its energy efficiency.",
+    "calculationStarted": "Calculation started",
+    "calculationProcessing": "Your data is being processed. Please wait...",
+    "calculationFinished": "Calculation completed",
+    "calculationReady": "Your results are ready.",
+    "constructionYear": "Year of construction",
+    "constructionYearPlaceholder": "e.g. 1990",
+    "livingArea": "Living area (m²)",
+    "livingAreaPlaceholder": "e.g. 150",
+    "floors": "Number of floors",
+    "floorsPlaceholder": "e.g. 2",
+    "roofType": "Roof type",
+    "selectRoofType": "Select roof type",
+    "heatingSystem": "Heating system",
+    "selectHeatingSystem": "Select heating system",
+    "insulationStatus": "Insulation status",
+    "selectInsulationStatus": "Select insulation status",
+    "windows": "Window type",
+    "selectWindowType": "Select window type",
+    "buildingTypes": {
+      "einfamilienhaus": "Single-family house",
+      "zweifamilienhaus": "Two-family house",
+      "mehrfamilienhaus": "Apartment building",
+      "reihenhaus": "Terraced house",
+      "doppelhaushälfte": "Semi-detached house",
+      "wohnung": "Apartment"
+    },
+    "roofTypes": {
+      "satteldach": "Gable roof",
+      "flachdach": "Flat roof",
+      "pultdach": "Mono-pitch roof",
+      "walmdach": "Hip roof",
+      "mansarddach": "Mansard roof"
+    },
+    "heatingSystems": {
+      "gas": "Gas heating",
+      "öl": "Oil heating",
+      "wärmepumpe": "Heat pump",
+      "fernwaerme": "District heating",
+      "pellets": "Pellet heating",
+      "elektro": "Electric heating"
+    },
+    "insulationStatuses": {
+      "keine": "No insulation",
+      "teilweise": "Partially insulated",
+      "vollstaendig": "Fully insulated"
+    },
+    "windowTypes": {
+      "einfach": "Single glazing",
+      "doppel": "Double glazing",
+      "dreifach": "Triple glazing"
+    },
+    "angrenzende_gebaeude": {
+      "Nein": "No",
+      "An einer Seite": "On one side",
+      "An beiden Seiten": "On both sides"
+    },
+    "heizung_energietraeger": {
+      "label": "Energy source",
+      "Erdgas": "Natural gas",
+      "Öl": "Oil",
+      "Pellets": "Pellets",
+      "Strom": "Electricity",
+      "Stückholz": "Firewood",
+      "Fernwärme": "District heating",
+      "Anderes": "Other"
+    },
+    "heizung_baujahr": {
+      "label": "Year (heating)",
+      "Wie Baujahr des Hauses": "Same as year built",
+      "Anderes": "Other"
+    },
+    "heizung_heizflaechen": {
+      "label": "Heating surfaces",
+      "Fußbodenheizung": "Underfloor heating",
+      "Heizkörper": "Radiators"
+    },
+    "warmwasser": {
+      "label": "Hot water supply",
+      "ueber_heizung": "Only via heating",
+      "mit_solar": "With solar support",
+      "durchlauferhitzer": "Instantaneous water heater / small boiler"
+    },
+    "dach_form": {
+      "label": "Roof shape",
+      "Walmdach": "Hip roof",
+      "Satteldach": "Gable roof",
+      "Pultdach": "Mono-pitch roof",
+      "Flachdach": "Flat roof",
+      "Mansarddach": "Mansard roof"
+    },
+    "dach_ausrichtung": {
+      "label": "Roof orientation",
+      "Nord": "North",
+      "Nord-Ost": "Northeast",
+      "Ost": "East",
+      "Süd-Ost": "Southeast",
+      "Süd": "South",
+      "Süd-West": "Southwest",
+      "West": "West",
+      "Nord-West": "Northwest"
+    },
+    "dachboden": {
+      "label": "Attic use/condition",
+      "teilweise": "Partially used/heated",
+      "vollstaendig": "Fully used/heated",
+      "nicht": "Not used/heated"
+    },
+    "dach": {
+      "unbeheizt": {
+        "label": "Unheated area use",
+        "gar_nicht": "Not at all",
+        "ausbauen": "Expand and use"
+      }
+    },
+    "fassade": {
+      "label": "Facade",
+      "holz": "Wood",
+      "massiv": "Solid",
+      "keine_schaeden": "No damage",
+      "neu_streichen": "Needs repainting",
+      "risse": "Small cracks, crumbling plaster"
+    },
+    "fenster": {
+      "label": "Window",
+      "einfach": "Single glazing",
+      "zweifach": "Double glazing",
+      "dreifach": "Triple glazing",
+      "kastenfenster": "Box window",
+      "holz": "Wood",
+      "kunststoff": "Plastic"
+    },
+    "keller": {
+      "label": "Basement",
+      "nein": "No",
+      "beheizt": "Yes - heated",
+      "teilweise": "Yes - partially heated",
+      "unbeheizt": "Yes - unheated",
+      "massiv": "Solid",
+      "andere": "Other (e.g. wood)",
+      "weniger_2m": "Less than 2 m",
+      "2_2_2m": "2.00 - 2.20 m",
+      "mehr_2_2m": "More than 2.20 m"
+    },
+    "sanierung": {
+      "label": "Renovation measures",
+      "heizung": "Renew heating system",
+      "fassade": "Renovate facade",
+      "dach": "Renovate roof",
+      "eingangstuer": "Renew entrance door",
+      "photovoltaik": "Install photovoltaic system",
+      "solarthermie": "Install solar thermal system",
+      "fenster": "Replace windows",
+      "kellerdeckendaemmung": "Basement ceiling insulation"
+    },
+    "section1": {
+      "title": "1/10 - General Information",
+      "baujahr": "Year built*",
+      "anzahl_wohneinheiten": "Number of residential units*",
+      "wohnflaeche_qm": "Living area in sqm (m²)*",
+      "anzahl_vollgeschosse": "Number of full floors*",
+      "angrenzende_gebaeude": "Adjacent buildings*",
+      "gebaeude_nachtraeglich_gedaemmt": "Was the building subsequently insulated?*",
+      "postleitzahl_immobilie": "Property postal code"
+    },
+    "section2": {
+      "title": "2/10 - Heating",
+      "heizung_energietraeger": "Energy source",
+      "heizung_baujahr": "Year (heating)",
+      "heizung_heizflaechen": "Heating surfaces",
+      "heizung_rohre_gedaemmt": "Are the pipes insulated?"
+    },
+    "section3": {
+      "title": "3/10 - Hot Water",
+      "warmwasseraufbereitung": "Hot water supply"
+    },
+    "section4": {
+      "title": "4/10 - Roof",
+      "dach_form": "Roof shape",
+      "dach_ausrichtung": "Roof orientation",
+      "dach_dachboden_nutzung_zustand": "Attic use/condition",
+      "dach_unbeheizte_flaeche_nutzung": "How should the unheated area be used?",
+      "dach_anzahl_dachgauben_dachfenster": "Number of dormers or roof windows"
+    },
+    "section5": {
+      "title": "5/10 - Facade",
+      "fassade_bauweise": "Construction type",
+      "fassade_zustand": "Condition"
+    },
+    "section6": {
+      "title": "6/10 - Windows",
+      "fenster_verglasung": "Glazing 1",
+      "fenster_rahmenmaterial": "Frame material",
+      "fenster_erneuerung_jahr": "When were the windows renewed? (year)",
+      "fenster_anteil_verglasung_prozent": "Share of windows with this glazing in %"
+    },
+    "section7": {
+      "title": "7/10 - Basement",
+      "keller_vorhanden": "Is there a basement?",
+      "keller_art_kellerdecke": "Type of basement ceiling",
+      "keller_gewoelbekeller": "Vaulted cellar",
+      "keller_raumhoehe": "Room height in basement in m"
+    },
+    "section8": {
+      "title": "8/10 - Photovoltaics",
+      "photovoltaik_vorhanden": "Photovoltaic system available?"
+    },
+    "section9": {
+      "title": "9/10 - Renovation wishes",
+      "sanierungswunsch_massnahmen": "What should be renewed?"
+    },
+    "section10": {
+      "title": "10/10 - Subsidy bonuses",
+      "foerderbonus_heizung_einkommensbonus": "10.1 Subsidy bonus for heating replacement: income bonus",
+      "foerderbonus_heizung_klimageschwindigkeitsbonus": "10.1 Subsidy bonus for heating replacement: climate speed bonus",
+      "foerderbonus_isfp": "10.2 Subsidy bonus for an integrated renovation roadmap: ISFP bonus"
+    }
+  },
+  "sidebar": {
+    "Energieprofil": "Energy Profile",
+    "Eckdaten": "Key Data",
+    "Heizung": "Heating",
+    "Dämmung.Isolation": "Insulation",
+    "Solarenergie": "Solar Energy",
+    "Lüftungssysteme": "Ventilation Systems",
+    "Fenster.Türen": "Windows & Doors",
+    "Smart_Home": "Smart Home",
+    "Gründach.Begrünung": "Green Roof & Greening",
+    "Grün.Check": "Green.Check",
+    "Potenziale": "Potentials",
+    "Abmelden": "Logout",
+    "switchToIndustrial": "Switch to Industrial",
+    "switchToResidential": "Switch to Residential"
+  },
+  "validation": {
+    "buildingNameRequired": "Building name is required",
+    "buildingTypeRequired": "Please select a building type",
+    "yearBuiltFormat": "Year must be a 4-digit number",
+    "squareMetersNumber": "Must be a valid number",
+    "setup.validation.buildingType": "Please select a building type",
+    "setup.validation.constructionYearMin": "Year of construction must be at least 1800",
+    "setup.validation.constructionYearMax": "Year of construction cannot be in the future",
+    "setup.validation.livingArea": "Living area must be at least 1 m²",
+    "setup.validation.floors": "Number of floors must be at least 1",
+    "setup.validation.roofType": "Please select a roof type",
+    "setup.validation.heatingSystem": "Please select a heating system",
+    "setup.validation.insulationStatus": "Please select the insulation status",
+    "setup.validation.windows": "Please select the window type"
+  },
+  "dashboard": {
+    "energyEfficiency": "Overall Energy Efficiency",
+    "insulation": "Insulation",
+    "window": "Window",
+    "current": "Current",
+    "recommended": "Recommended"
+  },
+  "energyGrades": {
+    "A+": "A+",
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D",
+    "E": "E",
+    "F": "F",
+    "G": "G",
+    "H": "H"
+  }
+}

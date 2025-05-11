@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Mapbox Test</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoiMjAwMmJpc2h3YWplZXQiLCJhIjoiY21haWFobGlhMDR1YjJxc2kxMm8yczdvbSJ9.T-sLgiVBAbp90goQIjzAVw";
+      new mapboxgl.Map({
+        container: "map",
+        style: "mapbox://styles/mapbox/light-v11",
+        center: [0, 0],
+        zoom: 2,
+      });
+    </script>
+  </body>
+</html>

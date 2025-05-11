@@ -1,0 +1,364 @@
+{
+  "app": {
+    "title": "GreenVisor",
+    "description": "Ihre Finanzmanagement-Lösung"
+  },
+  "auth": {
+    "auth": "Los geht's",
+    "login": "Login",
+    "signup": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot your password?",
+    "continueWith": "Or continue with",
+    "signInWithEmail": "Sign In with Email",
+    "signInWithDiscord": "Mit Discord anmelden",
+    "dontHaveAccount": "Don't have an account?",
+    "alreadyHaveAccount": "Already have an account?",
+    "createAccount": "Create an account",
+    "enterEmail": "Enter your email below to create your account",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "passwordPlaceholder": "Choose a strong password"
+  },
+  "chatbot": {
+    "title": "Grün.Zuhause",
+    "welcomeMessage": {
+      "welcome1": "Hallo und willkommen bei <strong>Grün.Zuhause!</strong> 🌱",
+      "welcome2": "Ich bin dein digitaler Sanierungsberater und begleite Sie Schritt für Schritt auf dem Weg zu einem klimaneutralen Zuhause.",
+      "welcome3": "In deiner Kommune wurde eine kommunale Wärmeleitplanung durchgeführt, die das Ziel verfolgt, bis 2040 einen klimaneutralen Gebäudebestand zu erreichen. Im Rahmen dieser Planung wurden aktuelle Daten zu deinem Gebäude und zur Versorgungs-/Netzinfrastruktur erfasst.",
+      "welcome4": "Mit <strong>Grün.Zuhause</strong> kannst du dein Gebäude energetisch zukunftsfähig machen und die geplanten Veränderungen in der Infrastruktur nachvollziehen. Gemeinsam finden wir die besten Maßnahmen, um deine Energiekosten und CO₂-Emissionen zu senken – und das immer im Rahmen deines Budgets."
+    },
+    "startNow": "Jetzt Starten",
+    "openChat": "Chat öffnen"
+  },
+  "welcome": {
+    "headline": "Dein Gebäude fit für morgen – modernisieren, optimieren, profitieren.",
+    "subline": "Weniger Emissionen, mehr Ersparnis – finde die besten Maßnahmen, die deinem Budget und der Umwelt helfen!"
+  },
+  "common": {
+    "submit": "Abschicken",
+    "loading": "Lädt...",
+    "continue": "Weiter",
+    "back": "Zurück",
+    "Ja": "Ja",
+    "Nein": "Nein"
+  },
+  "theme": {
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System",
+    "toggle": "Thema umschalten"
+  },
+  "setup": {
+    "selectLocation": "Standort auswählen",
+    "loadingMap": "Karte wird geladen...",
+    "mapInstructions": "Klicken Sie auf die Karte, um Ihren Standort auszuwählen",
+    "selectedCoordinates": "Ausgewählte Koordinaten",
+    "selectedLocation": "Ausgewählter Standort",
+    "locationDescription": "Wir verwenden dies, um genaue Standortdaten Ihres Hauses zu erhalten.",
+    "searchLocation": "Suche nach einer Stadt, Adresse oder einem Wahrzeichen...",
+    "locationSaved": "Standort erfolgreich gespeichert",
+    "noLocation": "Bitte wählen Sie einen Standort auf der Karte aus",
+    "locationFound": "Standort gefunden: {{name}}",
+    "mapError": "Kartenfehler",
+    "mapErrorHint": "Bitte versuchen Sie, die Seite zu aktualisieren oder einen anderen Browser zu verwenden.",
+    "useMyLocation": "Meinen Standort verwenden",
+    "enterCoordinates": "Koordinaten eingeben",
+    "latitude": "Breitengrad (-90 bis 90)",
+    "latitudePlaceholder": "z.B. 51.5074",
+    "longitude": "Längengrad (-180 bis 180)",
+    "longitudePlaceholder": "z.B. -0.1278",
+    "setLocation": "Standort festlegen",
+    "locationAccessFailed": "Standortzugriff fehlgeschlagen",
+    "locationAccessHint": "Sie können auf die Karte klicken oder die Schaltfläche \"Koordinaten eingeben\" verwenden.",
+    "finalizeSetup": "Setup abschließen",
+    "completeDetails": "Vervollständigen Sie die Gebäudedetails, um das Setup abzuschließen",
+    "buildingName": "Gebäudename",
+    "enterBuildingName": "Gebäudename eingeben",
+    "buildingType": "Gebäudetyp",
+    "selectType": "Gebäudetyp auswählen",
+    "residential": "Wohngebäude",
+    "commercial": "Gewerbegebäude",
+    "industrial": "Industriegebäude",
+    "mixed": "Gemischt genutzt",
+    "yearBuilt": "Baujahr",
+    "yearBuiltDescription": "Geben Sie das Baujahr des Gebäudes ein",
+    "squareMeters": "Quadratmeter",
+    "totalArea": "Gesamtfläche des Gebäudes in Quadratmetern",
+    "previouslyRenovated": "Bereits renoviert",
+    "renovatedDescription": "Wurde dieses Gebäude bereits renoviert?",
+    "locationCoordinates": "Standortkoordinaten",
+    "complete": "Setup abschließen",
+    "calculatorTitle": "Vervollständigen Sie Ihre Gebäudedaten",
+    "calculatorIntro": "Geben Sie die Daten Ihres Gebäudes ein, um eine Abschätzung des Energieeffizienzzustands zu erhalten.",
+    "calculationStarted": "Berechnung gestartet",
+    "calculationProcessing": "Ihre Daten werden verarbeitet. Bitte warten...",
+    "calculationFinished": "Berechnung abgeschlossen",
+    "calculationReady": "Ihre Ergebnisse sind bereit.",
+    "constructionYear": "Baujahr",
+    "constructionYearPlaceholder": "z.B. 1990",
+    "livingArea": "Wohnfläche (m²)",
+    "livingAreaPlaceholder": "z.B. 150",
+    "floors": "Anzahl der Stockwerke",
+    "floorsPlaceholder": "z.B. 2",
+    "roofType": "Dachtyp",
+    "selectRoofType": "Wählen Sie einen Dachtyp",
+    "heatingSystem": "Heizsystem",
+    "selectHeatingSystem": "Wählen Sie ein Heizsystem",
+    "insulationStatus": "Dämmstatus",
+    "selectInsulationStatus": "Wählen Sie den Dämmstatus",
+    "windows": "Fensterart",
+    "selectWindowType": "Wählen Sie die Fensterart",
+    "buildingTypes": {
+      "einfamilienhaus": "Einfamilienhaus",
+      "zweifamilienhaus": "Zweifamilienhaus",
+      "mehrfamilienhaus": "Mehrfamilienhaus",
+      "reihenhaus": "Reihenhaus",
+      "doppelhaushälfte": "Doppelhaushälfte",
+      "wohnung": "Wohnung"
+    },
+    "roofTypes": {
+      "satteldach": "Satteldach",
+      "flachdach": "Flachdach",
+      "pultdach": "Pultdach",
+      "walmdach": "Walmdach",
+      "mansarddach": "Mansarddach"
+    },
+    "heatingSystems": {
+      "gas": "Gasheizung",
+      "öl": "Ölheizung",
+      "wärmepumpe": "Wärmepumpe",
+      "fernwaerme": "Fernwärme",
+      "pellets": "Pelletheizung",
+      "elektro": "Elektroheizung"
+    },
+    "insulationStatuses": {
+      "keine": "Keine Dämmung",
+      "teilweise": "Teilweise gedämmt",
+      "vollstaendig": "Vollständig gedämmt"
+    },
+    "windowTypes": {
+      "einfach": "Einfachverglasung",
+      "doppel": "Doppelverglasung",
+      "dreifach": "Dreifachverglasung"
+    },
+    "formTitle": "KFW Sanierungsrechner",
+    "section1": {
+      "title": "1/10 - Objekt allgemein",
+      "baujahr": "Baujahr*",
+      "anzahl_wohneinheiten": "Anzahl Wohneinheiten*",
+      "wohnflaeche_qm": "Wohnfläche in qm (m²)*",
+      "anzahl_vollgeschosse": "Anzahl Vollgeschosse*",
+      "angrenzende_gebaeude": "Angrenzende Gebäude*",
+      "gebaeude_nachtraeglich_gedaemmt": "Wurde das Gebäude nachträglich gedämmt?*",
+      "postleitzahl_immobilie": "Postleitzahl der Immobilie"
+    },
+    "section2": {
+      "title": "2/10 - Heizung",
+      "heizung_energietraeger": "Energieträger",
+      "heizung_baujahr": "Baujahr (Heizung)",
+      "heizung_heizflaechen": "Heizflächen",
+      "heizung_rohre_gedaemmt": "Sind die Rohre gedämmt?"
+    },
+    "section3": {
+      "title": "3/10 - Warmwasser",
+      "warmwasseraufbereitung": "Warmwasseraufbereitung"
+    },
+    "section4": {
+      "title": "4/10 - Dach",
+      "dach_form": "Dachform",
+      "dach_ausrichtung": "Dachausrichtung",
+      "dach_dachboden_nutzung_zustand": "Dachboden Nutzung/Zustand",
+      "dach_unbeheizte_flaeche_nutzung": "Wie soll die unbeheizte Fläche genutzt werden?",
+      "dach_anzahl_dachgauben_dachfenster": "Anzahl Dachgauben oder Dachfenster"
+    },
+    "section5": {
+      "title": "5/10 - Fassade",
+      "fassade_bauweise": "Bauweise",
+      "fassade_zustand": "Zustand"
+    },
+    "section6": {
+      "title": "6/10 - Fenster",
+      "fenster_verglasung": "Verglasung 1",
+      "fenster_rahmenmaterial": "Rahmenmaterial",
+      "fenster_erneuerung_jahr": "Wann wurden die Fenster erneuert? (Baujahr)",
+      "fenster_anteil_verglasung_prozent": "Anteil der Fenster mit dieser Verglasung in %"
+    },
+    "section7": {
+      "title": "7/10 - Keller",
+      "keller_vorhanden": "Ist ein Keller vorhanden?",
+      "keller_art_kellerdecke": "Art der Kellerdecke",
+      "keller_gewoelbekeller": "Gewölbekeller",
+      "keller_raumhoehe": "Raumhöhe im Keller in m"
+    },
+    "section8": {
+      "title": "8/10 - Photovoltaik",
+      "photovoltaik_vorhanden": "Photovoltaikanlage vorhanden?"
+    },
+    "section9": {
+      "title": "9/10 - Sanierungswunsch",
+      "sanierungswunsch_massnahmen": "Was soll erneuert werden?"
+    },
+    "section10": {
+      "title": "10/10 - Förderboni",
+      "foerderbonus_heizung_einkommensbonus": "10.1 Förderbonus bei einem Heizungstausch: Einkommensbonus",
+      "foerderbonus_heizung_klimageschwindigkeitsbonus": "10.1 Förderbonus bei einem Heizungstausch: Klimageschwindigkeitsbonus",
+      "foerderbonus_isfp": "10.2 Förderbonus bei einem integrierten Sanierungsfahrplan: ISFP-Bonus"
+    },
+    "options": {
+      "nein": "Nein",
+      "an_einer_seite": "An einer Seite",
+      "an_beiden_seiten": "An beiden Seiten",
+      "ja": "Ja"
+    },
+    "angrenzende_gebaeude": {
+      "Nein": "Nein",
+      "An einer Seite": "An einer Seite",
+      "An beiden Seiten": "An beiden Seiten"
+    },
+    "heizung_energietraeger": {
+      "Erdgas": "Erdgas",
+      "Öl": "Öl",
+      "Pellets": "Pellets",
+      "Strom": "Strom",
+      "Stückholz": "Stückholz",
+      "Fernwärme": "Fernwärme",
+      "Anderes": "Anderes"
+    },
+    "heizung_baujahr": {
+      "Wie Baujahr des Hauses": "Wie Baujahr des Hauses",
+      "Anderes": "Anderes"
+    },
+    "heizung_heizflaechen": {
+      "Fußbodenheizung": "Fußbodenheizung",
+      "Heizkörper": "Heizkörper"
+    },
+    "warmwasser": {
+      "ueber_heizung": "Ausschließlich über Heizung",
+      "mit_solar": "Mit Solarunterstützung",
+      "durchlauferhitzer": "Durchlauferhitzer leinboiler"
+    },
+    "dach_form": {
+      "Walmdach": "Walmdach",
+      "Satteldach": "Satteldach",
+      "Pultdach": "Pultdach",
+      "Flachdach": "Flachdach",
+      "Mansarddach": "Mansarddach"
+    },
+    "dach_ausrichtung": {
+      "Nord": "Nord",
+      "Nord-Ost": "Nord-Ost",
+      "Ost": "Ost",
+      "Süd-Ost": "Süd-Ost",
+      "Süd": "Süd",
+      "Süd-West": "Süd-West",
+      "West": "West",
+      "Nord-West": "Nord-West"
+    },
+    "dachboden": {
+      "teilweise": "Teilweise genutzt/beheizt",
+      "vollstaendig": "Vollständig genutzt/beheizt",
+      "nicht": "Nicht genutzt/beheizt"
+    },
+    "dach": {
+      "unbeheizt": {
+        "gar_nicht": "Gar nicht",
+        "ausbauen": "Ausbauen und nutzen"
+      }
+    },
+    "fassade": {
+      "holz": "Holz",
+      "massiv": "Massiv",
+      "keine_schaeden": "Keine Schäden",
+      "neu_streichen": "Muss neu gestrichen werden",
+      "risse": "Kleine Risse röckelnder Putz"
+    },
+    "fenster": {
+      "einfach": "Einfach",
+      "zweifach": "Zweifach",
+      "dreifach": "Dreifach",
+      "kastenfenster": "Kastenfenster",
+      "holz": "Holz",
+      "kunststoff": "Kunststoff"
+    },
+    "keller": {
+      "nein": "Nein",
+      "beheizt": "Ja - beheizt",
+      "teilweise": "Ja - teilweise beheizt",
+      "unbeheizt": "Ja - unbeheizt",
+      "massiv": "Massiv",
+      "andere": "Andere (z.B. Holz)",
+      "weniger_2m": "Weniger als 2 m",
+      "2_2_2m": "2,00 - 2,20 m",
+      "mehr_2_2m": "mehr als 2,20 m"
+    },
+    "sanierung": {
+      "heizung": "Heizung eizsystem erneuern",
+      "fassade": "Fassade sanieren",
+      "dach": "Dach sanieren",
+      "eingangstuer": "Eingangstür erneuern",
+      "photovoltaik": "Photovoltaikanlage installieren",
+      "solarthermie": "Solarthermische Anlage installieren",
+      "fenster": "Fenster austauschen",
+      "kellerdeckendaemmung": "Kellerdeckendämmung"
+    },
+    "selectOption": "Bitte wählen...",
+    "formSubmitted": "Formular erfolgreich abgeschickt!",
+    "validation": {
+      "required": "Dieses Feld ist erforderlich.",
+      "year": "Bitte ein gültiges Jahr eingeben."
+    }
+  },
+  "validation": {
+    "buildingNameRequired": "Gebäudename ist erforderlich",
+    "buildingTypeRequired": "Bitte wählen Sie einen Gebäudetyp aus",
+    "yearBuiltFormat": "Das Jahr muss eine 4-stellige Zahl sein",
+    "squareMetersNumber": "Muss eine gültige Zahl sein",
+    "setup.validation.buildingType": "Bitte wählen Sie einen Gebäudetyp",
+    "setup.validation.constructionYearMin": "Baujahr muss mindestens 1800 sein",
+    "setup.validation.constructionYearMax": "Baujahr kann nicht in der Zukunft liegen",
+    "setup.validation.livingArea": "Wohnfläche muss mindestens 1 m² sein",
+    "setup.validation.floors": "Anzahl der Stockwerke muss mindestens 1 sein",
+    "setup.validation.roofType": "Bitte wählen Sie einen Dachtyp",
+    "setup.validation.heatingSystem": "Bitte wählen Sie ein Heizsystem",
+    "setup.validation.insulationStatus": "Bitte wählen Sie den Dämmstatus",
+    "setup.validation.windows": "Bitte wählen Sie die Fensterart",
+    "required": "Dieses Feld ist erforderlich.",
+    "year": "Bitte ein gültiges Jahr eingeben."
+  },
+  "sidebar": {
+    "Energieprofil": "Energieprofil",
+    "Eckdaten": "Eckdaten",
+    "Heizung": "Heizung",
+    "Dämmung.Isolation": "Dämmung & Isolation",
+    "Solarenergie": "Solarenergie",
+    "Lüftungssysteme": "Lüftungssysteme",
+    "Fenster.Türen": "Fenster & Türen",
+    "Smart_Home": "Smart Home",
+    "Gründach.Begrünung": "Gründach & Begrünung",
+    "Grün.Check": "Grün Check",
+    "Potenziale": "Potenziale",
+    "Abmelden": "Logout",
+    "switchToIndustrial": "Wechseln Sie zu Industrie",
+    "switchToResidential": "Wechseln Sie zu Wohngebäuden"
+  },
+  "dashboard": {
+    "energyEfficiency": "Gesamtenergieeffizienz",
+    "insulation": "Dämmung",
+    "window": "Fenster",
+    "current": "Aktuell",
+    "recommended": "Empfohlen"
+  },
+  "energyGrades": {
+    "A+": "A+",
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D",
+    "E": "E",
+    "F": "F",
+    "G": "G",
+    "H": "H"
+  }
+}
