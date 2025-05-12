@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from langchain_neo4j import GraphCypherQAChain, Neo4jGraph
 from langchain_openai import ChatOpenAI
 
-from prompt import custom_prompt, cypher_chain_prompt
+from .prompt import custom_prompt, cypher_chain_prompt
 
 from appwrite.client import Client
 from appwrite.services.databases import Databases
