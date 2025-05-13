@@ -184,3 +184,12 @@ You can customize several parameters in the scripts:
   * Ensure URLs are correct in `start_urls.txt`
   * Increase `MAX_DEPTH` to crawl deeper
 
+## Further development Notes
+
+**Version V.0.0.2** – streamline of the code so that the entire process of scraping with filters for PDFs and URLs takes place together. Next planned functionality: fetching URLs from a remote hosted Google Sheet or database.
+
+Better visualization and combine preprocess and scraping. 
+
+
+## Proposed update 
+dynamic setting of cralwer depth 
