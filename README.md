@@ -4,7 +4,13 @@
   <img src="./images/greenvisor_logo.png" alt="Greenvisor Logo" width="20%" />
 </div>
 
+
+## Deployed Website
+
+You can access the live application here: [https://greenvisor.vercel.app/](https://greenvisor.vercel.app/)
+
 **Version:** 0.0.1
+
 **Last Updated:** May 10, 2025
 
 ## Documentation Index
@@ -27,3 +33,11 @@ Greenvisor is an AI-powered energy consultation application designed to provide 
 * **Graph Database Integration:** Utilizes a Neo4j graph database to fetch relevant data and context for answering user queries.
 * **PDF Export Functionality:** Allows for the export of data (presumably consultation results or reports) into PDF files.
 * **Modular Design:** Built with FastAPI for the API layer and Langchain for LLM interactions.
+
+
+
+## Future roadmap
+
+- [ ] **Enhanced Reports:** Add customizable visualization and detailed PDF export options.
+- [ ] **Automated Subsidy Updates:** Automatically update subsidy information as government policies change, relevant to current user data and chat history.
+- [ ] **Human Expert Feedback System:** Integrate a system to receive feedback and impovemnet of the outputs from an Human.
